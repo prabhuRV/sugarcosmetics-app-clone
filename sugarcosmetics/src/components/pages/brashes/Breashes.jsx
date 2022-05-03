@@ -1,9 +1,9 @@
 import React from 'react'
-import Breashes from './breashesData'
+import BreashesData from './BreashesData'
 const Breashes = () => {
   return (
     <>
-      <Breashes/>
+    <BreashesData/>
     </>
   )
 }

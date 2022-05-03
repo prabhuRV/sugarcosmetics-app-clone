@@ -1,7 +1,9 @@
-import React from 'react'
-
-const Breashes = () => {
-        const [getData,setGetData]=React.useState([]);
+import React,{useEffect,useState} from 'react'
+import styles from './main.css'
+import BrushesItem from './BrushesItems';
+import {v4 as uuid} from 'uuid'
+const BreashesData = () => {
+        const [getData,setGetData] = useState([]);
 
 
      const breashesData = async()=>{  
@@ -17,11 +19,25 @@ const Breashes = () => {
     }
         useEffect(()=>{
             breashesData();
-            console.log("BreashesData",getData)
+            // console.log("BreashesData",getData)
         },[setGetData])
   return (
-    <div>breashesData</div>
+    <>
+       <div  className="container" style={styles.container}>
+           
+          { getData.map((elem)=>{
+                       return <BrushesItem key={uuid()} {...elem} />
+                      })}
+            
+        </div>
+    </>
   )
 }
 
-export default Breashes
+export default BreashesData
+
+//    let mainData = {
+//                   ...data,
+//                   id:uuid()
+//               }
+//                    let newUpdatedData  = mainData.map((elem)=>elem)

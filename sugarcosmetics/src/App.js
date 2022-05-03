@@ -1,8 +1,10 @@
 
 import './App.css';
-import Face from './components/pages/makeup/Face';
-import Lips from './components/pages/makeup/Lips';
-import MakeUp from './components/pages/makeup/MakeUp';
+import Breashes from './components/pages/brashes/Breashes';
+
+// import Face from './components/pages/makeup/Face';
+// import Lips from './components/pages/makeup/Lips';
+// import MakeUp from './components/pages/makeup/MakeUp';
 
 
 
@@ -12,7 +14,8 @@ function App() {
      <h1>hello world</h1>
       {/* <MakeUp/> */}
       {/* <Lips/> */}
-      <Face/>
+      {/* <Face/> */}
+      <Breashes/>
     </div>
   );
 }
