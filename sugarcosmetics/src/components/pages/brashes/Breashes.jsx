@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Breashes from './breashesData'
 const Breashes = () => {
   return (
-    <div>breashes</div>
+    <>
+      <Breashes/>
+    </>
   )
 }
 
