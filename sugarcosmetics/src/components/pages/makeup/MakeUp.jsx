@@ -17,12 +17,53 @@ function MakeUp() {
         getData();
     },[])
 
+    const handleH2l = ()=>{
+        let new_data= data.sort((a,b)=>{ return b.price - a.price });
+        console.log(new_data)
+        setData([...new_data])
+    }
+
+    const handleL2h = ()=>{
+        let sorted_data= data.sort((a,b)=>{ return  a.price - b.price });
+
+        console.log(sorted_data)
+        setData([...sorted_data])
+    }
+
   return (
       <>
-      <div id= {styles.info}>
+    <div id= {styles.infoContain}>
+        <div id= {styles.info}>
           <h1 id= {styles.h1}>Makeup :</h1>
           <p id= {styles.items}>54 items</p>
-      </div>
+         </div>
+     
+       <div id={styles.sortData}>
+
+              <div id={styles.opt}>
+                     <div id= {styles.top} >
+                          <p>Select Sorting</p>
+                          <p>Clear All</p>
+                     </div><hr/>
+                        
+                        <div id={styles.line}>
+                          <p>Relevance</p>
+                        </div><hr/>
+                          
+                          <div id={styles.line} onClick= {handleH2l}>
+                             <p>Price - High to Low</p>
+                          </div> <hr/>
+                            
+                          <div id={styles.line} onClick= {handleL2h}>
+                          <p>Price - Low to High</p>
+                          </div> 
+                           
+                           
+                </div>
+       </div>
+
+        
+    </div>
     <div id={styles.contain}>
           {data.map((item)=>(
               <div key= {item.id} id= {styles.unit}>
