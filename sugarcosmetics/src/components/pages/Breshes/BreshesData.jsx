@@ -39,7 +39,7 @@ function BreshesData() {
           <p id= {styles.items}>{data.length} items</p>
          </div>
      
-       <div id={styles.sortData}>
+       <div  id={styles.sortData}>
 
               <div id={styles.opt}>
                      <div id= {styles.top} >
@@ -47,7 +47,8 @@ function BreshesData() {
                           <p>Clear All</p>
                      </div><hr/>
                         
-                        <div id={styles.line}>
+                       <div id={styles.sorting} >
+                          <div id={styles.line}>
                           <p>Relevance</p>
                         </div><hr/>
                           
@@ -58,6 +59,7 @@ function BreshesData() {
                           <div id={styles.line}>
                           <p onClick={handleL2h}>Price - Low to High</p>
                           </div> 
+                       </div>
                            
                            
                 </div>

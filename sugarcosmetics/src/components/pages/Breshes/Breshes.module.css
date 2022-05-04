@@ -14,10 +14,19 @@
 
 #sortData{
     /* border:1px solid red; */
-    border:1px solid gray
+    border:1px solid gray;
+    height:auto
+   
+}
+#sortData:hover #sorting{
+    display: block;
+}
+#sorting{
+    display:none;
+    border: 0px;
 }
 #opt{
-    height: 130px;
+    height:auto;
     width: 250px;
     /* border:1px solid green; */
     /* line-height: 2px; */
@@ -60,3 +69,6 @@ hr{
     margin-left: 15px;
 
  }
+/* #sorting{
+    display: none;
+} */
