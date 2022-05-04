@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
     FREE eyeshadow palette worth 1199 on a spend of 1199
     </div>
     <div className={styles.div2}>
-      <div style={{marginLeft : "60px" , }}><img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" /></div>
+      <div style={{marginLeft : "60px" , }}><Link to="/mainhome"><img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" /></Link></div>
       <div>
         <div className = {styles.input}><input className={styles.input1} type="text" placeholder='Try "Liquid Lipstick"'/><button className={styles.button1}>Search</button>
         <div className={styles.dropdown2}>
@@ -53,43 +54,43 @@ function Header() {
       </div>
     </div>
     <div className={styles.div3}>
-        <div className={styles.makeup}>MAKEUP
+        <div className={styles.makeup}><Link to="/makeup">MAKEUP</Link>
           <div className={styles.dropdown1}>
-            <a href="#">LIPS</a>
-            <a href="#">FACE</a>
-            <a href="#">EYES</a>
+            <Link to="/lips">LIPS</Link>
+            <Link to="/face">FACE</Link>
+            <Link to="/eyes">EYES</Link>
           </div>
         </div>
         
-        <div className={styles.makeup}>BRUSHES
+        <div className={styles.makeup}><Link to="/brushes">BRUSHES</Link>
           <div className={styles.dropdown1}>
-              <a href="#">FACE BRUSHES</a>
-              <a href="#">EYE BRUSHES</a>
+              <Link to="/facebrushes">FACE BRUSHES</Link>
+              <Link to="/eyebrushes">EYE BRUSHES</Link>
           </div>
         </div>
-        <div className={styles.makeup}>SKINCARE
+        <div className={styles.makeup}><Link to="/skincare">SKINCARE</Link>
         <div className={styles.dropdown1}>
-              <a href="#">MOISTURISERS</a>
-              <a href="#">MASKS</a>
-              <a href="#">SETTING MISTS</a>
-              <a href="#">COFFEE CULTURE RANGE</a>
-              <a href="#">SHEET MUSK COMBO</a>
-              <a href="#">CITRUS GOAT REAL RANGE</a>
-              <a href="#">AQUAHOLIC RANGE</a>
+              <Link to="/moisturisers">MOISTURISERS</Link>
+              <Link to="/masks">MASKS</Link>
+              <Link to="/settingmists">SETTING MISTS</Link>
+              <Link to="/coffeculturerange">COFFEE CULTURE RANGE</Link>
+              <Link to="/sheetmustcombo">SHEET MUSK COMBO</Link>
+              <Link to="/citrusgoatrealrange">CITRUS GOAT REAL RANGE</Link>
+              <Link to="/aquaholicrange">AQUAHOLIC RANGE</Link>
               
           </div>
         </div>
-        <div className={styles.makeup}>TRENDING
+        <div className={styles.makeup}><Link to="/trending">TRENDING</Link>
         <div className={styles.dropdown1}>
-              <a href="#">SUGAR MERCH STATION</a>
-              <a href="#">MAKE UP KITS</a>
-              <a href="#">BESTSELLERS</a>
+              <Link to="/sugarmerchstation">SUGAR MERCH STATION</Link>
+              <Link to="/makeupkits">MAKE UP KITS</Link>
+              <Link to="/bestsellers">BESTSELLERS</Link>
               
           </div>
         </div>
         
-        <div>BLOG</div>
-        <div>OFFERS</div>
+        <div><Link to="/blog">BLOG</Link></div>
+        <div><Link to="/offers">OFFERS</Link></div>
     </div>
     </>
     
