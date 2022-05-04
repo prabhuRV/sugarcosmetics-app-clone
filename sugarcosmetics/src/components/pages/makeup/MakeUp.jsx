@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { ShowData } from '../Carddiscreption/ShowData';
-import {v4 as uuid} from 'uuid'
 import styles from "./MakeUp.module.css"
+
 function MakeUp() {
     const [data,setData] = useState([]);
     useEffect(()=>{
@@ -33,7 +32,7 @@ function MakeUp() {
 
   return (
       <>
-    <div id={styles.infoContain}>
+    <div id= {styles.infoContain}>
         <div id= {styles.info}>
           <h1 id= {styles.h1}>Makeup :</h1>
           <p id= {styles.items}>54 items</p>
@@ -51,11 +50,11 @@ function MakeUp() {
                           <p>Relevance</p>
                         </div><hr/>
                           
-                          <div id={styles.line} >
+                          <div id={styles.line} onClick= {handleH2l}>
                              <p>Price - High to Low</p>
                           </div> <hr/>
                             
-                          <div id={styles.line}>
+                          <div id={styles.line} onClick= {handleL2h}>
                           <p>Price - Low to High</p>
                           </div> 
                            
@@ -63,11 +62,21 @@ function MakeUp() {
                 </div>
        </div>
 
-      
-  
+        
     </div>
+    <div id={styles.contain}>
+          {data.map((item)=>(
+              <div key= {item.id} id= {styles.unit}>
+                     
+                     <img id= {styles.img} src= {item.image}/>
+                     <p id= {styles.name}>{item.name}</p>
+                     <p id= {styles.price}>{item.price}</p>
 
-<<<<<<< Updated upstream
+                     <div id= {styles.ratingHold}>
+                          <img id= {styles.star} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuW-ijbF7ZlfvwARw20McEOaUkKA_HdCK7vA&usqp=CAU" alt="" />
+                         <p id= {styles.rating}>{item.rating}(55)</p>
+                     </div>
+
                 
                      
                      <div style= {{height: "40px"}}>
@@ -78,22 +87,6 @@ function MakeUp() {
               </div>
           ))}
     </div>
-=======
-    <div id={styles.contain}>
-    {data.map((item, index) => {
-      return (
-        <ShowData
-       
-          key={item.id}
-          {...item}
-       
-        />
-      );
-    })}
-        
-     </div>
-  
->>>>>>> Stashed changes
     </>
   )
 }
