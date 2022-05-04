@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { ShowData } from '../Carddiscreption/ShowData';
 import styles from "./Face.module.css"
+import {v4 as uuid} from 'uuid'
 function Face() {
     const [data,setData] = useState([]);
     useEffect(()=>{
@@ -15,33 +17,66 @@ function Face() {
         }
         getData();
     },[])
+
+
+    const handleH2l = ()=>{
+        let new_data= data.sort((a,b)=>{ return b.price - a.price });
+        console.log(new_data)
+        setData([...new_data])
+    }
+
+    const handleL2h = ()=>{
+        let sorted_data= data.sort((a,b)=>{ return  a.price - b.price });
+
+        console.log(sorted_data)
+        setData([...sorted_data])
+    }
   return (
-    <>
-    <div id= {styles.info}>
-        <h1 id= {styles.h1}>Face :</h1>
-        <p id= {styles.items}>28 items</p>
+    <div id={styles.parent}>
+<div id={styles.infoContain}>
+        <div id= {styles.info}>
+          <h1 id= {styles.h1}>Face:</h1>
+          <p id= {styles.items}>28 items</p>
+         </div>
+     
+     <p id= {styles.sorting}>Sort</p>
+       <div id={styles.sortData}>
+
+              <div id={styles.opt}>
+                     <div id= {styles.top} >
+                          <p>Select Sorting</p>
+                          <p>Clear All</p>
+                     </div><hr/>
+                        
+                        <div id={styles.line}>
+                          <p>Relevance</p>
+                        </div><hr/>
+                          
+                          <div id={styles.line} >
+                             <p onClick={handleH2l}>Price - High to Low</p>
+                          </div> <hr/>
+                            
+                          <div id={styles.line}>
+                          <p onClick={handleL2h}>Price - Low to High</p>
+                          </div> 
+                           
+                           
+                </div>
+       </div>
+
+      
+  
     </div>
   <div id={styles.contain}>
-        {data.map((item)=>(
-            <div key= {item.id} id= {styles.unit}>
-                   
-                   <img id= {styles.img} src= {item.image}/>
-                   <p id= {styles.name}>{item.name}</p>
-                   <p id= {styles.price}>{item.price}</p>
 
-                   <div id= {styles.ratingHold}>
-                        <img id= {styles.star} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuW-ijbF7ZlfvwARw20McEOaUkKA_HdCK7vA&usqp=CAU" alt="" />
-                       <p id= {styles.rating}>{item.rating}(55)</p>
-                   </div>
+    {data.map((item, index) => {
+        return (
+            <ShowData key={uuid()} {...item} />
+            );
+        })}
 
-                   <div id= {styles.btnHold}>
-                   <button id= {styles.btn}>ADD TO CART</button>
-                   </div>
-                
-            </div>
-        ))}
   </div>
-  </>
+  </div>
   )
 }
 
