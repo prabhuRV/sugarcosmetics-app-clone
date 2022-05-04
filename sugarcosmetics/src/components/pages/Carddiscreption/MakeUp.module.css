@@ -1,40 +1,47 @@
 
 #unit{
     /* border:1px solid red */
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    background-color: #FFFFFF;
-    height: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: #FFFFFF; */
+    border-radius: 5px;
+    height: 390px;
    
 position:sticky;
  
 }
 #img{
-    height: 256px;
+    height: 240px;
     width: 184px;
     object-fit: cover
 }
+.whislisticon
+{
+    height: 30px;
+    width: 30px;
+}
 #btn{
+    justify-content: right;
     background-color: #212529;
     color: #FFFFFF;
     font-family: "Quicksand";
-    height:30px;
-   width: 138px;
+    height:40px;
+    width: 500px;
    border: 0px;
    
 
 }
 #btnHold{
-    justify-content: flex-end;
+    justify-content: right;
     cursor: pointer;
     display: none;
     /* border:1px solid green; */
 }
 
 #unit:hover #btnHold{
-    display:block;
+    display:flex;
     transition: display 4s;
-    
+    gap: 10px;
  }
  #unit:hover #unit{
  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

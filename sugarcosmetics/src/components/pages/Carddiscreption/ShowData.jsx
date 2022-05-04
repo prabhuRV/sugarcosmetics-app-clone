@@ -48,6 +48,7 @@ const show = () => {
                      </div>
 
                      <div id= {styles.btnHold}>
+                     <button  onClick={AddToCart}><img className={styles.whislisticon} src="https://cdn3.iconfinder.com/data/icons/marketing-e-commerce/128/icons_-_marketing-41-512.png"/></button>
                      <button id= {styles.btn} onClick={AddToCart}>ADD TO CART</button>
                      </div>
                   
