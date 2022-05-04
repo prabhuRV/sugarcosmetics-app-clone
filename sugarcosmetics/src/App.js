@@ -1,7 +1,11 @@
 
 import './App.css';
+import BreshesData from './components/pages/Breshes/BreshesData';
+import { BestSellers } from './components/pages/Trending/BestSellers';
+import MakeupKit from './components/pages/Trending/MakeupKit';
+import { MerchStation } from './components/pages/Trending/MerchStation';
 
-// import Breashes from './components/pages/brashes/Breashes';
+
 // import Login from './components/pages/login/Login';
 
 // import BreshesData from './components/pages/Breshes/BreshesData';
@@ -18,7 +22,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
+      {/* <BreshesData /> */}
+      {/* <BestSellers /> */}
+      <MerchStation />
+{/* <MakeupKit /> */}
     </div>
   );
 }

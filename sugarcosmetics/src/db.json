@@ -871,102 +871,53 @@
         }
     ],
     "Treanding":[
-        [{
-            "rating":5,
-            "Price":1799,"name":"Summer Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649087039"
+        {
+                "rating":5, 
+                "price":1799,"name":"Summer Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649087039"
              },{
                 "rating":5, 
-                "Price":1599,"name":"Date Night Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
+                "price":1599,"name":"Date Night Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
              },{
                 "rating":5, 
-                "Price":1099,"name":"Makeup Starter Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_2cb6e30d-c2a5-43c3-9ec4-7d00350fc004.jpg?v=1649346213"
+                "price":1099,"name":"Makeup Starter Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_2cb6e30d-c2a5-43c3-9ec4-7d00350fc004.jpg?v=1649346213"
              },{
                 "rating":5, 
-                "Price":1999,"name":"Anniversary Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1650022932"
+                "price":1999,"name":"Anniversary Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1650022932"
              },{
                 "rating":5, 
-                "Price":1699,"name":"Wedding Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_ff08fd13-e6e4-4320-bf31-a8470ac5858a.jpg?v=1650025876"
+                "price":1699,"name":"Wedding Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_ff08fd13-e6e4-4320-bf31-a8470ac5858a.jpg?v=1650025876"
              },{
                 "rating":5, 
-                "Price":649,"name":"Triple Delight Makeup Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6.jpg?v=1643903231"
+                "price":649,"name":"Triple Delight Makeup Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6.jpg?v=1643903231"
              },{
                 "rating":5, 
-                "Price":1299,"name":"Party Ready kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/PartyReadyKit-WBG1.png?v=1642487420"
+                "price":1299,"name":"Party Ready kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/PartyReadyKit-WBG1.png?v=1642487420"
              },{
                 "rating":5, 
-                "Price":1999,"name":"9-in-1 Beauty Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_172725a5-b5f9-4648-869a-4c05561a1f81.jpg?v=1650023118"
+                "price":1999,"name":"9-in-1 Beauty Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_172725a5-b5f9-4648-869a-4c05561a1f81.jpg?v=1650023118"
              },{
                 "rating":5, 
-                "Price":2499,"name":"Festive Ready Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983"
+                "price":2499,"name":"Festive Ready Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983"
              },{
                 "rating":5, 
-                "Price":1499,"name":"Everyday Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_91f4c2cd-0b49-4f88-bb82-64502676a151.jpg?v=1649423967"
+                "price":1499,"name":"Everyday Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_91f4c2cd-0b49-4f88-bb82-64502676a151.jpg?v=1649423967"
              },{
                 "rating":5, 
-                "Price":999,"name": "Hi-5 Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074"
+                "price":999,"name":"Hi-5 Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074"
              },{
                 "rating":5, 
-                "Price":1399,"name":"Bridesmaid Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e62e7d34-b515-434c-8b0c-f8f635d41a91.jpg?v=1650025567"
+                "price":1399,"name":"Bridesmaid Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e62e7d34-b515-434c-8b0c-f8f635d41a91.jpg?v=1650025567"
              },{
                 "rating":5, 
-                "Price":1999,"name":"Glam Up Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_969f5548-2c56-4506-ada8-159b53a8f630.jpg?v=1649423977"
+                "price":1999,"name":"Glam Up Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_969f5548-2c56-4506-ada8-159b53a8f630.jpg?v=1649423977"
              },{
                 "rating":5, 
-                "Price":1499,"name":"Eid Special Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467"
+                "price":1499,"name":"Eid Special Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467"
              },{
                 "rating":5, 
-                "Price":999,"name":"Go Getter Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-SETS-WBG-IMAGES-Set2.jpg?v=1632844196"
-        
-             },{
-                "rating":5, 
-                "Price":2699,"name":"Sweat No More Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/383823136-launch-sweat-no-more-makeup-kit-wbg-images_11.jpg?v=1649132668"
-             },{
-                "rating":5, 
-                "Price":1799,"name":"Summer Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649087039"
-             },{
-                "rating":5, 
-                "Price":1599,"name":"Date Night Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
-             },{
-                "rating":5, 
-                "Price":1099,"name":"Makeup Starter Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_2cb6e30d-c2a5-43c3-9ec4-7d00350fc004.jpg?v=1649346213"
-             },{
-                "rating":5, 
-                "Price":1999,"name":"Anniversary Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1650022932"
-             },{
-                "rating":5, 
-                "Price":1699,"name":"Wedding Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_ff08fd13-e6e4-4320-bf31-a8470ac5858a.jpg?v=1650025876"
-             },{
-                "rating":5, 
-                "Price":649,"name":"Triple Delight Makeup Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6.jpg?v=1643903231"
-             },{
-                "rating":5, 
-                "Price":1299,"name":"Party Ready kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/PartyReadyKit-WBG1.png?v=1642487420"
-             },{
-                "rating":5, 
-                "Price":1999,"name":"9-in-1 Beauty Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_172725a5-b5f9-4648-869a-4c05561a1f81.jpg?v=1650023118"
-             },{
-                "rating":5, 
-                "Price":2499,"name":"Festive Ready Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983"
-             },{
-                "rating":5, 
-                "Price":1499,"name":"Everyday Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_91f4c2cd-0b49-4f88-bb82-64502676a151.jpg?v=1649423967"
-             },{
-                "rating":5, 
-                "Price":999,"name":"Hi-5 Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074"
-             },{
-                "rating":5, 
-                "Price":1399,"name":"Bridesmaid Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e62e7d34-b515-434c-8b0c-f8f635d41a91.jpg?v=1650025567"
-             },{
-                "rating":5, 
-                "Price":1999,"name":"Glam Up Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_969f5548-2c56-4506-ada8-159b53a8f630.jpg?v=1649423977"
-             },{
-                "rating":5, 
-                "Price":1499,"name":"Eid Special Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467"
-             },{
-                "rating":5, 
-                "Price":999,"name":"Go Getter Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-SETS-WBG-IMAGES-Set2.jpg?v=1632844196"}]
+                "price":999,"name":"Go Getter Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-SETS-WBG-IMAGES-Set2.jpg?v=1632844196"}]
 
-    ]
+    
     ,
     "MerchStation":[{"rating":4.5,"price" :799,"name":"Tote Chic Canvas Carry","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tote-chic-canvas-carry-28477196927059.jpg?v=1624532788"}
         ,{"rating":3.6,"price" :99,"name":"Grip Trip Pop Socket - Yellow","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-yellow-28150898917459.jpg?v=1619156246"}

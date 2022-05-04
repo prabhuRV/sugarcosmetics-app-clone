@@ -3,12 +3,12 @@ import { ShowData } from '../Carddiscreption/ShowData';
 import {v4 as uuid} from 'uuid'
 
 import styles from "../Styles/Default.module.css"
-function MakeupKit() {
+export const  BestSellers=()=> {
   const [data,setData] = useState([]);
   useEffect(()=>{
       let getData= async()=>{
           try {
-              let res= await fetch("http://localhost:8080/Treanding");
+              let res= await fetch("http://localhost:8080/BestOffer");
               let info= await res.json();
               console.log(info)
               setData([...info])
@@ -87,4 +87,3 @@ return (
   </>
 )
 }
-export default MakeupKit
