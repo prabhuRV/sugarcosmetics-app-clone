@@ -33,7 +33,7 @@ function Lips() {
     <>
      <div id={styles.infoContain}>
         <div id= {styles.info}>
-          <h1 id= {styles.h1}>Makeup :</h1>
+          <h1 id= {styles.h1}>Lips :</h1>
           <p id= {styles.items}>{data.length} items</p>
          </div>
      

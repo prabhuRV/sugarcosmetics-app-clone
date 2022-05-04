@@ -870,5 +870,115 @@
             "rating": 4.1
         }
     ],
-    "Treanding":[]
+    "Treanding":[
+        {
+                "rating":5, 
+                "price":1799,"name":"Summer Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649087039"
+             },{
+                "rating":5, 
+                "price":1599,"name":"Date Night Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
+             },{
+                "rating":5, 
+                "price":1099,"name":"Makeup Starter Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_2cb6e30d-c2a5-43c3-9ec4-7d00350fc004.jpg?v=1649346213"
+             },{
+                "rating":5, 
+                "price":1999,"name":"Anniversary Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1650022932"
+             },{
+                "rating":5, 
+                "price":1699,"name":"Wedding Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_ff08fd13-e6e4-4320-bf31-a8470ac5858a.jpg?v=1650025876"
+             },{
+                "rating":5, 
+                "price":649,"name":"Triple Delight Makeup Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6.jpg?v=1643903231"
+             },{
+                "rating":5, 
+                "price":1299,"name":"Party Ready kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/PartyReadyKit-WBG1.png?v=1642487420"
+             },{
+                "rating":5, 
+                "price":1999,"name":"9-in-1 Beauty Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_172725a5-b5f9-4648-869a-4c05561a1f81.jpg?v=1650023118"
+             },{
+                "rating":5, 
+                "price":2499,"name":"Festive Ready Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983"
+             },{
+                "rating":5, 
+                "price":1499,"name":"Everyday Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_91f4c2cd-0b49-4f88-bb82-64502676a151.jpg?v=1649423967"
+             },{
+                "rating":5, 
+                "price":999,"name":"Hi-5 Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074"
+             },{
+                "rating":5, 
+                "price":1399,"name":"Bridesmaid Makeup Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e62e7d34-b515-434c-8b0c-f8f635d41a91.jpg?v=1650025567"
+             },{
+                "rating":5, 
+                "price":1999,"name":"Glam Up Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_969f5548-2c56-4506-ada8-159b53a8f630.jpg?v=1649423977"
+             },{
+                "rating":5, 
+                "price":1499,"name":"Eid Special Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467"
+             },{
+                "rating":5, 
+                "price":999,"name":"Go Getter Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-SETS-WBG-IMAGES-Set2.jpg?v=1632844196"}]
+
+    
+    ,
+    "MerchStation":[{"rating":4.5,"price" :799,"name":"Tote Chic Canvas Carry","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tote-chic-canvas-carry-28477196927059.jpg?v=1624532788"}
+        ,{"rating":3.6,"price" :99,"name":"Grip Trip Pop Socket - Yellow","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-yellow-28150898917459.jpg?v=1619156246"}
+        ,{"rating":5,"price" :399,"name":"Always Ahead Adjustable Cap","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-always-ahead-adjustable-cap-28516708352083.jpg?v=1625067752"}
+        ,{"rating":5,"price" :99,"name":"Grip Trip Pop Socket - Orange","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-orange-28150906978387.jpg?v=1619156248"}
+        ,{"rating":4.66667,"price" :799,"name":"Serial Sipper Water Bottle","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-serial-sipper-watter-bottle-28150768205907.jpg?v=1619156231"}
+        ,{"rating":5,"price" :599,"name":"Obsessive Compulsive Case Organizer","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-obsessive-compulsive-case-organizer-28508036235347.jpg?v=1624981425"}
+        ,{"rating":5,"price" :99,"name":"Grip Trip Pop Socket - Gradient blue","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-blue-28150851174483.jpg?v=1619156238"}
+        ,{"rating":4,"price" :99,"name":"Grip Trip Pop Socket - Gradient purple","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-purple-28150861889619.jpg?v=1619156240"}
+        ,{"rating":3.6,"price" :599,"name":"Money Maker Envelope Wallet - Grey","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-grey-28490559979603.jpg?v=1624953191"}
+        ,{"rating":5,"price" :599,"name":"Money Maker Envelope Wallet - Black","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-black-28490557358163.jpg?v=1624954703"}
+        ,{"rating":4.33333,"price" :99,"name":"Grip Trip Pop Socket - Pink","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-pink-28150889709651.jpg?v=1619156245"}
+        ,{"rating":5,"price" :349,"name":"Chique Fleek Card Wallet - Tan","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-chique-fleek-card-wallet-with-zipper-tan-28502091399251.jpg?v=1624894907"}
+        ,{"rating":5,"price" :399,"name":"Beauty Stalker Everyday Pouch - Pink","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-beauty-stalker-everyday-pouch-pink-28502124593235.jpg?v=1624894914"}
+        ,{"rating":4.83333,"price" :999,"name":"Glampacker Duffle Bag","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-glampacker-duffle-bag-28150649978963.jpg?v=1619156211"}
+        ,{"rating":5,"price" :399,"name":"Slim Feat Card Wallet - Grey","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-slim-feat-card-wallet-with-flap-grey-28490591043667.jpg?v=1624956771"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee - White - Medium","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-medium-28516852531283.jpg?v=1629195785"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee - Black - Large","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee - White - Large","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-large-28516864983123.jpg?v=1629283996"}
+        ,{"rating":5,"price" :799,"name":"Easy PC Laptop Sleeve","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---Laptop-Sleeves_1.jpg?v=1625240618"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee- White - Extra Large","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-extra-large-28516866588755.jpg?v=1629195790"}
+        
+        ,{"rating":4.5,"price" :799,"name":"Tote Chic Canvas Carry","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tote-chic-canvas-carry-28477196927059.jpg?v=1624532788"}
+        ,{"rating":3.6,"price" :99,"name":"Grip Trip Pop Socket - Yellow","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-yellow-28150898917459.jpg?v=1619156246"}
+        ,{"rating":5,"price" :399,"name":"Always Ahead Adjustable Cap","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-always-ahead-adjustable-cap-28516708352083.jpg?v=1625067752"}
+        ,{"rating":5,"price" :99,"name":"Grip Trip Pop Socket - Orange","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-orange-28150906978387.jpg?v=1619156248"}
+        ,{"rating":4.66667,"price" :799,"name":"Serial Sipper Water Bottle","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-serial-sipper-watter-bottle-28150768205907.jpg?v=1619156231"}
+        ,{"rating":5,"price" :599,"name":"Obsessive Compulsive Case Organizer","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-obsessive-compulsive-case-organizer-28508036235347.jpg?v=1624981425"}
+        ,{"rating":5,"price" :99,"name":"Grip Trip Pop Socket - Gradient blue","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-blue-28150851174483.jpg?v=1619156238"}
+        ,{"rating":4,"price" :99,"name":"Grip Trip Pop Socket - Gradient purple","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-purple-28150861889619.jpg?v=1619156240"}
+        ,{"rating":3.6,"price" :599,"name":"Money Maker Envelope Wallet - Grey","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-grey-28490559979603.jpg?v=1624953191"}
+        ,{"rating":5,"price" :599,"name":"Money Maker Envelope Wallet - Black","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-black-28490557358163.jpg?v=1624954703"}
+        ,{"rating":4.33333,"price" :99,"name":"Grip Trip Pop Socket - Pink","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-pink-28150889709651.jpg?v=1619156245"}
+        ,{"rating":5,"price" :349,"name":"Chique Fleek Card Wallet - Tan","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-chique-fleek-card-wallet-with-zipper-tan-28502091399251.jpg?v=1624894907"}
+        ,{"rating":5,"price" :399,"name":"Beauty Stalker Everyday Pouch - Pink","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-beauty-stalker-everyday-pouch-pink-28502124593235.jpg?v=1624894914"}
+        ,{"rating":4.83333,"price" :999,"name":"Glampacker Duffle Bag","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-glampacker-duffle-bag-28150649978963.jpg?v=1619156211"}
+        ,{"rating":5,"price" :399,"name":"Slim Feat Card Wallet - Grey","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-slim-feat-card-wallet-with-flap-grey-28490591043667.jpg?v=1624956771"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee - White - Medium","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-medium-28516852531283.jpg?v=1629195785"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee - Black - Large","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee - White - Large","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-large-28516864983123.jpg?v=1629283996"}
+        ,{"rating":5,"price" :799,"name":"Easy PC Laptop Sleeve","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---Laptop-Sleeves_1.jpg?v=1625240618"}
+        ,{"rating":3.6,"price" :799,"name":"Holographic Signature SUGAR Tee- White - Extra Large","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-extra-large-28516866588755.jpg?v=1629195790"}
+        ],
+   "BestOffer":[{"raing" :4.7707,"price" :249,"name" :"Kohl Of Honour Intense Kajals","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1644399711"}
+    ,{"raing" :4.82315,"price" :799,"name" :"Matte As Hell Crayon Lipstick","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232"}
+    ,{"raing" :4.72372,"price" :699,"name" :"Matte Attack Transferproof Lipstick","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270"}
+    ,{"raing" :4.8913,"price" :1999,"name" :"Anniversary Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1650022932"}
+    ,{"raing" :4.75,"price" :999,"name" :"Hi-5 Kit","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074"}
+    ,{"raing" :4.81609,"price" :499,"name" :"Smudge Me Not Liquid Lipstick","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813"}
+    ,{"raing" :4.73163,"price" :799,"name" :"Contour De Force Face Palette","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607"}
+    ,{"raing" :4.76206,"price" :799,"name" :"Smudge Me Not Liquid Lipstick Minis Set","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966"}
+    ,{"raing" :4.78788,"price" :799,"name" :"Base Of Glory Pore Minimizing Primer","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1639983555"}
+    ,{"raing" :4.76797,"price" :199,"name" :"Tipsy Lips Moisturizing Balm","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412"}
+    ,{"raing" :4.79208,"price" :599,"name" :"All Set To Go Translucent Powder","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/3_7.jpg?v=1626795160"}
+    ,{"raing" :4.82353,"price" :999,"name" :"Ace Of Face Foundation Stick","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644"}
+    ,{"raing" :4.71296,"price" :499,"name" :"Dream Cover SPF15 Mattifying Compact","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501"}
+    ,{"raing" :4.80952,"price" :499,"name" :"Gloss Boss 24HR Eyeliner - 01 Back In Black (Black)","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594"}
+    ,{"raing" :4.70238,"price" :499,"name" :"Wingman Waterproof Microliner - 01 I'll Be Black (Black)","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-wingman-waterproof-microliner-01-i-ll-be-black-black-28163915841619.jpg?v=1619117351"}
+    ,{"raing" :4.78102,"price" :599,"name" :"All Set To Go Banana Powder","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199"}
+    ,{"raing" :4.83333,"price" :599,"name" :"Good Moodies Lip Crayon","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/01_9e0bf9bb-92a6-45ca-8ce4-ce7d58c617ac.jpg?v=1639496863"}
+    ,{"raing" :4.76744,"price" :799,"name" :"The Most Eligiblur Smoothing Primer","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-the-most-eligiblur-smoothing-primer-28122626162771.jpg?v=1619115330"}
+    ,{"raing" :4.79545,"price" :799,"name" :"Rage For Coverage 24Hr Foundation","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28391223263315.jpg?v=1623073552"}
+    ,{"raing" :4.76433,"price" :499,"name" :"Aquaholic Priming Moisturizer","image":"https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292"}]
 }

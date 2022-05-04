@@ -18,7 +18,7 @@ function Face() {
   return (
     <>
     <div id= {styles.info}>
-        <h1 id= {styles.h1}>Makeup :</h1>
+        <h1 id= {styles.h1}>Face :</h1>
         <p id= {styles.items}>28 items</p>
     </div>
   <div id={styles.contain}>
