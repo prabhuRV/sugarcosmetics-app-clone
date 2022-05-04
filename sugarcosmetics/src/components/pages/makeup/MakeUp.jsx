@@ -52,11 +52,11 @@ function MakeUp() {
                         </div><hr/>
                           
                           <div id={styles.line} >
-                             <p>Price - High to Low</p>
+                             <p onClick={handleH2l}>Price - High to Low</p>
                           </div> <hr/>
                             
                           <div id={styles.line}>
-                          <p>Price - Low to High</p>
+                          <p onClick={handleL2h}>Price - Low to High</p>
                           </div> 
                            
                            
@@ -72,7 +72,7 @@ function MakeUp() {
       return (
         <ShowData
        
-          key={item.id}
+          key={uuid()}
           {...item}
        
         />

@@ -10,7 +10,7 @@ export const ShowData = (item) => {
                      
                      <img id= {styles.img} src= {item.image}/>
                      <p id= {styles.name}>{item.name}</p>
-                     <p id= {styles.price}>{item.price}</p>
+                     <p id= {styles.price}>RS .{item.price}</p>
 
                      <div id= {styles.ratingHold}>
                           <img id= {styles.star} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuW-ijbF7ZlfvwARw20McEOaUkKA_HdCK7vA&usqp=CAU" alt="" />

@@ -1,7 +1,7 @@
 #contain{
      display: grid;
-     grid-template-columns: repeat(4,252px);
-     grid-template-rows: repeat(14,402px);
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(14,500px);
      justify-content: center;
      gap:40px;
     margin-top: 30px;
