@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ShowData } from '../Carddiscreption/ShowData';
 import styles from "./Lips.module.css"
 
 function Lips() {
@@ -23,24 +24,17 @@ function Lips() {
         <p id= {styles.items}>41 items</p>
     </div>
   <div id={styles.contain}>
-        {data.map((item)=>(
-            <div key= {item.id} id= {styles.unit}>
-                   
-                   <img id= {styles.img} src= {item.image}/>
-                   <p id= {styles.name}>{item.name}</p>
-                   <p id= {styles.price}>{item.price}</p>
-
-                   <div id= {styles.ratingHold}>
-                        <img id= {styles.star} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuW-ijbF7ZlfvwARw20McEOaUkKA_HdCK7vA&usqp=CAU" alt="" />
-                       <p id= {styles.rating}>{item.rating}(55)</p>
-                   </div>
-
-                   <div id= {styles.btnHold}>
-                   <button id= {styles.btn}>ADD TO CART</button>
-                   </div>
-                
-            </div>
-        ))}
+  {data.map((item, index) => {
+      return (
+        <ShowData
+       
+          key={item.id}
+          {...item}
+       
+        />
+      );
+    })}
+        
   </div>
   </>
   )
