@@ -50,7 +50,8 @@ hr{
 #img{
     height: 256px;
     width: 184px;
-    object-fit: cover
+    object-fit: cover;
+
 }
 #btn{
     background-color: #212529;

@@ -1,0 +1,35 @@
+#slide{
+ 
+    height: 1025.69px;
+    width: 656.61px;
+}
+
+#bg{
+    height: 1025.69px;
+    width: 656.61px;
+    position: relative;
+    object-fit: cover;
+}
+#form{
+    position: absolute;
+    top:80px;
+    background-color: white;
+   height: 400px;
+   width: 500px;
+}
+#head{
+    font-size: 24px;
+    font-family: "Quicksand";
+    color: #000000DE;
+}
+#number{
+
+    outline: 0;
+  border-width: 0 0 2px;
+ 
+ letter-spacing: .3em;
+}
+#number:focus {
+    border:0px;
+    border-bottom: 5px dashed;
+  }
