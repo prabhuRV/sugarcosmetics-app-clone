@@ -77,10 +77,13 @@ function MakeUp() {
                          <p id= {styles.rating}>{item.rating}(55)</p>
                      </div>
 
-                     <div id= {styles.btnHold}>
-                     <button id= {styles.btn}>ADD TO CART</button>
+                
+                     
+                     <div style= {{height: "40px"}}>
+                        <div id= {styles.btnHold}>
+                        <button id= {styles.btn}>ADD TO CART</button>
+                        </div>
                      </div>
-                  
               </div>
           ))}
     </div>
