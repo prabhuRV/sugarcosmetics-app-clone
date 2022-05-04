@@ -1,7 +1,14 @@
 import React from 'react'
+import { Route,Routes } from 'react-router-dom';
 
 export const MainRouter = () => {
   return (
-    <div>MainRouter</div>
+     <>
+     
+     
+      <Routes>
+        <Route path={""}/>
+      </Routes>
+     </>
   )
 }
