@@ -782,91 +782,91 @@
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
             "name": "blend trend eyeshadow brush-043 round xl",
-            "price": "299",
+            "price": 299,
             "rating": 4.7
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
             "name": "blend trend dual face brush-075 powder foundation",
-            "price": "399",
+            "price": 399,
             "rating": 4.1
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
             "name": "blend trend foundation brush-052 kabuki",
-            "price": "349",
+            "price": 349,
             "rating": 4.8
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
             "name": "blend trend face brush-003 contour",
-            "price": "379",
+            "price": 379,
             "rating": 4.7
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
             "name": "blend trend eyeshadow brush-042 round",
-            "price": "399",
+            "price": 399,
             "rating": 4.7
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1.jpg?v=1630683833",
             "name": "eyes face combo",
-            "price": "389",
+            "price": 389,
             "rating": 4.5
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
             "name": "blend trend face brush-001 blush",
-            "price": "329",
+            "price": 329,
             "rating": 4.0
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
             "name": "blend trend face brush-007 powder",
-            "price": "389",
+            "price": 389,
             "rating": 4.8
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
             "name": "blend-trend-face-brush-006-highlighter",
-            "price": "329",
+            "price": 329,
             "rating": 4.9
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
             "name": "blend trend eyeshadow brush-041 flat",
-            "price": "399",
+            "price": 399,
             "rating": 4.8
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
             "name": "blend trend dual eyeshadow brush-412 flat round",
-            "price": "399",
+            "price": 399,
             "rating": 4.8
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
             "name": "blend trend dual eyeshadow brush-413 flat round xl",
-            "price": "309",
+            "price": 309,
             "rating": 4.5
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo1-WBGimages.jpg?v=1630683801",
             "name": "beginners essential combo 1",
-            "price": "399",
+            "price": 399,
             "rating": 4.5
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo2-WBGimages.jpg?v=1630683812",
             "name": "beginners essential combo 2",
-            "price": "379",
+            "price": 379,
             "rating": 4.3
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
             "name": "face essentials combo",
-            "price": "399",
+            "price": 399,
             "rating": 4.1
         }
     ]
