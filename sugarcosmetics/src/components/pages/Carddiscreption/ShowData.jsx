@@ -1,24 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./MakeUp.module.css"
+import {v4 as uuid} from 'uuid'
 export const ShowData = (item) => {
+  const [CartData, setCardData] = useState([])
+  const {image,rating,price,name,id}=item
+  const AddToCart = () => {
+console.log("hai");
+    const cart ={image,rating,price,name,
+      id:uuid()
+    }
+    console.log(cart);
+     setCardData([cart,...CartData])
+    
+}  
+const show = () => {
+  console.log("hai");
+      const cart ={image,rating,price,name,
+        id:uuid()
+      }
+      console.log(cart);
+       setCardData([cart,...CartData])
+      
+  }
+
   return (
     <>
     
  
          
-              <div key= {item.id} id= {styles.unit}>
+              <div  id= {styles.unit}>
                      
-                     <img id= {styles.img} src= {item.image}/>
-                     <p id= {styles.name}>{item.name}</p>
-                     <p id= {styles.price}>RS .{item.price}</p>
+                     <img id= {styles.img} src= {image}/>
+                     <p id= {styles.name}>{name}</p>
+                     <p id= {styles.price}>RS .{price}</p>
 
                      <div id= {styles.ratingHold}>
                           <img id= {styles.star} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuW-ijbF7ZlfvwARw20McEOaUkKA_HdCK7vA&usqp=CAU" alt="" />
-                         <p id= {styles.rating}>{item.rating}(55)</p>
+                         <p id= {styles.rating}>{rating}(55)</p>
                      </div>
 
                      <div id= {styles.btnHold}>
-                     <button id= {styles.btn}>ADD TO CART</button>
+                     <button id= {styles.btn} onClick={AddToCart}>ADD TO CART</button>
                      </div>
                   
              
