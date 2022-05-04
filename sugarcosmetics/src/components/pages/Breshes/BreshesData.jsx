@@ -36,7 +36,7 @@ function BreshesData() {
     <div id={styles.infoContain}>
         <div id= {styles.info}>
           <h1 id= {styles.h1}>BRUSHES :</h1>
-          <p id= {styles.items}>54 items</p>
+          <p id= {styles.items}>{data.length} items</p>
          </div>
      
        <div id={styles.sortData}>
