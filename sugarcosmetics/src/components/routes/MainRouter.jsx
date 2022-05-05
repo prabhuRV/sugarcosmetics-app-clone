@@ -7,6 +7,7 @@ import Makeup from '../pages/makeup/MakeUp'
 import BreshesData from '../pages/Breshes/BreshesData'
 import Lips from '../pages/makeup/Lips'
 import Face from '../pages/makeup/Face'
+import Payment from '../pages/Payment/Payment'
 import MakeupKit from '../pages/Trending/MakeupKit'
 import {MerchStation }from '../pages/Trending/MerchStation'
 import {BestSellers}from '../pages/Trending/BestSellers'
@@ -28,7 +29,8 @@ export const MainRouter = () => {
          <Route path={"/sugarmerchstation"} element={<MerchStation/>}/>
          <Route path={"/bestsellers"} element={<BestSellers/>}/>
           <Route path={"/makeupkits"} element={<MakeupKit/>}/>
-          <Route path={"/cart"} element={<Cartsugar/>}></Route>
+          <Route path={"/cart"} element={<Cartsugar/>} />
+          <Route path={"/payment"} element={<Payment />} />
       </Routes>
       <Footer/>
      </>

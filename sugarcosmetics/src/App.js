@@ -1,10 +1,7 @@
 
 import './App.css';
 
-<<<<<<< Updated upstream
-import Payment from './components/pages/Payment/Payment';
-=======
->>>>>>> Stashed changes
+
 
 
 import { MainRouter } from './components/routes/MainRouter';

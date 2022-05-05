@@ -98,7 +98,7 @@ const Cartsugar = () => {
                    </div>
                    <div style={{marginTop:"20px",display:"flex"}}>
                        <Link to="/" style={{height:"37px",border:"1px solid gray",width:"35%",backgroundColor:"#fff",padding:"7px 0px",boxSizing:"border-box",}}> Continue Shopping</Link>
-                       <button style={{height:"37px",border:"1px solid gray",width:"70%",backgroundColor:"darkslategray",color:"#fff"}}>Delivery Information</button>
+                       <button style={{height:"37px",border:"1px solid gray",width:"70%",backgroundColor:"darkslategray",color:"#fff"}}><Link to="/payment" >Delivery Information</Link> </button>
                    </div>
                </div>
 
