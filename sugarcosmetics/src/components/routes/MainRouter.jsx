@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route,Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home';
-import Header from '../pages/navbar/Header';
-import Footer from '../pages/footer/Footer'
+// import Header from '../pages/navbar/Header';
+// import Footer from '../pages/footer/Footer'
 import Makeup from '../pages/makeup/MakeUp'
 import BreshesData from '../pages/Breshes/BreshesData'
 import Lips from '../pages/makeup/Lips'
@@ -16,7 +16,7 @@ export const MainRouter = () => {
   return (
      <>
      
-       <Header/>
+       {/* <Header/> */}
       <Routes>
         <Route path={"/"} element={<Slider/>}/>
         <Route path={"/makeup"} element={<Makeup/>}/>
@@ -28,7 +28,7 @@ export const MainRouter = () => {
          <Route path={"/bestsellers"} element={<BestSellers/>}/>
           <Route path={"/makeupkits"} element={<MakeupKit/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
      </>
   )
 }
