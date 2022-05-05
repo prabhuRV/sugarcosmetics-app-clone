@@ -18,9 +18,9 @@ function App() {
     <div className="App">
 
 
-    <Payment/>
+    {/* <Payment/> */}
      
-     {/* <MainRouter/> */}
+     <MainRouter/>
 
     </div>
   );
