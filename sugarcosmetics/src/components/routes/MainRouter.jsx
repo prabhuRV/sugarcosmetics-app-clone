@@ -10,6 +10,7 @@ import Face from '../pages/makeup/Face'
 import MakeupKit from '../pages/Trending/MakeupKit'
 import {MerchStation }from '../pages/Trending/MerchStation'
 import {BestSellers}from '../pages/Trending/BestSellers'
+import Slider from '../pages/Home/Slider/Slider';
 
 export const MainRouter = () => {
   return (
@@ -17,7 +18,7 @@ export const MainRouter = () => {
      
        <Header/>
       <Routes>
-        <Route path={"/home"} element={<Home/>}/>
+        <Route path={"/"} element={<Slider/>}/>
         <Route path={"/makeup"} element={<Makeup/>}/>
         <Route path={"/lips"} element={<Lips/>}/>
         <Route path={"/face"} element={<Face/>}/>
