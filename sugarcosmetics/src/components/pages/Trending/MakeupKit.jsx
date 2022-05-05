@@ -33,43 +33,52 @@ function MakeupKit() {
   }
 
 return (
-    <>
+  <>
   <div id={styles.infoContain}>
-      <div id= {styles.info}>
-        <h1 id= {styles.h1}>Make up Kit:</h1>
-        <p id= {styles.items}>{data.length} items</p>
-       </div>
-   
-     <div  id={styles.sortData}>
+  <div id= {styles.info}>
+    <h1 id= {styles.h1}>MakeupKit  :</h1>
+    <p id= {styles.items}>{data.length} items</p>
+   </div>
 
-            <div id={styles.opt}>
-                   <div id= {styles.top} >
-                        <p>Select Sorting</p>
-                        <p>Clear All</p>
-                   </div><hr/>
+ <div  id={styles.sortData}>
+
+ 
+        <div id={styles.opt}>
+        
+               <div id= {styles.top} >
+             
+               <img className={styles.whislisticon} src="https://in.sugarcosmetics.com/desc-images/sortIcon.png"/>
+                    <p id= {styles.items}>Sort</p>
+                   
+               </div>
+                  
+                 <div id={styles.sorting} >
+                 <div id={styles.Select}>
+                    <p>Select Sorting</p>
+                    <p> clear All</p>
+                  </div><hr/>
+                    <div id={styles.line}>
+                    <p>Relevance</p>
+                    
+                  </div><hr/>
+
+                    
+                    <div id={styles.line} >
+                       <p onClick={handleH2l}>Price - High to Low</p>
+                    </div> <hr/>
                       
-                     <div id={styles.sorting} >
-                        <div id={styles.line}>
-                        <p>Relevance</p>
-                      </div><hr/>
-                        
-                        <div id={styles.line} >
-                           <p onClick={handleH2l}>Price - High to Low</p>
-                        </div> <hr/>
-                          
-                        <div id={styles.line}>
-                        <p onClick={handleL2h}>Price - Low to High</p>
-                        </div> 
-                     </div>
-                         
-                         
-              </div>
-     </div>
+                    <div id={styles.line}>
+                    <p onClick={handleL2h}>Price - Low to High</p>
+                    </div> 
+                 </div>
+                     
+                     
+          </div>
+ </div>
 
-    
 
-  </div>
 
+</div>
   <div id={styles.contain}>
   {data.map((item, index) => {
     return (
@@ -84,7 +93,10 @@ return (
       
    </div>
 
+ 
   </>
+
+  
 )
 }
 export default MakeupKit
