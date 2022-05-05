@@ -1,4 +1,7 @@
-
+#main{
+  height:auto;
+  margin-bottom: 50px;
+}
 
 #parent{
     height: auto;
@@ -14,23 +17,29 @@
     font-size: 13px;
     color: #6C757D;
     font-family: "Quicksand";
+    text-align: left;
+    margin-left: 30px;
 }
 
 #div{
-    height: 400px;
+    height: auto;
     width: 700px;
     background-color: #e0e0e0;
 }
 #p2{
-    font-size: 14px;
+    font-size: 17px;
     color: #6C757D;
     font-family: "Quicksand";
+    text-align: left;
+    margin-left: 30px;
+   
 }
 #instant{
     /* border:1px solid red; */
     border:1px solid #b1b2b4;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     background-color: #f1eeee;
+    
 }
 
 #upi {
@@ -59,7 +68,10 @@
 
   #inpHold{
       background-color: white;
-      
+      height: 40px;
+  }
+  #formHold{
+    background-color: white;
   }
 #options{
     display: grid;
@@ -83,6 +95,7 @@
     justify-content: space-between;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
 }
 #div1>p{
     margin-right: 150px;
@@ -136,4 +149,63 @@
   }
   #cvv:focus {
     border-color: #6C757D;
+  }
+
+#check{
+  margin-top: 10px;
+  margin-left: 20px
+}
+#p4{
+  font-size: 13px;
+  color: #6C757D;
+  font-family: "Quicksand"; 
+  text-align: left;
+  margin-left: 15px;
+}
+  #banks{
+    display: flex;
+  }
+  #logoHold{
+    height:40px;
+    width: 100px;
+    display: flex;
+   /* border:1px solid red; */
+   margin-left: 10px;
+   margin-top: 15px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 7px;
+  }
+  #logo{
+      height:38px;
+      width: 40px;
+      object-fit: cover;
+  }
+  #inpHold2{
+    background-color: white;
+    height:80px;
+  }
+  #btnHold{
+    display: flex;
+    margin-top: 10px;
+  }
+  #btn1{
+    background-color: #f1eeee;
+   border: 1px solid #6C757D;
+   width:180px;
+  }
+  #btn1>a{
+    color: #6C757D;
+    font-size: 13px;
+    font-family: "Quicksand"; 
+    text-decoration: underline;
+  }
+  #btn2{
+    background-color: #212529;
+    color: #FFFFFF;
+    width: 520px;
+    height: 30px;
+    font-size: 13px;
+    font-family: "Quicksand"; 
+    margin-left: 10px;
+
   }

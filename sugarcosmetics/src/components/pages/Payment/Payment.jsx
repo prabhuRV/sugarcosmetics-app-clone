@@ -5,23 +5,46 @@ function Payment() {
     const [click, setClick] = useState(false)
     const [click2, setClick2] = useState(false)
     const [click3, setClick3] = useState(false)
+    const [click4, setClick4] = useState(false)
+    const [click5, setClick5] = useState(false)
     const handleClick = () =>{
        setClick(!click);
        setClick2(false);
        setClick3(false)
-       document.querySelector("#instant").style.backgroundColor = "white";
+       setClick4(false);
+       setClick5(false);
+  
     }
     const handleClick2 = () =>{
       setClick2(!click2);
       setClick(false)
       setClick3(false)
+      setClick4(false);
+      setClick5(false);
    }
    const handleClick3 = () =>{
     setClick(false)
     setClick2(false);
     setClick3(!click3);
+    setClick4(false);
+    setClick5(false);
  
  }
+ const handleClick4= () =>{
+  setClick4(!click4);
+  setClick(false)
+  setClick2(false);
+  setClick3(false);
+  setClick5(false);
+}
+const handleClick5= () =>{
+  setClick5(!click5);
+  setClick4(false);
+  setClick(false)
+  setClick2(false);
+  setClick3(false);
+
+}
 
   return (
     <div id= {styles.main}>
@@ -29,7 +52,7 @@ function Payment() {
                   <div>
 
                   </div>
-                  <div>
+                  <div >
                       <p id= {styles.p}>Payment Method</p>
 
                            <div id= {styles.div}>
@@ -43,7 +66,7 @@ function Payment() {
                                       {click ? <div id= {styles.inpHold}>
                                           <input type= "text" id= {styles.upi} placeholder = "ENTER UPI ID"/>
                                         </div>: <div></div>} 
-                               </div>
+                                   </div>
                                
                                 <div id= {styles.instant}>
                                      <div  onClick={handleClick2}>
@@ -93,24 +116,58 @@ function Payment() {
                                     <div id= {styles.p3Hold}  onClick={handleClick3} > 
                                     <p id= {styles.p3}>Credit/Debit cards(Visa,Master,Rupay,Amex etc)</p>
                                     </div>
-                                    {click3 ? <div id= {styles.inpHold}>
+                                    {click3 ? <div id= {styles.formHold}>
                                       <div>
-                                      <input type= "text" id= {styles.card} placeholder = "ENTER UPI ID"/>
+                                      <input type= "text" id= {styles.card} placeholder = "CARD NUMBER"/>
                                       </div>
                                      <div>
-                                     <input type= "text" id= {styles.holder} placeholder = "ENTER UPI ID"/>
+                                     <input type= "text" id= {styles.holder} placeholder = "CARD HOLDER NAME"/>
                                      </div>
                                       <div id= {styles.expHold}>
-                                      <input type= "text" id= {styles.expiry} placeholder = "Expiry"/>
-                                      <input type= "text" id= {styles.cvv} placeholder = "cvv"/>
+                                      <input type= "text" id= {styles.expiry} placeholder = "Expiry(MM/YY)"/>
+                                      <input type= "text" id= {styles.cvv} placeholder = "CVV"/>
                                       </div>
-                                      <input type= "checkbox"/>
-                                      <p id= {styles.p3}>We will securely save this card for faster paymnet experience (CVV will not saved). If required you can remove this card from My Account > Payment Methods</p>
+                                      <div style= {{display: "flex",marginTop: "20px"}}>
+                                      <input id= {styles.check} type= "checkbox"/>
+                                      <p id= {styles.p4}>We will securely save this card for faster paymnet experience (CVV will not saved). If required you can remove this card from My Account > Payment Methods</p>
+                                      </div>
+
                                     </div>: <div></div>} 
+
                                 </div>
 
+                                <div id= {styles.instant}> 
 
-                           </div>
+                                    <div id= {styles.p3Hold}  onClick={handleClick4} > 
+                                    <p id= {styles.p3}>Net banking(ICICI,HDFC,SBI etc)</p>
+                                    </div>
+                                    {click4 ? <div id= {styles.inpHold2}>
+                                         <div id= {styles.banks}>
+                                              <div id={styles.logoHold}> <img id={styles.logo} src="https://media.glassdoor.com/sqll/38314/bank-of-india-squarelogo.png"/> <p>BOI</p></div>
+                                              <div id={styles.logoHold}> <img id={styles.logo} src="https://cdn.theorg.com/6d47d353-2e64-4ad9-be6f-4290dab69d44_thumb.png"/> <p>HDFC</p> </div>
+                                              <div id={styles.logoHold}> <img id={styles.logo} src="https://www.kindpng.com/picc/m/23-238516_icici-bank-png-industrial-credit-and-investment-corporation.png"/> <p>ICICI</p> </div>
+                                              <div id={styles.logoHold}> <img id={styles.logo} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iComfpPNe3wtTozOQJ5iIvREQENqIvf3I0kec3qQvm0jMKHEBTnSFaG01LUDQLatnBY&usqp=CAU"/> <p>SBI</p> </div>
+                                              <div id={styles.logoHold}> <img id={styles.logo} src="https://s3-symbol-logo.tradingview.com/yes-bank--600.png"/> <p>YES</p> </div>
+                                              <a style= {{textDecoration: "underline", marginLeft: "20px",  marginTop: "17px"}}href=""> view more</a>
+                                         </div>    
+                                    </div>: <div></div>} 
+                               </div>
+                               <div id= {styles.instant}> 
+
+                                  <div id= {styles.p3Hold}  onClick={handleClick5} > 
+                                  <p id= {styles.p3}>Cash on Delivery</p>
+                                  </div>
+                                  {click5 ? <div id= {styles.inpHold}>
+                                    <p id= {styles.p3}>We recommend using a digital payment for completing the payment</p>
+                                  </div>: <div></div>} 
+                              </div>
+                          
+                                <div id= {styles.btnHold}>
+                                  <button id= {styles.btn1}><a href=''>Delivery Info</a></button>
+                                  <button id= {styles.btn2}>Proceed to Payment</button>
+                                </div>
+                      </div>
+                       
                   </div>
            </div>
 
