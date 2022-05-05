@@ -11,6 +11,7 @@ import MakeupKit from '../pages/Trending/MakeupKit'
 import {MerchStation }from '../pages/Trending/MerchStation'
 import {BestSellers}from '../pages/Trending/BestSellers'
 import Slider from '../pages/Home/Slider/Slider';
+import Cartsugar from '../pages/CartPage/Cartsugar';
 
 export const MainRouter = () => {
   return (
@@ -27,6 +28,7 @@ export const MainRouter = () => {
          <Route path={"/sugarmerchstation"} element={<MerchStation/>}/>
          <Route path={"/bestsellers"} element={<BestSellers/>}/>
           <Route path={"/makeupkits"} element={<MakeupKit/>}/>
+          <Route path={"/cart"} element={<Cartsugar/>}></Route>
       </Routes>
       <Footer/>
      </>
