@@ -23,10 +23,10 @@ body{
    /* display: flex; */
 }
 .half{
-    height:1000px;
+    height:inherit;
     width:45%;
     border:1px solid gray;
-    padding: 0px 40px;
+  
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 20px;

@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './sugar.module.css';
 import {Link} from 'react-router-dom'
+import { CartStorage } from './CartStorage';
 const Cartsugar = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('cartData'));
+    if (items) {
+     setItems(items);
+    }
+  }, []);
+  console.log(items);
+
   return (
     <>
      <div className={styles.carTotal}>
@@ -31,6 +42,16 @@ const Cartsugar = () => {
                 <div className={styles.half}>
                      <div>
                          {/* // maping the cartData */}
+                         {items.map((item, index) => {
+                            return (
+                              <CartStorage
+                            
+                                key={item.id}
+                                {...item}
+                            
+                              />
+                            );
+                          })}
                      </div>
                      
                 </div>
