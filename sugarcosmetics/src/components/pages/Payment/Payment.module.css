@@ -1,0 +1,49 @@
+
+
+#parent{
+    height: 500px;
+    width : 95%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 100px;
+    border:1px solid red;
+    display: flex;
+}
+#p{
+    font-size: 13px;
+    color: #6C757D;
+    font-family: "Quicksand";
+}
+
+#div{
+    height: 400px;
+    width: 700px;
+    background-color: #e0e0e0;
+}
+#p2{
+    font-size: 14px;
+    color: #6C757D;
+    font-family: "Quicksand";
+}
+#upi {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #6C757D;
+    display: none;
+  }
+
+  #upi:focus {
+    border-color: #6C757D;
+  }
+  #inpHold{
+      background-color: white;
+     
+  }
+  /* #instant{
+    background-color: white;
+  } */
+
+  #upi:target{
+      display: block;
+  }
