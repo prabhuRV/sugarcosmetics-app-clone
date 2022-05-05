@@ -5,8 +5,8 @@ body{
     
     width:95%;
     margin:auto;
-    justify-content: center;
-    /* border:1px solid gray; */
+/*    
+    border:1px solid gray; */
     margin-top: 25px; 
     
 }
@@ -14,7 +14,7 @@ body{
    
     width:100%;
     margin:auto;
-    justify-content: center;
+    /* justify-content: center; */
     /* border:1px solid gray; */
    margin-top: 15px;
    margin-bottom: 15px;
@@ -24,16 +24,17 @@ body{
 }
 .half{
     height:1000px;
-    width:40%;
+    width:45%;
     border:1px solid gray;
     padding: 0px 40px;
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 .half1 {
     height: 350px;
-    width: 40%;
+    width: 45%;
     /* border: 1px solid gray; */
     padding: 0px 40px;
     margin-right: 20px;
@@ -45,12 +46,13 @@ body{
     width:90%;
     justify-content: space-around;
     display: flex;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    margin-left:0px;
 }
 .dummy{
     /* border:1px solid gray; */
     height:30px;
-    width:45%;
+    width:40%;
     margin-top:10px;
     display: flex;
     justify-content: space-between;
@@ -74,4 +76,7 @@ body{
     border-radius: 10px;
     color:#fff;
     font-weight: 600;
+}
+.homeLogo {
+    text-align: start;
 }

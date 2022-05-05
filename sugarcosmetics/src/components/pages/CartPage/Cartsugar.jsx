@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from './sugar.module.css'
+import styles from './sugar.module.css';
+import {Link} from 'react-router-dom'
 const Cartsugar = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Cartsugar = () => {
         <div className={styles.itemsDiv}>
               <div className={styles.gap1}>
                   <div className={styles.dummy}>
-                  <div>
+                  <div style={{justifyContent:"start"}}>
                        <img src="https://in.sugarcosmetics.com/desc-images/shopping_cart.svg"width="20px" height="20px" alt="cartLogo" /> 
                    <span style={{marginLeft:"10px"}}>Order Summary</span>
                   </div>
@@ -25,57 +26,57 @@ const Cartsugar = () => {
                   </div>
               </div>
 
-           <div style={{display:"flex",justifyContent:"center"}} >
+           <div style={{display:"flex"}} >
 
                 <div className={styles.half}>
                      <div>
-                         
+                         {/* // maping the cartData */}
                      </div>
                      
                 </div>
-               <div className={styles.half1} style={{backgroundColor:"whitesmoke"}}>
+               <div className={styles.half1} style={{backgroundColor:"whitesmoke",justifyContent:"start"}}>
                 
-                   <div style={{backgroundColor:"#fff",padding:"10px 20px",marginTop:"15px"}}>
-                        <div style={{height:"35px",paddingTop:"10px"}}>
+                   <div style={{backgroundColor:"#fff",padding:"10px 20px",marginTop:"15px",}}>
+                        <div style={{height:"35px",paddingTop:"10px",textAlign:"start"}}>
                         <img src="https://in.sugarcosmetics.com/desc-images/GiftCard.svg" width="20px" height="20px" ></img>
                         <span style={{marginLeft:"10px"}}>Gift Card/Discount Code</span>
                         <input className={styles.promocode} type="text" />
                         <input className={styles.promosub} type="submit" value="submit" />
                     </div>
 
-                    <div style={{height:"35px",paddingTop:"11px"}}>
+                    <div style={{height:"35px",paddingTop:"11px",textAlign:"start"}}>
                         <img src="	https://in.sugarcosmetics.com/desc-images/PriceDetails.svg" width="20px" height="20px" ></img>
                         <span style={{marginLeft:"10px"}}>Price Details</span>
                     </div>
+                  
                     
-                    
-                    <div style={{height:"30px",paddingTop:"5px"}}>
+                    <div style={{height:"30px",paddingTop:"5px" ,textAlign:"start"}}>
                         <img src="	https://in.sugarcosmetics.com/desc-images/CartSubtotal.svg" width="15px" height="15px" />
                          <span style={{marginLeft:"10px"}}>Cart Sub Total: </span>
                          <span  style={{marginLeft:"80px"}}>₹ 50000</span>
                     </div>
-                      <div style={{height:"30px",paddingTop:"5px"}}>
+                      <div style={{height:"30px",paddingTop:"5px" ,textAlign:"start"}}>
                         <img src="https://in.sugarcosmetics.com/desc-images/Shipping_Cost.svg" width="15px" height="15px" />
                          <span style={{marginLeft:"10px"}}>Shipping Cost: </span>
                          <span  style={{marginLeft:"80px"}}>₹ 00.0</span>
                     </div>
-                      <div style={{height:"30px",paddingTop:"5px"}}>
+                      <div style={{height:"30px",paddingTop:"5px" ,textAlign:"start"}}>
                         <img src="https://in.sugarcosmetics.com/desc-images/Discount.svg" width="15px" height="15px" />
                          <span style={{marginLeft:"10px"}}>Discount Applied: </span>
                          <span  style={{marginLeft:"60px"}}>₹ 00.0</span>
                     </div>
-                      <div style={{height:"30px",paddingTop:"5px"}}>
+                      <div style={{height:"30px",paddingTop:"5px" ,textAlign:"start"}}>
                         <img src="https://in.sugarcosmetics.com/desc-images/AmountPayable.svg" width="15px" height="15px" />
                          <span style={{marginLeft:"10px"}}>Amount Payable: </span>
                          <span  style={{marginLeft:"65px"}}>₹ 50000</span>
                     </div>
-                    <div>
-                        <span>Including ₹ 494.69  in taxes</span>
+                    <div style={{textAlign:"start"}}>
+                        <span >Including ₹ 494.69  in taxes</span>
                     </div>
 
                    </div>
                    <div style={{marginTop:"20px",display:"flex"}}>
-                       <button style={{height:"36.50px",border:"1px solid gray",width:"35%",backgroundColor:"#fff",}}> Continue Shopping</button>
+                       <Link to="/" style={{height:"37px",border:"1px solid gray",width:"35%",backgroundColor:"#fff",padding:"7px 0px",boxSizing:"border-box",}}> Continue Shopping</Link>
                        <button style={{height:"37px",border:"1px solid gray",width:"70%",backgroundColor:"darkslategray",color:"#fff"}}>Delivery Information</button>
                    </div>
                </div>

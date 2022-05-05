@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./MakeUp.module.css"
 import {v4 as uuid} from 'uuid';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartStorage';
 // import { useParams } from 'react-router-dom';
 export const ShowData = (item) => {
   const [CartData, setCardData] = useState([])
   const [review, setReview] = useState(0)
   const {image,rating,price,name,id}=item
+   const {cart1,setCart1} = useContext(CartContext);
+
   const AddToCart = () => {
 console.log("hai");
     const cart ={image,rating,price,name,
       id:uuid()
     }
-    console.log(cart);
+    console.log([cart,...CartData]);
      setCardData([cart,...CartData])
-    
+     setCart1([cart,...CartData]) 
 }  
 const show = () => {
   console.log("hai");
