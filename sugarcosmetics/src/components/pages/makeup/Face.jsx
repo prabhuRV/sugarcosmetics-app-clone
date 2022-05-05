@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ShowData } from '../Carddiscreption/ShowData';
-import styles from "./Face.module.css"
+
 import {v4 as uuid} from 'uuid'
+import styles from "../Styles/Default.module.css"
 function Face() {
     const [data,setData] = useState([]);
     useEffect(()=>{
@@ -32,51 +33,68 @@ function Face() {
         setData([...sorted_data])
     }
   return (
-    <div id={styles.parent}>
-<div id={styles.infoContain}>
-        <div id= {styles.info}>
-          <h1 id= {styles.h1}>Face:</h1>
-          <p id= {styles.items}>28 items</p>
-         </div>
-     
-     <p id= {styles.sorting}>Sort</p>
-       <div id={styles.sortData}>
-
-              <div id={styles.opt}>
-                     <div id= {styles.top} >
-                          <p>Select Sorting</p>
-                          <p>Clear All</p>
-                     </div><hr/>
-                        
-                        <div id={styles.line}>
-                          <p>Relevance</p>
-                        </div><hr/>
-                          
-                          <div id={styles.line} >
-                             <p onClick={handleH2l}>Price - High to Low</p>
-                          </div> <hr/>
-                            
-                          <div id={styles.line}>
-                          <p onClick={handleL2h}>Price - Low to High</p>
-                          </div> 
-                           
-                           
-                </div>
-       </div>
-
+    <>
+    <div id={styles.infoContain}>
+    <div id= {styles.info}>
+      <h1 id= {styles.h1}>BestSellers  :</h1>
+      <p id= {styles.items}>{data.length} items</p>
+     </div>
+ 
+     <div  id={styles.sortData}>
+ 
+   
+ <div id={styles.opt}>
+ 
+        <div id= {styles.top} >
       
+        <img className={styles.whislisticon} src="https://in.sugarcosmetics.com/desc-images/sortIcon.png"/>
+             <p id= {styles.items}>Sort</p>
+            
+        </div>
+           
+          <div id={styles.sorting} >
+          <div id={styles.Select}>
+             <p>Select Sorting</p>
+             <p> clear All</p>
+           </div><hr/>
+             <div id={styles.line}>
+             <p>Relevance</p>
+             
+           </div><hr/>
+
+             
+             <div id={styles.line} >
+                <p onClick={handleH2l}>Price - High to Low</p>
+             </div> <hr/>
+               
+             <div id={styles.line}>
+             <p onClick={handleL2h}>Price - Low to High</p>
+             </div> 
+          </div>
+              
+              
+   </div>
+   </div>
+
   
-    </div>
-  <div id={styles.contain}>
 
+</div>
+    <div id={styles.contain}>
     {data.map((item, index) => {
-        return (
-            <ShowData key={uuid()} {...item} />
-            );
-        })}
-
-  </div>
-  </div>
+      return (
+        <ShowData
+       
+          key={uuid()}
+          {...item}
+       
+        />
+      );
+    })}
+        
+     </div>
+  
+   
+    </>
   )
 }
 

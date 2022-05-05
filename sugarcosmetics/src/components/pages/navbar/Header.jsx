@@ -8,7 +8,7 @@ function Header() {
     FREE eyeshadow palette worth 1199 on a spend of 1199
     </div>
     <div className={styles.div2}>
-      <div style={{marginLeft : "60px" , }}><Link to="/home"><img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" /></Link></div>
+      <div style={{marginLeft : "60px" , }}><Link to="/"><img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" /></Link></div>
       <div>
         <div className = {styles.input}><input className={styles.input1} type="text" placeholder='Try "Liquid Lipstick"'/><button className={styles.button1}>Search</button>
         <div className={styles.dropdown2}>
