@@ -32,7 +32,7 @@ function MakeUp() {
     }
 
   return (
-      <>
+      <div id={styles.parent}>
     <div id={styles.infoContain}>
         <div id= {styles.info}>
           <h1 id= {styles.h1}>Makeup :</h1>
@@ -81,7 +81,7 @@ function MakeUp() {
         
      </div>
   
-    </>
+    </div>
   )
 }
 
