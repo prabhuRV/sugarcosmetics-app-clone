@@ -42,9 +42,10 @@ body{
 }
 .gap1{
     height:35px;
-    width:100%;
+    width:90%;
     justify-content: space-around;
     display: flex;
+    border: 1px solid gray;
 }
 .dummy{
     /* border:1px solid gray; */
