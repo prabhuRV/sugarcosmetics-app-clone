@@ -48,8 +48,8 @@ function Header() {
         <div><img src="https://in.sugarcosmetics.com/desc-images/person.png" alt="" /></div>
         Login/Register</div>
       <div style = {{display:"flex" , paddingTop : "15px" , gap : "20px"}}>
-        <span><i class="fa-solid fa-heart"></i></span>
-        <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+        <span><i className="fa-solid fa-heart"></i></span>
+        <span><i className="fa-solid fa-cart-arrow-down"></i></span>
         <div><img className={styles.icon3} src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" alt="" /></div>
       </div>
     </div>
