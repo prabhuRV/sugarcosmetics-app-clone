@@ -36,7 +36,7 @@ return (
     <>
   <div id={styles.infoContain}>
       <div id= {styles.info}>
-        <h1 id= {styles.h1}>BRUSHES :</h1>
+        <h1 id= {styles.h1}>BestSellers  :</h1>
         <p id= {styles.items}>{data.length} items</p>
        </div>
    

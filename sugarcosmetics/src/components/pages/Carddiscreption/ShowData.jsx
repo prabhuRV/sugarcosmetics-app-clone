@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./MakeUp.module.css"
-import {v4 as uuid} from 'uuid'
+import {v4 as uuid} from 'uuid';
+// import { useParams } from 'react-router-dom';
 export const ShowData = (item) => {
   const [CartData, setCardData] = useState([])
   const [review, setReview] = useState(0)

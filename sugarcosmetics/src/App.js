@@ -1,13 +1,19 @@
 
 import './App.css';
+// <<<<<<< HEAD
 // <<<<<<< Updated upstream
+// =======
+
+import { MainRouter } from './components/routes/MainRouter';
+
+// >>>>>>> 0b479fb9ed59aa0cf92012be46a864c7e3e43974
 import BreshesData from './components/pages/Breshes/BreshesData';
 import { BestSellers } from './components/pages/Trending/BestSellers';
 import MakeupKit from './components/pages/Trending/MakeupKit';
 import { MerchStation } from './components/pages/Trending/MerchStation';
 
 
-// import Login from './components/pages/login/Login';
+import Login from './components/pages/login/Login';
 
 // import BreshesData from './components/pages/Breshes/BreshesData';
 
@@ -23,9 +29,11 @@ import Slider from './components/pages/Home/Slider/Slider';
 
 
 
+
 function App() {
   return (
     <div className="App">
+{/* <<<<<<< HEAD */}
 {/* <<<<<<< Updated upstream */}
       {/* <BreshesData /> */}
       {/* <BestSellers /> */}
@@ -38,6 +46,9 @@ function App() {
      <Slider/>
 
 
+=======
+     <MainRouter/>
+{/* >>>>>>> 0b479fb9ed59aa0cf92012be46a864c7e3e43974 */}
     </div>
   );
 }

@@ -1,3 +1,7 @@
+#parent{
+   background-color: #f5f5f5;
+}
+
 #contain{
     display: grid;
     grid-template-columns: repeat(4,252px);

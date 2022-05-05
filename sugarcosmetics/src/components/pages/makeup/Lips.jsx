@@ -30,10 +30,10 @@ function Lips() {
         setData([...sorted_data])
     }
   return (
-    <>
+    <div id={styles.parent}>
      <div id={styles.infoContain}>
         <div id= {styles.info}>
-          <h1 id= {styles.h1}>Makeup :</h1>
+          <h1 id= {styles.h1}>Lips :</h1>
           <p id= {styles.items}>{data.length} items</p>
          </div>
      
@@ -77,7 +77,7 @@ function Lips() {
     })}
         
   </div>
-  </>
+  </div>
   )
 }
 

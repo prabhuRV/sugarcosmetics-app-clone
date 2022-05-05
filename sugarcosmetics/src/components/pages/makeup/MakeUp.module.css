@@ -1,15 +1,22 @@
+#parent{
+    background-color: #f5f5f5;
+}
+
 #contain{
      display: grid;
      grid-template-columns: repeat(4,252px);
      grid-template-rows: repeat(14,auto);
      justify-content: center;
      gap:40px;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 #infoContain{
     display: flex; 
     justify-content: space-between;
+}
+#info{
+    margin-top: 60px;
 }
 
 #sortData{
@@ -123,6 +130,7 @@ hr{
      font-family:"Quicksand";
      margin-left:100px;
     font-weight: 400;
+   
  }
  #items{
      color: #6C757D;
