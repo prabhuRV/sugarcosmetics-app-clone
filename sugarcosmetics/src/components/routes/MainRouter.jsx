@@ -12,10 +12,11 @@ import Delivery from "../pages/Payment/Delivery";
 import MakeupKit from '../pages/Trending/MakeupKit'
 import {MerchStation }from '../pages/Trending/MerchStation'
 import {BestSellers}from '../pages/Trending/BestSellers'
-// import Slider from '../pages/Home/Slider/Slider';
+import Slider from '../pages/Home/Slider/Slider';
 import Cartsugar from '../pages/CartPage/Cartsugar';
 import FaceBrushes from '../pages/Breshes/FaceBrushes';
 import EyeBrushes from '../pages/Breshes/EyeBrushes';
+import Payment from '../pages/Payment/Payment';
 
 export const MainRouter = () => {
   return (
@@ -44,7 +45,7 @@ export const MainRouter = () => {
         <Route path={"/bestsellers"} element={<BestSellers />} />
         <Route path={"/makeupkits"} element={<MakeupKit />} />
         <Route path={"/cart"} element={<Cartsugar />} />
-        {/* <Route path={"/payment"} element={<Payment />} /> */}
+        <Route path={"/payment"} element={<Payment />} />
         <Route path={"/facebrushes"} element={<FaceBrushes />} />
         <Route path={"/eyebrushes"} element={<EyeBrushes />} />
         <Route path={"/delivery"} element={<Delivery/>}/>

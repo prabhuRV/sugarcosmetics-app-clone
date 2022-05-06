@@ -104,26 +104,6 @@ function Payment() {
                     <p>Airtelmoney</p>
                   </div>
 
-<<<<<<< Updated upstream
-                                    <div id= {styles.p3Hold}  onClick={handleClick3} > 
-                                    <p id= {styles.p3}>Credit/Debit cards(Visa,Master,Rupay,Amex etc)</p>
-                                    </div>
-                                    {click3 ? <div id= {styles.formHold}>
-                                      <div>
-                                      <input type= "text" id= {styles.card} placeholder = "CARD NUMBER"/>
-                                      </div>
-                                     <div>
-                                     <input type= "text" id= {styles.holder} placeholder = "CARD HOLDER NAME"/>
-                                     </div>
-                                      <div id= {styles.expHold}>
-                                      <input type= "text" id= {styles.expiry} placeholder = "Expiry(MM/YY)"/>
-                                      <input type= "text" id= {styles.cvv} placeholder = "CVV"/>
-                                      </div>
-                                      <div style= {{display: "flex",marginTop: "20px"}}>
-                                      <input id= {styles.check} type= "checkbox"/>
-                                      <p id= {styles.p4}>We will securely save this card for faster paymnet experience (CVV will not saved). If required you can remove this card from My Account  Payment Methods</p>
-                                      </div>
-=======
                   <div id={styles.div1}>
                     <img
                       id={styles.img}
@@ -132,7 +112,6 @@ function Payment() {
                     />
                     <p>Amazonpay</p>
                   </div>
->>>>>>> Stashed changes
 
                   <div id={styles.div1}>
                     <img
