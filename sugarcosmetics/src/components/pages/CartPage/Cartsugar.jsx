@@ -198,7 +198,7 @@ const Cartsugar = () => {
                     color: "#fff",
                   }}
                 >
-                  <Link to="/payment">Delivery Information</Link>{" "}
+                  <Link to="/delivery">Delivery Information</Link>{" "}
                 </button>
               </div>
             </div>

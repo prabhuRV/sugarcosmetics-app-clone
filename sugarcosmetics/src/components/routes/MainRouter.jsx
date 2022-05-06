@@ -8,7 +8,7 @@ import Makeup from '../pages/makeup/MakeUp'
 import BreshesData from '../pages/Breshes/BreshesData'
 import Lips from '../pages/makeup/Lips'
 import Face from '../pages/makeup/Face'
-import Payment from '../pages/Payment/Payment'
+import Delivery from "../pages/Payment/Delivery";
 import MakeupKit from '../pages/Trending/MakeupKit'
 import {MerchStation }from '../pages/Trending/MerchStation'
 import {BestSellers}from '../pages/Trending/BestSellers'
@@ -32,11 +32,10 @@ export const MainRouter = () => {
         <Route path={"/bestsellers"} element={<BestSellers />} />
         <Route path={"/makeupkits"} element={<MakeupKit />} />
         <Route path={"/cart"} element={<Cartsugar />} />
-        <Route path={"/payment"} element={<Payment />} />
+        {/* <Route path={"/payment"} element={<Payment />} /> */}
         <Route path={"/facebrushes"} element={<FaceBrushes />} />
         <Route path={"/eyebrushes"} element={<EyeBrushes />} />
-
-
+        <Route path={"/delivery"} element={<Delivery/>}/>
       </Routes>
       <Footer />
     </>
