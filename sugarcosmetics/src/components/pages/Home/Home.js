@@ -6,11 +6,12 @@ import Reffer from './Slider/Reffer';
 export default function Home() {
   return (
     <>
-    <Slider />
-    <Reffer />
-<TestSlide  />
-    
+      <div style={ {height:"2500px"} }>
+        <Slider />
+        {/* <TestSlide  /> */}
+        <Reffer />
+      </div>
     </>
-  )
+  );
 }
 
