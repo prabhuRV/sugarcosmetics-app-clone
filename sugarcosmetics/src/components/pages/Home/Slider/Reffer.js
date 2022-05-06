@@ -5,7 +5,11 @@ import "./Slider.scss";
 
 export default function Reffer() {
   return (
-    <div>
+    <div className="mainDiv">
+
+      <div className="distance">
+        
+      </div>
       <div className="reffetText">
         <p>REFER YOUR FRIENDS</p>
       </div>

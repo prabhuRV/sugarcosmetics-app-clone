@@ -1,16 +1,10 @@
 
 import './App.css';
+// import Home from './components/pages/Home/Home';
 import Payment from './components/pages/Payment/Payment';
 
 
 import { MainRouter } from './components/routes/MainRouter';
-
-
-
-
-
-
-
 
 
 function App() {
@@ -20,7 +14,8 @@ function App() {
 
     {/* <Payment/> */}
      
-     <MainRouter/>
+     {/* <MainRouter/> */}
+     {/* <Home/> */}
 
     </div>
   );
