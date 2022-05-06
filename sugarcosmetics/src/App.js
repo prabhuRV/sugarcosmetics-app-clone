@@ -5,6 +5,7 @@ import Header from './components/pages/navbar/Header';
 import { BestSellers } from './components/pages/Trending/BestSellers';
 import MakeupKit from './components/pages/Trending/MakeupKit';
 import { MerchStation } from './components/pages/Trending/MerchStation';
+// import Delivery from './components/pages/Payment/Delivery'
 
 
 
@@ -28,6 +29,7 @@ function App() {
       {/* <BestSellers /> */}
       {/* <MerchStation /> */}
 {/* <MakeupKit /> */}
+{/* <Delivery/> */}
     </div>
   );
 }
