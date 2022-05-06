@@ -1,17 +1,26 @@
 .div1{
+    
     text-align: center;
     border: 1px solid black;
     background-color: black;
     height: 30px; 
     color: white;
     padding-top: 4px;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+  
 } 
 .div2{
     padding-top: 10px;
     display:flex ;
     height: 60px;
     gap: 90px;
+    position:-webkit-sticky;
     background-color: rgb(248,249,250);
+    position:-webkit-sticky;
+    position: sticky;
+    top: 30px;
 }
 .icon3{
     height: 20px;
@@ -37,12 +46,19 @@
     display: flex;padding-top: 10px;
 }
 .div3{
+    background-color: rgb(255 , 255 , 255); 
     display: flex;
     gap: 70px;
     padding-top: 15px;
     padding-left: 40px;
     height: 35px;
-    
+ 
+    position:-webkit-sticky;
+
+
+    top: 100px;
+    margin-bottom: 20px;
+    position: inherit;
 }
 .div3 > div{
     font-size: small;
@@ -56,13 +72,18 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
     z-index: 1;
+    text-align: left;
 }
 .dropdown1 > a{
     display : block ;
-    color: black;
+    color: gray;
     padding: 12px 16px;
     text-decoration: none;
 }
+.dropdown1 > a:hover{
+   color: black;
+}
+
 .makeup:hover .dropdown1{
     display : block
 }
@@ -79,4 +100,15 @@
     padding-left: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+a
+{
+    font-family:Arial, Helvetica, sans-serif;
+   color: #6c757d;
+    text-decoration:none solid rgb(108, 117, 125);
+    
+    font-size:14px;
+    
+    padding:16px 0px;
+    font-weight:700;
 }

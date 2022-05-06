@@ -1,3 +1,5 @@
+import "./App.css";
+
 
 import './App.css';
 import BreshesData from './components/pages/Breshes/BreshesData';
@@ -22,14 +24,20 @@ import { MerchStation } from './components/pages/Trending/MerchStation';
 
 
 
+import { MainRouter } from "./components/routes/MainRouter";
+
+
 function App() {
   return (
     <div className="App">
+
       {/* <BreshesData /> */}
       {/* <BestSellers /> */}
       {/* <MerchStation /> */}
 {/* <MakeupKit /> */}
 {/* <Delivery/> */}
+      <MainRouter />
+
     </div>
   );
 }

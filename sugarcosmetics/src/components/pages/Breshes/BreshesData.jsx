@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { ShowData } from '../Carddiscreption/ShowData';
 import {v4 as uuid} from 'uuid'
 import styles from "../Styles/Default.module.css"
+
+
 function BreshesData() {
     const [data,setData] = useState([]);
+  
+     
     useEffect(()=>{
         let getData= async()=>{
             try {

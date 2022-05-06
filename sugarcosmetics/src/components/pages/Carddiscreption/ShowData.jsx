@@ -1,18 +1,40 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./MakeUp.module.css"
-import {v4 as uuid} from 'uuid'
+import {v4 as uuid} from 'uuid';
+
+
+
+// import { useParams } from 'react-router-dom';
+
+
 export const ShowData = (item) => {
-  const [CartData, setCardData] = useState([])
+  const getDatafromLS=()=>{
+    let car = localStorage.getItem('cartData');
+  //console.log(data);
+    if(car){
+      return JSON.parse(car);
+    }
+    else{
+      return []
+    }
+  };
+    
+  
+  const [CartData, setCardData] = useState(getDatafromLS())
   const [review, setReview] = useState(0)
   const {image,rating,price,name,id}=item
+   
+   useEffect(()=>{
+    localStorage.setItem('cartData',JSON.stringify(CartData));
+  },[CartData])
   const AddToCart = () => {
 console.log("hai");
     const cart ={image,rating,price,name,
       id:uuid()
     }
-    console.log(cart);
-     setCardData([cart,...CartData])
-    
+    console.log([cart,...CartData]);
+     setCardData([...CartData,cart])
+  
 }  
 const show = () => {
   console.log("hai");
@@ -52,7 +74,7 @@ const show = () => {
                      <button id= {styles.btn} onClick={AddToCart}>ADD TO CART</button>
                      </div>
                   
-             
+      
          
     </div>
     </>
