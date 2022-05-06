@@ -2,8 +2,19 @@ import React, { useEffect, useState } from "react";
 import styles from "./CartStorage.module.css";
 export const CartStorage = (item) => {
   const { id, image, price, rating, name } = item;
+    const [show, setShow] = useState(true);
   const deletediv = () => {
     console.log("delete");
+  };
+  const [count, setCount] = useState(0);
+
+  const handleInc = () => {
+    setCount(count + 1);
+  };
+  const handleDec = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
   };
   return (
     <>
@@ -22,9 +33,13 @@ export const CartStorage = (item) => {
         />
         <div className={styles.price}>
           {" "}
-          <button>+Additem(Rs. {price}.00)</button>
+          <button onClick={handleDec}>-</button>
+          {count}
+          <button onClick={handleInc}>+</button>
         </div>
-      </div>{" "}
+
+        <div> {}</div>
+      </div>
     </>
   );
 };
