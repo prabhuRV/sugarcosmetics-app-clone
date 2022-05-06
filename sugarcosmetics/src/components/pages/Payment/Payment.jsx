@@ -129,7 +129,7 @@ const handleClick5= () =>{
                                       </div>
                                       <div style= {{display: "flex",marginTop: "20px"}}>
                                       <input id= {styles.check} type= "checkbox"/>
-                                      <p id= {styles.p4}>We will securely save this card for faster paymnet experience (CVV will not saved). If required you can remove this card from My Account > Payment Methods</p>
+                                      <p id= {styles.p4}>We will securely save this card for faster paymnet experience (CVV will not saved). If required you can remove this card from My Account  Payment Methods</p>
                                       </div>
 
                                     </div>: <div></div>} 

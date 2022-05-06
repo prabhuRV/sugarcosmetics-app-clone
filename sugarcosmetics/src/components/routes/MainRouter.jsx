@@ -33,7 +33,6 @@ export const MainRouter = () => {
         <Route path={"/makeupkits"} element={<MakeupKit />} />
         <Route path={"/cart"} element={<Cartsugar />} />
         <Route path={"/payment"} element={<Payment />} />
-
         <Route path={"/facebrushes"} element={<FaceBrushes />} />
         <Route path={"/eyebrushes"} element={<EyeBrushes />} />
 

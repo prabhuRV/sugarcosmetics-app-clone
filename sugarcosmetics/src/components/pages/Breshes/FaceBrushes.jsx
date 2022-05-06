@@ -44,7 +44,7 @@ const FaceBrushes = () => {
       <div id={styles.infoContain}>
         <div id={styles.info}>
           <h1 id={styles.h1}>FACE BRUSHES :</h1>
-          <p id={styles.items}>{data.length} items</p>
+          <p id={styles.items}> {data.length} items</p>
         </div>
 
         <div id={styles.sortData}>
