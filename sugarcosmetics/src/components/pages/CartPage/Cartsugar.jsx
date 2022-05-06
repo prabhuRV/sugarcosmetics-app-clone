@@ -3,7 +3,8 @@ import styles from "./sugar.module.css";
 import { Link } from "react-router-dom";
 import { CartStorage } from "./CartStorage";
 const Cartsugar = () => {
-  const [items, setItems] = useState([]);
+   const [items, setItems] = useState([]);
+     const [Cost, setCost] = useState(0);
 
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("cartData"));
@@ -11,13 +12,14 @@ const Cartsugar = () => {
       setItems(items);
     }
   }, []);
+  const handleCost = () => {
+    let ans = 0;
+    items.map((item) => (ans += 1 * item.price));
+    setCost(ans);
+  };
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("cartData"));
-    if (items) {
-      setItems(items);
-    }
-  }, []);
- 
+    handleCost();
+  });
 
   return (
     <>
@@ -39,7 +41,7 @@ const Cartsugar = () => {
                 />
                 <span style={{ marginLeft: "10px" }}>Order Summary</span>
               </div>
-              <div>Cart Total : Rs.</div>
+              <div>Cart Total : Rs.{Cost}</div>
             </div>
             <div style={{ display: "flex" }} className={styles.dummy}>
               <div>
@@ -62,9 +64,10 @@ const Cartsugar = () => {
             <div className={styles.half}>
               <div>
                 {/* // maping the cartData */}
-                {items.map((item, index) => {
-                  return <CartStorage key={item.id} {...item} />;
-                })}
+
+                {items.map((item) => (
+                  <CartStorage key={item.id} {...item} />
+                ))}
               </div>
             </div>
             <div
@@ -204,7 +207,7 @@ const Cartsugar = () => {
                     color: "#fff",
                   }}
                 >
-                  <Link to="/delivery">Delivery Information</Link>{" "}
+                  <Link to="/payment">Delivery Information</Link>{" "}
                 </button>
               </div>
             </div>

@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route,Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home'
 import Header from '../pages/navbar/Header';
@@ -23,47 +23,38 @@ import Eye from '../pages/makeup/Eye';
 
 
 export const MainRouter = () => {
+ 
+  
   return (
     <>
       <Header />
       <Routes>
-
-        <Route path={"/"} element={<Home />}/>
-        <Route path={"/makeup"} element={<Makeup/>}/>
-        <Route path={"/lips"} element={<Lips/>}/>
-        <Route path={"/face"} element={<Face/>}/>
-        <Route path={"/eyes"} element={<Eye/>}/>
-        <Route path={"/brushes"} element={<BreshesData/>}/>
-        <Route path= {"/skincare"} element = {<Skincare/>}/>
-        <Route path={"/trending"} element={<Makeup/>}/>
-         <Route path={"/sugarmerchstation"} element={<MerchStation/>}/>
-         <Route path={"/bestsellers"} element={<BestSellers/>}/>
-          <Route path={"/makeupkits"} element={<MakeupKit/>}/>
-          <Route path={"/cart"} element={<Cartsugar/>}></Route>
-
-        <Route path={"/"} element={<Slider />} />
-        <Route path={"/makeup"} element={<Makeup />} />
+        <Route path={"/"} element={<Home />} />
+        <Route
+          path={"/makeup"}
+          element={<Makeup />}
+        />
         <Route path={"/lips"} element={<Lips />} />
         <Route path={"/face"} element={<Face />} />
-        <Route path={"/eyes"} element={<Eye/>}/>
+        <Route path={"/eyes"} element={<Eye />} />
         <Route path={"/brushes"} element={<BreshesData />} />
+        <Route path={"/skincare"} element={<Skincare />} />
         <Route path={"/trending"} element={<Makeup />} />
         <Route path={"/sugarmerchstation"} element={<MerchStation />} />
         <Route path={"/bestsellers"} element={<BestSellers />} />
         <Route path={"/makeupkits"} element={<MakeupKit />} />
-        <Route path={"/cart"} element={<Cartsugar />} />
+        <Route path={"/cart"} element={<Cartsugar />}></Route>
+
 
         <Route path={"/payment"} element={<Payment />} />
 
         <Route path={"/facebrushes"} element={<FaceBrushes />} />
         <Route path={"/eyebrushes"} element={<EyeBrushes />} />
-        <Route path={"/delivery"} element={<Delivery/>}/>
-
+        <Route path={"/delivery"} element={<Delivery />} />
       </Routes>
       <Footer />
     </>
   );
-
 }
 
 

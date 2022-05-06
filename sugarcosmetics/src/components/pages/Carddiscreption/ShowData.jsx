@@ -5,6 +5,7 @@ import { v4 as uuid } from "uuid";
 // import { useParams } from 'react-router-dom';
 
 export const ShowData = (item) => {
+
   const getDatafromLS = () => {
     let car = localStorage.getItem("cartData");
     //console.log(data);
@@ -15,7 +16,7 @@ export const ShowData = (item) => {
     }
   };
 
-  const [CartData, setCardData] = useState(getDatafromLS());
+   const [CartData, setCardData] = useState(getDatafromLS());
   const [review, setReview] = useState(0);
   const { image, rating, price, name, id } = item;
 
@@ -59,17 +60,18 @@ export const ShowData = (item) => {
         </div>
 
         <div id={styles.btnHold}>
-          <button onClick={AddToCart}>
+          <button>
             <img
               className={styles.whislisticon}
               src="https://cdn3.iconfinder.com/data/icons/marketing-e-commerce/128/icons_-_marketing-41-512.png"
             />
           </button>
           <button id={styles.btn} onClick={AddToCart}>
-            ADD TO CART
+            Add to Cart
           </button>
         </div>
       </div>
     </>
   );
 };
+

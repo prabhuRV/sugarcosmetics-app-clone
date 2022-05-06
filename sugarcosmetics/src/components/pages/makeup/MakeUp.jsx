@@ -9,7 +9,7 @@ function MakeUp() {
       try {
         let res = await fetch("http://localhost:8080/makeup");
         let info = await res.json();
-        console.log(info);
+       // console.log(info);
         setData([...info]);
       } catch (error) {
         console.log(error);
@@ -17,6 +17,7 @@ function MakeUp() {
     };
     getData();
   }, []);
+ 
 
   const handleH2l = () => {
     let new_data = data.sort((a, b) => {
@@ -75,9 +76,11 @@ function MakeUp() {
         </div>
       </div>
       <div id={styles.contain}>
-        {data.map((item, index) => {
-          return <ShowData key={uuid()} {...item} />;
-        })}
+        {data.map((item) => (
+          <ShowData key={uuid()} {...item}  />
+          
+        ))}
+        
       </div>
     </>
   );
