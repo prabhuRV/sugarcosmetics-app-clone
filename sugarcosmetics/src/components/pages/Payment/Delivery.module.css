@@ -1,0 +1,109 @@
+.container{
+    width: 1180px;
+    height: 460px;
+    margin: auto;
+    background-color: #f5e1e9;
+    text-align: center;
+    border-radius: 5px;
+}
+.button1{
+    border-radius: 5px;
+    margin-top: 16px;
+    height: 45px;
+    width: 350px;
+    font-size: medium;
+    border: 2px solid black;
+    font-weight: 100;
+}
+.innerdiv1{
+    margin-top: -24px;
+    justify-content: center;
+    display: flex;
+    gap:5px
+}
+.formdiv1 > div{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+}
+.formdiv1 > div > input{
+    height: 30px;
+    width: 405px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size : medium;
+}
+.formdiv1 > div > input:focus{
+    outline :none;
+}
+.formdiv2{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.formdiv2 > div > input{
+    color: rgb(182,186,190);
+    height: 30px;
+    width: 245px;
+    border-radius: 5px;
+    border: 1px solid white;
+    border: opx;
+    padding-left: 20px;
+    font-size: medium;
+}
+.formdiv2 > div > input:focus{
+    outline: none;
+}
+.formdiv3{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.cancel{
+    height: 39px;
+    width: 350px;
+    background-color: rgb(33,37,41);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(33,37,41);
+    font-size: medium;
+}
+.save{
+    height: 39px;
+    width: 350px;
+    background-color: rgb(252,38,120);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(252,38,120);
+    font-size: medium;
+}
+.special{
+    width: 300px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid white;
+    padding-left: 10px;
+    font-size: medium;
+}
+.details{
+
+    height: 33px;
+    width: 105px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgb(33,37,41);
+    background-color: rgb(33,37,41);
+    color: white;
+    font-size: medium;
+}
+.img1{
+    margin-left: 100px;
+}
+.img2{
+    margin-left: 1250px;
+}

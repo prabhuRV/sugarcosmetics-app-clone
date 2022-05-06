@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Route,Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home';
@@ -32,10 +33,16 @@ export const MainRouter = () => {
         <Route path={"/makeupkits"} element={<MakeupKit />} />
         <Route path={"/cart"} element={<Cartsugar />} />
         <Route path={"/payment"} element={<Payment />} />
+
         <Route path={"/facebrushes"} element={<FaceBrushes />} />
         <Route path={"/eyebrushes"} element={<EyeBrushes />} />
+
+
       </Routes>
       <Footer />
     </>
   );
+
 }
+
+
