@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Route,Routes } from 'react-router-dom';
-// import Home from '../pages/Home/Home';
+import Home from '../pages/Home/Home';
 import Header from '../pages/navbar/Header';
 import Footer from '../pages/footer/Footer'
 import Makeup from '../pages/makeup/MakeUp'
@@ -17,6 +17,7 @@ import Cartsugar from '../pages/CartPage/Cartsugar';
 import FaceBrushes from '../pages/Breshes/FaceBrushes';
 import EyeBrushes from '../pages/Breshes/EyeBrushes';
 import Payment from '../pages/Payment/Payment';
+import { Skincare } from '../pages/Skincare/Skincare';
 
 export const MainRouter = () => {
   return (
@@ -24,11 +25,12 @@ export const MainRouter = () => {
       <Header />
       <Routes>
 {/* <<<<<<< HEAD */}
-        {/* <Route path={"/"} element={<Slider/>}/> */}
+        <Route path={"/"} element={<Home/>}/>
         <Route path={"/makeup"} element={<Makeup/>}/>
         <Route path={"/lips"} element={<Lips/>}/>
         <Route path={"/face"} element={<Face/>}/>
         <Route path={"/brushes"} element={<BreshesData/>}/>
+        <Route path= {"/skincare"} element = {<Skincare/>}/>
         <Route path={"/trending"} element={<Makeup/>}/>
          <Route path={"/sugarmerchstation"} element={<MerchStation/>}/>
          <Route path={"/bestsellers"} element={<BestSellers/>}/>
