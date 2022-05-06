@@ -1,6 +1,7 @@
 import React from "react";
 import "./Slider.scss";
 import SlideHome from '../SlideHome'
+import SlideOne from "../SlideOne.jsx";
 
 
 
@@ -41,6 +42,8 @@ export default function Reffer() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+
+        <SlideOne/>
       </div>
     </div>
   );

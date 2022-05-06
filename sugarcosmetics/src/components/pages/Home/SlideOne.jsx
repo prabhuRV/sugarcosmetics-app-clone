@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { ShowData } from "../Carddiscreption/ShowData";
 // import styles from './Delivery.module.css'
 import styles from "../Styles/Default.module.css";
-function Delivery() {
+
+function SlideOne() {
   const [data, setData] = useState([]);
   const [count,setCount] = useState(0);
   const [newData, setNewData] = useState([]);
@@ -10,7 +11,7 @@ function Delivery() {
   useEffect(() => {
     let getData = async () => {
       try {
-        let res = await fetch("http://localhost:8080/BRUSHES");
+        let res = await fetch("http://localhost:8080/Treanding");
         let info = await res.json();
         console.log(info);
         setData([...info]);
@@ -120,5 +121,5 @@ function Delivery() {
   );
 }
 
-export default Delivery;
+export default SlideOne;
 
