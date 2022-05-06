@@ -1,26 +1,11 @@
+import "./App.css";
 
-import './App.css';
-
-
-import { MainRouter } from './components/routes/MainRouter';
-
-
-
-
-
-
-
-
+import { MainRouter } from "./components/routes/MainRouter";
 
 function App() {
   return (
     <div className="App">
-
-
-
-     
-     <MainRouter/>
-
+      <MainRouter />
     </div>
   );
 }
