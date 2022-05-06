@@ -28,7 +28,7 @@ export const MainRouter = () => {
       <Header />
       <Routes>
 
-        <Route path={"/"} element={<Home/>}/>
+        <Route path={"/"} element={<Home />}/>
         <Route path={"/makeup"} element={<Makeup/>}/>
         <Route path={"/lips"} element={<Lips/>}/>
         <Route path={"/face"} element={<Face/>}/>

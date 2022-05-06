@@ -11,7 +11,13 @@ const Cartsugar = () => {
       setItems(items);
     }
   }, []);
-  console.log(items);
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("cartData"));
+    if (items) {
+      setItems(items);
+    }
+  }, []);
+ 
 
   return (
     <>
