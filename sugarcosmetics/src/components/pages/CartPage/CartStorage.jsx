@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import styles from "./CartStorage.module.css";
 export const CartStorage = (item) => {
   const { id, image, price, rating, name } = item;
-    const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true);
   const deletediv = () => {
     console.log("delete");
   };
   const [count, setCount] = useState(0);
+   const [Totalcount, setTotalcount] = useState(0);
 
   const handleInc = () => {
     setCount(count + 1);
@@ -16,6 +17,8 @@ export const CartStorage = (item) => {
       setCount(count - 1);
     }
   };
+let Total = count*price;
+
   return (
     <>
       <div className={styles.MainDiv}>
@@ -38,7 +41,7 @@ export const CartStorage = (item) => {
           <button onClick={handleInc}>+</button>
         </div>
 
-        <div> {}</div>
+        <div> {Total}</div>
       </div>
     </>
   );
