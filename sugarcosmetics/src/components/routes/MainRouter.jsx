@@ -18,6 +18,7 @@ import FaceBrushes from '../pages/Breshes/FaceBrushes';
 import EyeBrushes from '../pages/Breshes/EyeBrushes';
 import Payment from '../pages/Payment/Payment';
 import { Skincare } from '../pages/Skincare/Skincare';
+import Eye from '../pages/makeup/Eye';
 
 export const MainRouter = () => {
   return (
@@ -29,6 +30,7 @@ export const MainRouter = () => {
         <Route path={"/makeup"} element={<Makeup/>}/>
         <Route path={"/lips"} element={<Lips/>}/>
         <Route path={"/face"} element={<Face/>}/>
+        <Route path={"/eyes"} element={<Eye/>}/>
         <Route path={"/brushes"} element={<BreshesData/>}/>
         <Route path= {"/skincare"} element = {<Skincare/>}/>
         <Route path={"/trending"} element={<Makeup/>}/>
@@ -41,6 +43,7 @@ export const MainRouter = () => {
         <Route path={"/makeup"} element={<Makeup />} />
         <Route path={"/lips"} element={<Lips />} />
         <Route path={"/face"} element={<Face />} />
+        <Route path={"/eyes"} element={<Eye/>}/>
         <Route path={"/brushes"} element={<BreshesData />} />
         <Route path={"/trending"} element={<Makeup />} />
         <Route path={"/sugarmerchstation"} element={<MerchStation />} />
