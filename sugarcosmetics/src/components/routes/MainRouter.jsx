@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Route,Routes } from 'react-router-dom';
-import Home from '../pages/Home/Home';
+
 import Header from '../pages/navbar/Header';
 import Footer from '../pages/footer/Footer'
 import Makeup from '../pages/makeup/MakeUp'
@@ -16,6 +16,7 @@ import Slider from '../pages/Home/Slider/Slider';
 import Cartsugar from '../pages/CartPage/Cartsugar';
 import FaceBrushes from '../pages/Breshes/FaceBrushes';
 import EyeBrushes from '../pages/Breshes/EyeBrushes';
+import Payment from '../pages/Payment/Payment'
 
 export const MainRouter = () => {
   return (
@@ -32,7 +33,7 @@ export const MainRouter = () => {
         <Route path={"/bestsellers"} element={<BestSellers />} />
         <Route path={"/makeupkits"} element={<MakeupKit />} />
         <Route path={"/cart"} element={<Cartsugar />} />
-        {/* <Route path={"/payment"} element={<Payment />} /> */}
+        <Route path={"/payment"} element={<Payment/>} />
         <Route path={"/facebrushes"} element={<FaceBrushes />} />
         <Route path={"/eyebrushes"} element={<EyeBrushes />} />
         <Route path={"/delivery"} element={<Delivery/>}/>

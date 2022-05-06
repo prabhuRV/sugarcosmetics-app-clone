@@ -1,5 +1,6 @@
 import React from "react";
 import "./Slider.scss";
+import SlideHome from '../SlideHome'
 
 
 
@@ -19,16 +20,24 @@ export default function Reffer() {
           srcset=""
         />
       </div>
-    
-         <div>
-        <p className="PRIMING">METTLE PRIMING BALM</p>
 
-        </div>
+      <div>
+        <p className="PRIMING">METTLE PRIMING BALM</p>
+      </div>
+       
+       <SlideHome/>
 
       <div className="youTube">
-      <iframe width="1024" height="352.7px" src="https://www.youtube.com/embed/_TTJmiTiiOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          width="1024"
+          height="352.7px"
+          src="https://www.youtube.com/embed/_TTJmiTiiOQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-
     </div>
   );
 }
