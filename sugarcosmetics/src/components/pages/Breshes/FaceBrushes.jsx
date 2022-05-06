@@ -3,7 +3,7 @@ import { ShowData } from "../Carddiscreption/ShowData";
 import { v4 as uuid } from "uuid";
 import styles from "../Styles/Default.module.css";
 
-function BreshesData() {
+const FaceBrushes = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -12,7 +12,10 @@ function BreshesData() {
         let res = await fetch("http://localhost:8080/BRUSHES");
         let info = await res.json();
         console.log(info);
-        setData([...info]);
+        let newData = info.filter((item) => {
+          return item.category === "face";
+        })
+        setData([...newData]);
       } catch (error) {
         console.log(error);
       }
@@ -36,13 +39,12 @@ function BreshesData() {
     console.log(sorted_data);
     setData([...sorted_data]);
   };
-
   return (
     <>
       <div id={styles.infoContain}>
         <div id={styles.info}>
-          <h1 id={styles.h1}>BRUSHES :</h1>
-          <p id={styles.items}>{data.length} items</p>
+          <h1 id={styles.h1}>FACE BRUSHES :</h1>
+          <p id={styles.items}> {data.length} items</p>
         </div>
 
         <div id={styles.sortData}>
@@ -77,6 +79,6 @@ function BreshesData() {
       </div>
     </>
   );
-}
+};
 
-export default BreshesData;
+export default FaceBrushes;
