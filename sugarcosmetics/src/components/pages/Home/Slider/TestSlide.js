@@ -6,12 +6,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 // import Reffer from "./Reffer";
 
 // import "./Slider.scss";
-import { sliderData } from "./slider-data";
+import { testData } from "./slider-data";
 import "./Slider.scss";
 
-export default function Slider() {
+export default function TestSlide() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slideLength = sliderData.length;
+  const slideLength = testData.length;
 
   const autoScroll = true;
   let slideInterval;
@@ -44,10 +44,14 @@ export default function Slider() {
 
   return (
     <>
+
+    <div className="textSlide">
+      <p>QUICK BEAUTY TIPS WITH SUGAR</p>
+    </div>
       <div className="slider">
         <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
         <AiOutlineArrowRight className="arrow next" onClick={nextSlide} />
-        {sliderData.map((slide, index) => {
+        {testData.map((slide, index) => {
           return (
             <div
               className={index === currentSlide ? "slide current" : "slide"}

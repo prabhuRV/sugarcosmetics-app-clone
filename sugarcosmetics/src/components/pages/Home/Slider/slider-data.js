@@ -28,4 +28,25 @@ desc: ""}
 
 
 
+export const testData  = [
+    {image:"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/b6c868ac-3497-4c45-906a-55bbb1ebbc0f.jpg",
+    heading: "",
+    desc: "",
+},
+
+{image: "https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/d8b1d3f0-7cbd-4697-ab5e-4dfdc5a5d408.jpg",
+heading: "",
+desc: ""
+
+},
+
+{image: "https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/4453d766-3bd0-4fed-9a76-aa19dfc5f526.jpg",
+heading: "",
+desc: "",
+}
+
+
+]
+
+
 
