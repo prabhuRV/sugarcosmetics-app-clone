@@ -13,26 +13,29 @@ import {MerchStation }from '../pages/Trending/MerchStation'
 import {BestSellers}from '../pages/Trending/BestSellers'
 import Slider from '../pages/Home/Slider/Slider';
 import Cartsugar from '../pages/CartPage/Cartsugar';
+import FaceBrushes from '../pages/Breshes/FaceBrushes';
+import EyeBrushes from '../pages/Breshes/EyeBrushes';
 
 export const MainRouter = () => {
   return (
-     <>
-     
-       <Header/>
+    <>
+      <Header />
       <Routes>
-        <Route path={"/"} element={<Slider/>}/>
-        <Route path={"/makeup"} element={<Makeup/>}/>
-        <Route path={"/lips"} element={<Lips/>}/>
-        <Route path={"/face"} element={<Face/>}/>
-        <Route path={"/brushes"} element={<BreshesData/>}/>
-        <Route path={"/trending"} element={<Makeup/>}/>
-         <Route path={"/sugarmerchstation"} element={<MerchStation/>}/>
-         <Route path={"/bestsellers"} element={<BestSellers/>}/>
-          <Route path={"/makeupkits"} element={<MakeupKit/>}/>
-          <Route path={"/cart"} element={<Cartsugar/>} />
-          <Route path={"/payment"} element={<Payment />} />
+        <Route path={"/"} element={<Slider />} />
+        <Route path={"/makeup"} element={<Makeup />} />
+        <Route path={"/lips"} element={<Lips />} />
+        <Route path={"/face"} element={<Face />} />
+        <Route path={"/brushes"} element={<BreshesData />} />
+        <Route path={"/trending"} element={<Makeup />} />
+        <Route path={"/sugarmerchstation"} element={<MerchStation />} />
+        <Route path={"/bestsellers"} element={<BestSellers />} />
+        <Route path={"/makeupkits"} element={<MakeupKit />} />
+        <Route path={"/cart"} element={<Cartsugar />} />
+        <Route path={"/payment"} element={<Payment />} />
+        <Route path={"/facebrushes"} element={<FaceBrushes />} />
+        <Route path={"/eyebrushes"} element={<EyeBrushes />} />
       </Routes>
-      <Footer/>
-     </>
-  )
+      <Footer />
+    </>
+  );
 }
