@@ -1,15 +1,15 @@
 import React from "react";
 import "./Slider.scss";
+import SlideHome from '../SlideHome'
+import SlideOne from "../SlideOne.jsx";
+import TestSlide from "./TestSlide";
 
 
 
 export default function Reffer() {
   return (
     <div className="mainDiv">
-
-      <div className="distance">
-        
-      </div>
+      <div className="distance"></div>
       <div className="reffetText">
         <p>REFER YOUR FRIENDS</p>
       </div>
@@ -23,16 +23,27 @@ export default function Reffer() {
           srcset=""
         />
       </div>
-    
-         <div>
+
+      <div>
         <p className="PRIMING">METTLE PRIMING BALM</p>
-
-        </div>
-
-      <div className="youTube">
-      <iframe width="1024" height="352.7px" src="https://www.youtube.com/embed/_TTJmiTiiOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
+      <SlideHome />
+
+      <div className="youTube">
+        <iframe
+          width="1024"
+          height="352.7px"
+          src="https://www.youtube.com/embed/_TTJmiTiiOQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <SlideOne />
+        <TestSlide  />
+      </div>
     </div>
   );
 }

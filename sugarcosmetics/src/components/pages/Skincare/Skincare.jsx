@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { ShowData } from "../Carddiscreption/ShowData";
 import { v4 as uuid } from "uuid";
+
 import styles from "../Styles/Default.module.css";
-function MakeUp() {
+export const Skincare = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     let getData = async () => {
       try {
-        let res = await fetch("http://localhost:8080/makeup");
+        let res = await fetch("http://localhost:8080/SKINCARE");
         let info = await res.json();
-       // console.log(info);
+        console.log(info);
         setData([...info]);
       } catch (error) {
         console.log(error);
@@ -17,7 +18,6 @@ function MakeUp() {
     };
     getData();
   }, []);
- 
 
   const handleH2l = () => {
     let new_data = data.sort((a, b) => {
@@ -40,7 +40,7 @@ function MakeUp() {
     <>
       <div id={styles.infoContain}>
         <div id={styles.info}>
-          <h1 id={styles.h1}>MakeUp :</h1>
+          <h1 id={styles.h1}>Skincare :</h1>
           <p id={styles.items}>{data.length} items</p>
         </div>
 
@@ -49,7 +49,7 @@ function MakeUp() {
             <div id={styles.top}>
               <img
                 className={styles.whislisticon}
-                src="https://in.sugarcosmetics.com/desc-images/sortIcon.png"
+                src="http://localhost:8080/SKINCARE"
               />
               <p id={styles.items}>Sort</p>
             </div>
@@ -76,14 +76,10 @@ function MakeUp() {
         </div>
       </div>
       <div id={styles.contain}>
-        {data.map((item) => (
-          <ShowData key={uuid()} {...item}  />
-          
-        ))}
-        
+        {data.map((item, index) => {
+          return <ShowData key={uuid()} {...item} />;
+        })}
       </div>
     </>
   );
-}
-
-export default MakeUp;
+};
