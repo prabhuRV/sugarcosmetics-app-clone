@@ -180,7 +180,7 @@ function Payment() {
                     <p id={styles.p4}>
                       We will securely save this card for faster paymnet
                       experience (CVV will not saved). If required you can
-                      remove this card from My Account > Payment Methods
+                      remove this card from My Account Payment Methods
                     </p>
                   </div>
                 </div>
