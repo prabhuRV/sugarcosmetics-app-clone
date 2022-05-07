@@ -2,7 +2,7 @@ import Reffer from './Slider/Reffer';
 import React from 'react'
 import Slider from './Slider/Slider'
 import TestSlide from "./Slider/TestSlide";
-import Reffer from "./Slider/Reffer"
+
 // <<<<<<< HEAD
 import OneMore from './Slider/OneMore'
 import TwoMore from './Slider/TwoMore'
