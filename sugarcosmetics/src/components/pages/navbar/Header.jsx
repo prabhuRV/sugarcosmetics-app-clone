@@ -1,7 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 function Header() {
+  const [data,setData] = useState([]);
+
+
+  useEffect(()=>{
+    let getData = async()=>{
+       try {
+         let res = await fetch("http://localhost:9000/search");
+         let info = await res.json();
+        //  console.log(info);
+         setData([...info]);
+       } catch (error) {
+         console.log(error)
+       }
+    }
+    getData();
+  },[]);
+
+  const handleChange =(e)=>{
+       var value = e.target.value;
+     
+  }
+
+  const handleClick = ()=>{
+    var value= document.querySelector("#inp").value;
+    console.log(value)
+      let new_data = data.filter((item)=>{
+        return item.name.includes(value)
+      })
+    console.log(new_data)
+  }
+    
   return (
     <>
     <div className={styles.div1}>
@@ -10,7 +41,7 @@ function Header() {
     <div className={styles.div2}>
       <div style={{marginLeft : "60px" , }}><Link to="/"><img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" /></Link></div>
       <div>
-        <div className = {styles.input}><input className={styles.input1} type="text" placeholder='Try "Liquid Lipstick"'/><button className={styles.button1}>Search</button>
+        <div className = {styles.input}><input name="search" id= "inp" onChange={handleChange} className={styles.input1} type="text" placeholder='Try "Liquid Lipstick"'/><button onClick= {handleClick} className={styles.button1}>Search</button>
         <div className={styles.dropdown2}>
           <p style ={{fontSize : "small" , color : "orange"}}>Frequently</p>
           <div style = {{display:"flex" , gap : "15px"}}>
