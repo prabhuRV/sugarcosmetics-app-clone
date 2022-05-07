@@ -1,7 +1,7 @@
 import React from 'react'
-// import Slider from './Slider/Slider'
+import Slider from './Slider/Slider'
 import TestSlide from "./Slider/TestSlide";
-
+import Reffer from "./Slider/Reffer"
 // <<<<<<< HEAD
 import OneMore from './Slider/OneMore'
 import TwoMore from './Slider/TwoMore'
@@ -24,18 +24,19 @@ export default function Home() {
 
     </div>
   )
-// =======
-import Reffer from './Slider/Reffer';
-export default function Home() {
-  return (
-    <>
-      <div style={ {height:"2500px"} }>
-        <Slider />
-        <TestSlide  />
-        <Reffer />
-      </div>
-    </>
-  );
 }
-// >>>>>>> c400b74efea61ee157d74a2a382326e0997378a9
+// =======
+
+// export default function Home() {
+//   return (
+//     <>
+//       <div style={ {height:"2500px"} }>
+//         <Slider />
+//         <TestSlide  />
+//         <Reffer />
+//       </div>
+//     </>
+//   );
+// }
+
 

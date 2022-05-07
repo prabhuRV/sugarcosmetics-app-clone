@@ -31,7 +31,7 @@ import { MerchStation } from './components/pages/Trending/MerchStation';
 
 
 
-// import { MainRouter } from "./components/routes/MainRouter";
+import { MainRouter } from "./components/routes/MainRouter";
 
 
 // >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf
@@ -43,8 +43,8 @@ function App() {
 
     {/* <Payment/> */}
      
-     {/* <MainRouter/> */}
-     <Home/>
+     <MainRouter/>
+     {/* <Home/> */}
 {/* ======= */}
       {/* <BreshesData /> */}
       {/* <BestSellers /> */}
