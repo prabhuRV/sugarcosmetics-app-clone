@@ -21,6 +21,7 @@ import { Skincare } from "../pages/Skincare/Skincare";
 import Eye from "../pages/makeup/Eye";
 import { CartStorage } from "../pages/CartPage/CartStorage";
 import { SinglePage } from "../pages/SinglePageView/SinglePage";
+import { SinglePageLips } from "../pages/SinglePageView/SinglePageLips";
 
 export const MainRouter = () => {
   const [cart, setCart] = useState([]);
@@ -54,7 +55,7 @@ export const MainRouter = () => {
         <Route path={"/face"} element={<Face handleClick={handleClick} />} />
         <Route path={"/eyes"} element={<Eye handleClick={handleClick} />} />
         <Route path="makeup/:id" element={<SinglePage />} />
-        <Route path="Lips/:id" element={<SinglePage />} />
+        <Route path="Lips/:id" element={<SinglePageLips />} />
         <Route path="Face/:id" element={<SinglePage />} />
         <Route
           path={"/brushes"}
