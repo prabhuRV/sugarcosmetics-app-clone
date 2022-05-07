@@ -3,7 +3,7 @@ import { ShowData } from "../Carddiscreption/ShowData";
 import { v4 as uuid } from "uuid";
 import styles from "../Styles/Default.module.css";
 
-const FaceBrushes = () => {
+const FaceBrushes = ({ handleClick }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const FaceBrushes = () => {
         console.log(info);
         let newData = info.filter((item) => {
           return item.category === "face";
-        })
+        });
         setData([...newData]);
       } catch (error) {
         console.log(error);
@@ -73,9 +73,9 @@ const FaceBrushes = () => {
       </div>
 
       <div id={styles.contain}>
-        {data.map((item, index) => {
-          return <ShowData key={uuid()} {...item} />;
-        })}
+        {data.map((items) => (
+          <ShowData key={uuid()} item={items} handleClick={handleClick} />
+        ))}
       </div>
     </>
   );

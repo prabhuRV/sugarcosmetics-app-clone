@@ -3,7 +3,7 @@ import { ShowData } from "../Carddiscreption/ShowData";
 
 import { v4 as uuid } from "uuid";
 import styles from "../Styles/Default.module.css";
-function Eye() {
+function Eye({ handleClick }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     let getData = async () => {
@@ -75,9 +75,9 @@ function Eye() {
         </div>
       </div>
       <div id={styles.contain}>
-        {data.map((item, index) => {
-          return <ShowData key={uuid()} {...item} />;
-        })}
+        {data.map((items) => (
+          <ShowData key={uuid()} item={items} handleClick={handleClick} />
+        ))}
       </div>
     </>
   );

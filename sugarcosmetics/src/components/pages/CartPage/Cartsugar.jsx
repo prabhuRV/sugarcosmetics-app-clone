@@ -1,24 +1,36 @@
 import React, { useEffect, useState } from "react";
 import styles from "./sugar.module.css";
 import { Link } from "react-router-dom";
-import { CartStorage } from "./CartStorage";
-const Cartsugar = () => {
-  const [items, setItems] = useState([]);
+import { v4 as uuid } from "uuid";
 
-  useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("cartData"));
-    if (items) {
-      setItems(items);
-    }
-  }, []);
-  useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("cartData"));
-    if (items) {
-      setItems(items);
-    }
-  }, []);
+const Cartsugar = ({ cart, setCart, handleChange }) => {
+ console.log(cart);
+  const [Cost, setCost] = useState(0);
+const [shipping, setShpping] = useState(0);
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
+    handleCost();
+  };
+
+  const handleCost = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.price));
+    setCost(ans);
+    
+  };
  
-
+  useEffect(() => {
+    handleCost();
+  });
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+useEffect(() => {
+  setShpping(getRandomArbitrary(40,100));
+},[]);
+ 
+  console.log(Cost);
   return (
     <>
       <div className={styles.carTotal}>
@@ -39,7 +51,7 @@ const Cartsugar = () => {
                 />
                 <span style={{ marginLeft: "10px" }}>Order Summary</span>
               </div>
-              <div>Cart Total : Rs.</div>
+              <div>Cart Total : Rs.{Cost}</div>
             </div>
             <div style={{ display: "flex" }} className={styles.dummy}>
               <div>
@@ -62,9 +74,33 @@ const Cartsugar = () => {
             <div className={styles.half}>
               <div>
                 {/* // maping the cartData */}
-                {items.map((item, index) => {
-                  return <CartStorage key={item.id} {...item} />;
-                })}
+
+                {cart.map((item) => (
+                  <div className={styles.MainDiv} key={uuid()}>
+                    <div>
+                      <img className={styles.imas} src={item.image} />
+                    </div>
+                    <div className={styles.cartname}>
+                      {" "}
+                      <p>{item.name}</p>
+                    </div>
+                    <img
+                      className={styles.deleteIcan}
+                      src="https://img.icons8.com/fluency-systems-regular/344/filled-trash.png"
+                    />
+                    <div className={styles.price}>
+                      {" "}
+                      <button onClick={() => handleChange(item, -1)}>-</button>
+                      {item.amount}
+                      <button onClick={() => handleChange(item, 1)}>+</button>
+                    </div>
+
+                    <div className={styles.GrandPricediv}>
+                      {item.amount} *{item.price}.00={item.amount * item.price}
+                      .00
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
             <div
@@ -129,7 +165,7 @@ const Cartsugar = () => {
                     height="15px"
                   />
                   <span style={{ marginLeft: "10px" }}>Cart Sub Total: </span>
-                  <span style={{ marginLeft: "80px" }}>₹ 50000</span>
+                  <span style={{ marginLeft: "80px" }}>₹ {Cost}</span>
                 </div>
                 <div
                   style={{
@@ -143,8 +179,8 @@ const Cartsugar = () => {
                     width="15px"
                     height="15px"
                   />
-                  <span style={{ marginLeft: "10px" }}>Shipping Cost: </span>
-                  <span style={{ marginLeft: "80px" }}>₹ 00.0</span>
+                  <span style={{ marginLeft: "10px" }}>Shipping Cost:</span>
+                  <span style={{ marginLeft: "80px" }}>₹ {shipping}</span>
                 </div>
                 <div
                   style={{
@@ -174,10 +210,12 @@ const Cartsugar = () => {
                     height="15px"
                   />
                   <span style={{ marginLeft: "10px" }}>Amount Payable: </span>
-                  <span style={{ marginLeft: "65px" }}>₹ 50000</span>
+                  <span style={{ marginLeft: "65px" }}>
+                    ₹ {Cost - shipping + 200.69}
+                  </span>
                 </div>
                 <div style={{ textAlign: "start" }}>
-                  <span>Including ₹ 494.69 in taxes</span>
+                  <span>Including ₹ 200.69 in taxes</span>
                 </div>
               </div>
               <div style={{ marginTop: "20px", display: "flex" }}>
@@ -204,7 +242,7 @@ const Cartsugar = () => {
                     color: "#fff",
                   }}
                 >
-                  <Link to="/delivery">Delivery Information</Link>{" "}
+                  <Link to="/payment">Delivery Information</Link>{" "}
                 </button>
               </div>
             </div>

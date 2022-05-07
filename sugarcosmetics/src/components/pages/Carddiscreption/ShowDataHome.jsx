@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 
 // import { useParams } from 'react-router-dom';
 
-export const ShowData = ({ item, handleClick }) => {
+export const ShowDataHome = (item) => {
     
  // console.log(item);
   // const getDatafromLS = () => {
@@ -68,7 +68,7 @@ export const ShowData = ({ item, handleClick }) => {
               src="https://cdn3.iconfinder.com/data/icons/marketing-e-commerce/128/icons_-_marketing-41-512.png"
             />
           </button>
-          <button id={styles.btn} onClick={() => handleClick(item)}>
+          <button id={styles.btn}>
             Add to Cart
           </button>
         </div>

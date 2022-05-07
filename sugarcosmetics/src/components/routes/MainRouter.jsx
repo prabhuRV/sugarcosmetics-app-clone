@@ -1,69 +1,102 @@
-
-import React from 'react'
-import { Route,Routes } from 'react-router-dom';
-import Home from '../pages/Home/Home'
-import Header from '../pages/navbar/Header';
-import Footer from '../pages/footer/Footer'
-import Makeup from '../pages/makeup/MakeUp'
-import BreshesData from '../pages/Breshes/BreshesData'
-import Lips from '../pages/makeup/Lips'
-import Face from '../pages/makeup/Face'
+import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/Home/Home";
+import Header from "../pages/navbar/Header";
+import Footer from "../pages/footer/Footer";
+import Makeup from "../pages/makeup/MakeUp";
+import BreshesData from "../pages/Breshes/BreshesData";
+import Lips from "../pages/makeup/Lips";
+import Face from "../pages/makeup/Face";
 import Delivery from "../pages/Payment/Delivery";
-import MakeupKit from '../pages/Trending/MakeupKit'
-import {MerchStation }from '../pages/Trending/MerchStation'
-import {BestSellers}from '../pages/Trending/BestSellers'
-import Slider from '../pages/Home/Slider/Slider';
-import Cartsugar from '../pages/CartPage/Cartsugar';
-import FaceBrushes from '../pages/Breshes/FaceBrushes';
-import EyeBrushes from '../pages/Breshes/EyeBrushes';
+import MakeupKit from "../pages/Trending/MakeupKit";
+import { MerchStation } from "../pages/Trending/MerchStation";
+import { BestSellers } from "../pages/Trending/BestSellers";
+import Slider from "../pages/Home/Slider/Slider";
+import Cartsugar from "../pages/CartPage/Cartsugar";
+import FaceBrushes from "../pages/Breshes/FaceBrushes";
+import EyeBrushes from "../pages/Breshes/EyeBrushes";
 
-import Payment from '../pages/Payment/Payment';
-import { Skincare } from '../pages/Skincare/Skincare';
-import Eye from '../pages/makeup/Eye';
-
+import Payment from "../pages/Payment/Payment";
+import { Skincare } from "../pages/Skincare/Skincare";
+import Eye from "../pages/makeup/Eye";
+import { CartStorage } from "../pages/CartPage/CartStorage";
 
 export const MainRouter = () => {
+  const [cart, setCart] = useState([]);
+
+  const handleClick = (item) => {
+    if (cart.indexOf(item) !== -1) return;
+    setCart([...cart, item]);
+  };
+  console.log(cart);
+
+  const handleChange = (item, d) => {
+    let index = cart.indexOf(item);
+    //     console.log(index);
+    const arr = cart;
+
+    arr[index].amount += d;
+
+    if (arr[index].amount === 0) arr[index].amount = 1;
+    setCart([...arr]);
+  };
   return (
     <>
       <Header />
       <Routes>
-
-        <Route path={"/"} element={<Home />}/>
-        <Route path={"/makeup"} element={<Makeup/>}/>
-        <Route path={"/lips"} element={<Lips/>}/>
-        <Route path={"/face"} element={<Face/>}/>
-        <Route path={"/eyes"} element={<Eye/>}/>
-        <Route path={"/brushes"} element={<BreshesData/>}/>
-        <Route path= {"/skincare"} element = {<Skincare/>}/>
-        <Route path={"/trending"} element={<Makeup/>}/>
-         <Route path={"/sugarmerchstation"} element={<MerchStation/>}/>
-         <Route path={"/bestsellers"} element={<BestSellers/>}/>
-          <Route path={"/makeupkits"} element={<MakeupKit/>}/>
-          <Route path={"/cart"} element={<Cartsugar/>}></Route>
-
-        <Route path={"/"} element={<Slider />} />
-        <Route path={"/makeup"} element={<Makeup />} />
-        <Route path={"/lips"} element={<Lips />} />
-        <Route path={"/face"} element={<Face />} />
-        <Route path={"/eyes"} element={<Eye/>}/>
-        <Route path={"/brushes"} element={<BreshesData />} />
+        <Route path={"/"} element={<Home />} />
+        <Route
+          path={"/makeup"}
+          element={<Makeup handleClick={handleClick} />}
+        />
+        <Route path={"/lips"} element={<Lips handleClick={handleClick} />} />
+        <Route path={"/face"} element={<Face handleClick={handleClick} />} />
+        <Route path={"/eyes"} element={<Eye handleClick={handleClick} />} />
+        <Route
+          path={"/brushes"}
+          element={<BreshesData handleClick={handleClick} />}
+        />
+        <Route
+          path={"/skincare"}
+          element={<Skincare handleClick={handleClick} />}
+        />
         <Route path={"/trending"} element={<Makeup />} />
-        <Route path={"/sugarmerchstation"} element={<MerchStation />} />
-        <Route path={"/bestsellers"} element={<BestSellers />} />
-        <Route path={"/makeupkits"} element={<MakeupKit />} />
-        <Route path={"/cart"} element={<Cartsugar />} />
+        <Route
+          path={"/sugarmerchstation"}
+          element={<MerchStation handleClick={handleClick} />}
+        />
+        <Route
+          path={"/bestsellers"}
+          element={<BestSellers handleClick={handleClick} />}
+        />
+        <Route
+          path={"/makeupkits"}
+          element={<MakeupKit handleClick={handleClick} />}
+        />
+        <Route
+          path={"/cart"}
+          element={
+            <Cartsugar
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          }
+        />
 
         <Route path={"/payment"} element={<Payment />} />
 
-        <Route path={"/facebrushes"} element={<FaceBrushes />} />
-        <Route path={"/eyebrushes"} element={<EyeBrushes />} />
-        <Route path={"/delivery"} element={<Delivery/>}/>
-
+        <Route
+          path={"/facebrushes"}
+          element={<FaceBrushes handleClick={handleClick} />}
+        />
+        <Route
+          path={"/eyebrushes"}
+          element={<EyeBrushes handleClick={handleClick} />}
+        />
+        <Route path={"/delivery"} element={<Delivery />} />
       </Routes>
       <Footer />
     </>
   );
-
-}
-
-
+};

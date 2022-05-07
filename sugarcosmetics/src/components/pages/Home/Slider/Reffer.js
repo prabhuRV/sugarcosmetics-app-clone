@@ -2,16 +2,14 @@ import React from "react";
 import "./Slider.scss";
 import SlideHome from '../SlideHome'
 import SlideOne from "../SlideOne.jsx";
+import TestSlide from "./TestSlide";
 
 
 
 export default function Reffer() {
   return (
     <div className="mainDiv">
-
-      <div className="distance">
-        
-      </div>
+      <div className="distance"></div>
       <div className="reffetText">
         <p>REFER YOUR FRIENDS</p>
       </div>
@@ -29,8 +27,8 @@ export default function Reffer() {
       <div>
         <p className="PRIMING">METTLE PRIMING BALM</p>
       </div>
-       
-       <SlideHome/>
+
+      <SlideHome />
 
       <div className="youTube">
         <iframe
@@ -43,7 +41,8 @@ export default function Reffer() {
           allowfullscreen
         ></iframe>
 
-        <SlideOne/>
+        <SlideOne />
+        <TestSlide  />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ShowData } from "../Carddiscreption/ShowData";
+import { ShowDataHome } from "../Carddiscreption/ShowDataHome";
 // import styles from './Delivery.module.css'
 import styles from "../Styles/Default.module.css";
 
@@ -102,7 +103,7 @@ function SlideOne() {
         <div style={{  width: "80%" }}>
           <div id={styles.contain}>
             {newData.map((item, index) => {
-              return <ShowData {...item} />;
+              return <ShowDataHome {...item} />;
             })}
           </div>
         </div>

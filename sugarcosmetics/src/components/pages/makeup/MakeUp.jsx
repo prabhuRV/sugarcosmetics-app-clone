@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { ShowData } from "../Carddiscreption/ShowData";
 import { v4 as uuid } from "uuid";
 import styles from "../Styles/Default.module.css";
-function MakeUp() {
+function MakeUp({handleClick}) {
   const [data, setData] = useState([]);
   useEffect(() => {
     let getData = async () => {
       try {
         let res = await fetch("http://localhost:8080/makeup");
         let info = await res.json();
-        console.log(info);
+       // console.log(info);
         setData([...info]);
       } catch (error) {
         console.log(error);
@@ -17,6 +17,7 @@ function MakeUp() {
     };
     getData();
   }, []);
+ 
 
   const handleH2l = () => {
     let new_data = data.sort((a, b) => {
@@ -75,9 +76,10 @@ function MakeUp() {
         </div>
       </div>
       <div id={styles.contain}>
-        {data.map((item, index) => {
-          return <ShowData key={uuid()} {...item} />;
-        })}
+        
+        {data.map((items) => (
+          <ShowData key={uuid()} item={items} handleClick={handleClick} />
+        ))}
       </div>
     </>
   );
