@@ -1,3 +1,4 @@
+import Reffer from './Slider/Reffer';
 import React from 'react'
 import Slider from './Slider/Slider'
 import TestSlide from "./Slider/TestSlide";
@@ -8,6 +9,8 @@ import TwoMore from './Slider/TwoMore'
 import VideoSlide from './Slider/VideoSlide'
 import ThreeImage from './Slider/ThreeImage'
 import FourMore from './Slider/FourMore'
+import Delivery from './SlideHome';
+import SlideOne from './SlideOne';
 
 export default function Home() {
   return (
@@ -20,13 +23,13 @@ export default function Home() {
     <VideoSlide/>
     <TwoMore/>
     <ThreeImage/>
+    <Delivery/>
+    <SlideOne/>
     <FourMore/>
 
     </div>
   )
-}
-// =======
-
+  }
 // export default function Home() {
 //   return (
 //     <>

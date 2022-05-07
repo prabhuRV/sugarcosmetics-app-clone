@@ -296,6 +296,7 @@
 
 .TwoImage{
   display: flex;
+  justify-content: center;
 }
 .TwoImage img{
   height: 301.625px;
@@ -305,6 +306,7 @@
 // threeImage***
 .threeImage{
   display: flex;
+  justify-content: center;
   // padding-left: 8px;
 }
 
