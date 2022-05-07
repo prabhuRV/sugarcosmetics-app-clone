@@ -42,7 +42,7 @@ export default function Reffer() {
         ></iframe>
 
         <SlideOne />
-        <TestSlide  />
+        {/* <TestSlide  /> */}
       </div>
     </div>
   );
