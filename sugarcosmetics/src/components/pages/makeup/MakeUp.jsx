@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ShowData } from "../Carddiscreption/ShowData";
 import { v4 as uuid } from "uuid";
 import styles from "../Styles/Default.module.css";
-function MakeUp() {
+function MakeUp({handleClick}) {
   const [data, setData] = useState([]);
   useEffect(() => {
     let getData = async () => {
@@ -76,11 +76,10 @@ function MakeUp() {
         </div>
       </div>
       <div id={styles.contain}>
-        {data.map((item) => (
-          <ShowData key={uuid()} {...item}  />
-          
-        ))}
         
+        {data.map((items) => (
+          <ShowData key={uuid()} item={items} handleClick={handleClick} />
+        ))}
       </div>
     </>
   );

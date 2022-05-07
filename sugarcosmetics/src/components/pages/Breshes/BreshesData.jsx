@@ -3,7 +3,7 @@ import { ShowData } from "../Carddiscreption/ShowData";
 import { v4 as uuid } from "uuid";
 import styles from "../Styles/Default.module.css";
 
-function BreshesData() {
+function BreshesData({ handleClick }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -71,9 +71,9 @@ function BreshesData() {
       </div>
 
       <div id={styles.contain}>
-        {data.map((item, index) => {
-          return <ShowData key={uuid()} {...item} />;
-        })}
+        {data.map((items) => (
+          <ShowData key={uuid()} item={items} handleClick={handleClick} />
+        ))}
       </div>
     </>
   );
