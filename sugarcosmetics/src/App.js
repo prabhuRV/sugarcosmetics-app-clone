@@ -3,7 +3,7 @@ import "./App.css";
 
 import './App.css';
 // <<<<<<< HEAD
-// import Home from './components/pages/Home/Home';
+import Home from './components/pages/Home/Home';
 import Payment from './components/pages/Payment/Payment';
 // =======
 import BreshesData from './components/pages/Breshes/BreshesData';
@@ -31,7 +31,7 @@ import { MerchStation } from './components/pages/Trending/MerchStation';
 
 
 
-import { MainRouter } from "./components/routes/MainRouter";
+// import { MainRouter } from "./components/routes/MainRouter";
 
 
 // >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf
@@ -44,14 +44,14 @@ function App() {
     {/* <Payment/> */}
      
      {/* <MainRouter/> */}
-     {/* <Home/> */}
+     <Home/>
 {/* ======= */}
       {/* <BreshesData /> */}
       {/* <BestSellers /> */}
       {/* <MerchStation /> */}
 {/* <MakeupKit /> */}
 {/* <Delivery/> */}
-      <MainRouter />
+      {/* <MainRouter /> */}
 {/* >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf */}
 
     </div>
