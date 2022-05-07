@@ -14,6 +14,9 @@ export const ShowData = ({ item, handleClick }) => {
 
  
 
+
+
+
   useEffect(() => {
     let rand = Math.floor(Math.random() * 1000);
     setReview(rand);
@@ -22,9 +25,13 @@ export const ShowData = ({ item, handleClick }) => {
   return (
     <>
       <div id={styles.unit}>
-        <Link to={`/${catg}/${id}`}>
+        {catg === "makeup" || catg === "Lips" ? (
+          <Link to={`/${catg}/${id}`}>
+            <img id={styles.img} src={image} />
+          </Link>
+        ) : (
           <img id={styles.img} src={image} />
-        </Link>
+        )}
         <p id={styles.name}>{name}</p>
         <p id={styles.price}>RS .{price}</p>
 
