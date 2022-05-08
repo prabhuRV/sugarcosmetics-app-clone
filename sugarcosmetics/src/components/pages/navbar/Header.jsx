@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 import './head1.scss'
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import styles from "./Header.module.css";
+// import React,{ useEffect, useState } from "react";
+import { useState, useEffect } from 'react'
+// import { Link } from "react-router-dom";
+// import styles from "./Header.module.css";
 function Header() {
   const [data, setData] = useState([]);
 
@@ -118,8 +119,8 @@ function Header() {
       </div>
 
     
-    <div className={styles.div3}>
-      <div className={styles.makeup} ><Link to="/makeup">MAKEUP</Link>
+    {/* <div className={styles.div3}>
+      <div className={styles.makeup} ><Link to="/makeup">MAKEUP</Link> */}
 
       <div className={styles.div3}>
           <div className={styles.makeup}>
@@ -176,8 +177,8 @@ function Header() {
         <div>
           <Link to="/offers" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>OFFERS</Link>
         </div>
-    </div>
-    </div>
+    {/* </div>
+    </div> */}
 
     </>
   );

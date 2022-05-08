@@ -14,7 +14,7 @@ function App() {
 
     {/* <Payment/> */}
      
-     <MainRouter/>
+     {/* <MainRouter/> */}
      {/* <MyOffers/> */}
      {/* <BestOffer/> */}
      {/* <Home/> */}
