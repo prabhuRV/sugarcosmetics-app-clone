@@ -22,6 +22,7 @@ import Eye from "../pages/makeup/Eye";
 import { CartStorage } from "../pages/CartPage/CartStorage";
 import { SinglePage } from "../pages/SinglePageView/SinglePage";
 import { SinglePageLips } from "../pages/SinglePageView/SinglePageLips";
+import CheckOut from "../pages/checkout/CheckOut";
 
 export const MainRouter = () => {
   const [cart, setCart] = useState([]);
@@ -100,6 +101,7 @@ export const MainRouter = () => {
           element={<EyeBrushes handleClick={handleClick} />}
         />
         <Route path={"/delivery"} element={<Delivery />} />
+        <Route path={"/checkout"} element={<CheckOut />} />
       </Routes>
       <Footer />
     </>

@@ -4,25 +4,15 @@ import styles from "./Header.module.css";
 function Header() {
   const [data, setData] = useState([]);
 
-<<<<<<< Updated upstream
   const [search, setSearch] = useState("");
   console.log(search);
   useEffect(() => {
     let getData = async (search) => {
       try {
-        let res = await fetch(`http://localhost:8080/makeup?name=${search}`);
+        let res = await fetch(`http://localhost:9000/search?name=${search}`);
         let info = await res.json();
         console.log(info);
-=======
-
-  useEffect(()=>{
-    let getData = async()=>{
-       try {
-         let res = await fetch("http://localhost:9000/search");
-         let info = await res.json();
-         console.log(info);
->>>>>>> Stashed changes
-         setData([...info]);
+        setData([...info]);
       } catch (error) {
         console.log(error);
       }
@@ -35,18 +25,15 @@ function Header() {
     setSearch(value);
   };
 
-<<<<<<< Updated upstream
-=======
-  const handleClick = ()=>{
-    var value= document.querySelector("#inp").value;
-    console.log(value)
-      let new_data = data.filter((item)=>{
-        return item.name.includes("matt")
-      })
-    console.log(new_data)
-  }
-    
->>>>>>> Stashed changes
+  // const handleClick = ()=>{
+  //   var value= document.querySelector("#inp").value;
+  //   console.log(value)
+  //     let new_data = data.filter((item)=>{
+  //       return item.name.includes("matt")
+  //     })
+  //   console.log(new_data)
+  // }
+
   return (
     <>
       <div className={styles.div1}>
@@ -126,7 +113,7 @@ function Header() {
       </div>
       <div className={styles.div3}>
         <div className={styles.makeup}>
-          <Link to="/makeup">MAKEUP</Link>
+          <Link to="/makeup" style= {{fontSize : "14px", fontFamily : "Quicksand"}}>MAKEUP</Link>
           <div className={styles.dropdown1}>
             <Link to="/lips">LIPS</Link>
             <Link to="/face">FACE</Link>
@@ -135,14 +122,14 @@ function Header() {
         </div>
 
         <div className={styles.makeup}>
-          <Link to="/brushes">BRUSHES</Link>
+          <Link to="/brushes" style= {{fontSize : "14px", fontFamily : "Quicksand"}}>BRUSHES</Link>
           <div className={styles.dropdown1}>
             <Link to="/facebrushes">FACE BRUSHES</Link>
             <Link to="/eyebrushes">EYE BRUSHES</Link>
           </div>
         </div>
         <div className={styles.makeup}>
-          <Link to="/skincare">SKINCARE</Link>
+          <Link to="/skincare" style= {{fontSize : "14px", fontFamily : "Quicksand"}}>SKINCARE</Link>
           <div className={styles.dropdown1}>
             <Link to="/moisturisers">MOISTURISERS</Link>
             <Link to="/masks">MASKS</Link>
@@ -154,7 +141,7 @@ function Header() {
           </div>
         </div>
         <div className={styles.makeup}>
-          <Link to="/trending">TRENDING</Link>
+          <Link to="/trending" style= {{fontSize : "14px", fontFamily : "Quicksand"}}>TRENDING</Link>
           <div className={styles.dropdown1}>
             <Link to="/sugarmerchstation">SUGAR MERCH STATION</Link>
             <Link to="/makeupkits">MAKE UP KITS</Link>
@@ -163,10 +150,10 @@ function Header() {
         </div>
 
         <div>
-          <Link to="/blog">BLOG</Link>
+          <Link to="/blog" style= {{fontSize : "14px", fontFamily : "Quicksand"}}>BLOG</Link>
         </div>
         <div>
-          <Link to="/offers">OFFERS</Link>
+          <Link to="/offers" style= {{fontSize : "14px", fontFamily : "Quicksand"}}>OFFERS</Link>
         </div>
       </div>
     </>
