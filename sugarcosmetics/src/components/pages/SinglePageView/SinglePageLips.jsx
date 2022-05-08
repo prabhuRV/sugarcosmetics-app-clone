@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { v4 as uuid } from "uuid";
 import styles from "./Color.module.css";
-export const SinglePage = () => {
+export const SinglePageLips = () => {
   const [data, setData] = useState({});
   let { id } = useParams();
 
@@ -11,7 +12,7 @@ export const SinglePage = () => {
   useEffect(() => {
     const hadllecall = async () => {
       try {
-        let res = await fetch(`http://localhost:8080/makeup/${id}`);
+        let res = await fetch(`http://localhost:8080/Lips/${id}`);
         let data = await res.json();
         // console.log(data);
         setData(data);

@@ -1,9 +1,9 @@
-import React from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
-import styles from './Delivery.module.css'
+import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
+import styles from "./Delivery.module.css";
 
 function Delivery() {
-  const navigate= useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <div style={{ marginTop: "50px" }}></div>
@@ -71,7 +71,10 @@ function Delivery() {
                 <button className={styles.cancel}>Cancel</button>
               </div>
               <div>
-                <button className={styles.save} onClick = {()=>navigate("/payment")}>
+                <button
+                  className={styles.save}
+                  onClick={() => navigate("/payment")}
+                >
                   Save and use this address
                 </button>
               </div>
@@ -88,4 +91,4 @@ function Delivery() {
   );
 }
 
-export default Delivery
+export default Delivery;

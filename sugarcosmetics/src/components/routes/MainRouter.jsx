@@ -21,6 +21,9 @@ import { Skincare } from "../pages/Skincare/Skincare";
 import Eye from "../pages/makeup/Eye";
 import { CartStorage } from "../pages/CartPage/CartStorage";
 import { SinglePage } from "../pages/SinglePageView/SinglePage";
+import { SinglePageLips } from "../pages/SinglePageView/SinglePageLips";
+import CheckOut from "../pages/checkout/CheckOut";
+import Mask from "../pages/Skincare/Mask";
 
 import {MyOffer} from "../pages/Offer/MyOffer"
 
@@ -56,7 +59,7 @@ export const MainRouter = () => {
         <Route path={"/face"} element={<Face handleClick={handleClick} />} />
         <Route path={"/eyes"} element={<Eye handleClick={handleClick} />} />
         <Route path="makeup/:id" element={<SinglePage />} />
-        <Route path="Lips/:id" element={<SinglePage />} />
+        <Route path="Lips/:id" element={<SinglePageLips />} />
         <Route path="Face/:id" element={<SinglePage />} />
         <Route
           path={"/brushes"}
@@ -65,6 +68,10 @@ export const MainRouter = () => {
         <Route
           path={"/skincare"}
           element={<Skincare handleClick={handleClick} />}
+        />
+          <Route
+          path={"/masks"}
+          element={<Mask handleClick={handleClick} />}
         />
         <Route path={"/trending"} element={<Makeup />} />
         <Route
@@ -107,6 +114,7 @@ export const MainRouter = () => {
           element={<EyeBrushes handleClick={handleClick} />}
         />
         <Route path={"/delivery"} element={<Delivery />} />
+        <Route path={"/checkout"} element={<CheckOut />} />
       </Routes>
       <Footer />
     </>

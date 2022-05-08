@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import styles from "./Payment.module.css";
 
 function Payment() {
+  const navigate= useNavigate();
   const [click, setClick] = useState(false);
   const [click2, setClick2] = useState(false);
   const [click3, setClick3] = useState(false);
@@ -271,9 +273,9 @@ function Payment() {
 
             <div id={styles.btnHold}>
               <button id={styles.btn1}>
-                <a href="">Delivery Info</a>
+                <a href="" >Delivery Info</a>
               </button>
-              <button id={styles.btn2}>Proceed to Payment</button>
+              <button id={styles.btn2} onClick= {()=> navigate("/checkout")}>Proceed to Payment</button>
             </div>
           </div>
         </div>
