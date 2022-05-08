@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
-import './head1.scss'
+// import './head1.scss'
 // import React,{ useEffect, useState } from "react";
 import { useState, useEffect } from 'react'
 // import { Link } from "react-router-dom";
@@ -162,13 +162,13 @@ function Header() {
           </div>
 
 
-          <div className='textdecorat' ><Link to="/blog">BLOG</Link></div>
-          <div><Link className='textdec' style={{
+          {/* <div className='textdecorat' ><Link to="/blog">BLOG</Link></div> */}
+          {/* <div><Link className='textdec' style={{
             textDecoration: 'none solid rgb(108, 117, 125)',
 
 
-          }} to="/offers">OFFERS</Link></div>
-        </div>
+          }} to="/offers">OFFERS</Link></div> */}
+        {/* </div> */}
 
 
         <div>
@@ -177,8 +177,8 @@ function Header() {
         <div>
           <Link to="/offers" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>OFFERS</Link>
         </div>
-    {/* </div>
-    </div> */}
+    </div>
+    {/* </div> */} 
 
     </>
   );
