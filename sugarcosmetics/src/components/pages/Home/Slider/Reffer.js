@@ -2,7 +2,7 @@ import React from "react";
 import "./Slider.scss";
 import SlideHome from '../SlideHome'
 import SlideOne from "../SlideOne.jsx";
-import TestSlide from "./TestSlide";
+// import TestSlide from "./TestSlide";
 
 
 
@@ -42,7 +42,7 @@ export default function Reffer() {
         ></iframe>
 
         <SlideOne />
-        <TestSlide  />
+        {/* <TestSlide  /> */}
       </div>
     </div>
   );

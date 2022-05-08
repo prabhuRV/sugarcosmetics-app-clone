@@ -11,6 +11,11 @@
     top: 0;
   
 } 
+
+Link{
+    text-decoration: none;
+    list-style: none;
+}
 .div2{
     padding-top: 10px;
     display:flex ;
@@ -83,6 +88,10 @@
 .dropdown1 > a:hover{
    color: black;
 }
+.makeup:hover{
+    text-decoration:  none;
+    color: grey;
+}
 
 .makeup:hover .dropdown1{
     display : block
@@ -112,3 +121,11 @@ a
     padding:16px 0px;
     font-weight:700;
 }
+
+.textdec :hover{
+    color: black;
+}
+
+
+
+

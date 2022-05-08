@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
+import './head1.scss'
 function Header() {
   return (
     <>
@@ -54,7 +55,7 @@ function Header() {
       </div>
     </div>
     <div className={styles.div3}>
-        <div className={styles.makeup}><Link to="/makeup">MAKEUP</Link>
+        <div className={styles.makeup} ><Link to="/makeup">MAKEUP</Link>
           <div className={styles.dropdown1}>
             <Link to="/lips">LIPS</Link>
             <Link to="/face">FACE</Link>
@@ -89,8 +90,12 @@ function Header() {
           </div>
         </div>
         
-        <div><Link to="/blog">BLOG</Link></div>
-        <div><Link to="/offers">OFFERS</Link></div>
+        <div className='textdecorat' ><Link to="/blog">BLOG</Link></div>
+        <div><Link className='textdec' style={{
+          textDecoration:'none solid rgb(108, 117, 125)',
+
+          
+        }} to="/offers">OFFERS</Link></div>
     </div>
     </>
     

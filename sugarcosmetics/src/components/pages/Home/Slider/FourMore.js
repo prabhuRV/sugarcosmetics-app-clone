@@ -52,6 +52,11 @@ export default function FourMore() {
         <SwiperSlide><img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/f521d4d5-bf2c-462c-8897-e7e375c6301f.jpg" alt="" /></SwiperSlide>
        
       </Swiper>
+
+      <div className="read">
+        <p className="loadMore">READ MORE ABOUT SUGAR COSMETICS</p>
+
+      </div>
     </>
   );
 }
