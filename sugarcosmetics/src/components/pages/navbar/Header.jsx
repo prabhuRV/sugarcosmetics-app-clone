@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 function Header() {
   const [data, setData] = useState([]);
 
+<<<<<<< Updated upstream
   const [search, setSearch] = useState("");
   console.log(search);
   useEffect(() => {
@@ -12,6 +13,15 @@ function Header() {
         let res = await fetch(`http://localhost:8080/makeup?name=${search}`);
         let info = await res.json();
         console.log(info);
+=======
+
+  useEffect(()=>{
+    let getData = async()=>{
+       try {
+         let res = await fetch("http://localhost:9000/search");
+         let info = await res.json();
+         console.log(info);
+>>>>>>> Stashed changes
          setData([...info]);
       } catch (error) {
         console.log(error);
@@ -25,6 +35,18 @@ function Header() {
     setSearch(value);
   };
 
+<<<<<<< Updated upstream
+=======
+  const handleClick = ()=>{
+    var value= document.querySelector("#inp").value;
+    console.log(value)
+      let new_data = data.filter((item)=>{
+        return item.name.includes("matt")
+      })
+    console.log(new_data)
+  }
+    
+>>>>>>> Stashed changes
   return (
     <>
       <div className={styles.div1}>

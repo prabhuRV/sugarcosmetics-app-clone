@@ -19,7 +19,11 @@ export default function TestSlide() {
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+<<<<<<< Updated upstream
     //console.log("next");
+=======
+   
+>>>>>>> Stashed changes
   };
 
   const prevSlide = () => {
