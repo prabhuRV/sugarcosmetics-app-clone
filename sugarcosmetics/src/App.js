@@ -14,7 +14,7 @@ function App() {
 
     {/* <Payment/> */}
      
-     <MainRouter/>
+
      {/* <MyOffers/> */}
      {/* <BestOffer/> */}
      {/* <Home/> */}
@@ -27,7 +27,7 @@ function App() {
       {/* <MainRouter /> */}
 {/* >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf */}
 
-// =======
+
       <MainRouter />
 {/* >>>>>>> 57c2e83d665baf15382b198dce643316981a6abc */}
     </div>

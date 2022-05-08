@@ -89,7 +89,19 @@ Link{
 }
 .dropdown1 > a:hover{
    color: black;
+ 
 }
+
+#link:hover{
+
+     text-decoration: none;
+     color: rgb(61, 59, 59);
+     text-shadow: rgb(128, 128, 128) 1px 1px 5px;
+     cursor: pointer;
+  
+ }
+
+
 .makeup:hover{
     text-decoration:  none;
     color: grey;
