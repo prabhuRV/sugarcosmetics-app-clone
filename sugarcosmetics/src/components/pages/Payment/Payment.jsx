@@ -273,7 +273,7 @@ function Payment() {
 
             <div id={styles.btnHold}>
               <button id={styles.btn1}>
-                <a href="" >Delivery Info</a>
+                <a href="/cart" >Delivery Info</a>
               </button>
               <button id={styles.btn2} onClick= {()=> navigate("/checkout")}>Proceed to Payment</button>
             </div>
