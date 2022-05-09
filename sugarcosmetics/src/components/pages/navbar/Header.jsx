@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Header() {
   const [data, setData] = useState([]);
-  const [show,setShow] = useState(false)
+  const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
   console.log(search);
   useEffect(() => {
@@ -221,7 +221,7 @@ function Header() {
               <div id={styles.form}>
                 <p id={styles.head}>
                   <span
-                    style={{ marginRight: "50px",cursor:"pointer" }}
+                    style={{ marginRight: "50px", cursor: "pointer" }}
                     onClick={() => setShow(false)}
                   >
                     <i class="fa-solid fa-xmark"></i>

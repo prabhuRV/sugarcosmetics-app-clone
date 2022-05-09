@@ -31,3 +31,12 @@
 #path>a{
     font-size: 20px;
 }
+#child{
+    display: flex;
+   
+}
+#h5{
+    margin-left: 50px;
+    font-weight: 400;
+    
+}

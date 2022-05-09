@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./CheckOut.module.css";
 
 function CheckOut() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [Address, setItems] = useState([]);
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("Address"));
@@ -11,30 +11,33 @@ function CheckOut() {
       setItems(items);
     }
   }, []);
-    const [Cost, setCost] = useState(0);
-    useEffect(() => {
-      const items = JSON.parse(localStorage.getItem("Cost"));
-      if (items) {
-        setCost(items);
-      }
-    }, []);
+  const [Cost, setCost] = useState(0);
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("Cost"));
+    if (items) {
+      setCost(items);
+    }
+  }, []);
   console.log(Address);
   return (
     <div id={styles.parent}>
       <div id={styles.main}>
         <h2 id={styles.h2}>Order Details</h2>
         <div id={styles.info}>
-          <div>
-            <h5>Name: {Address.name}</h5>
+          <div id={styles.child}>
+            <h5>Name:</h5>
+            <h5 id={styles.h5}> {Address.name}</h5>
           </div>
-          <div>
-            <h5>
-              Address:{Address.flatNumber},{Address.address},{Address.city},
+          <div id={styles.child}>
+            <h5>Address:</h5>
+            <h5 id={styles.h5}>
+              {Address.flatNumber},{Address.address},{Address.city},
               {Address.country} ,{Address.pincode}{" "}
             </h5>
           </div>
-          <div>
-            <h5>Total Price :{Cost} </h5>
+          <div id={styles.child}>
+            <h5>Total Price :</h5>
+            <h5 id={styles.h5}>{Cost} </h5>
           </div>
         </div>
 

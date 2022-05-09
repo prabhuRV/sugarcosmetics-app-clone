@@ -36,7 +36,7 @@ Link{
     height: 36px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    width: 600px;
+    width: 500px;
     background-color: rgb(255 , 255 , 255);
     border:1px solid rgb(255 , 255 , 255);
 }
@@ -153,6 +153,7 @@ login pop */
   height: 1025.69px;
   width: 656.61px;
   /* border:1px solid red; */
+  /* overflow: scroll; */
 }
 
 #bg {
@@ -333,25 +334,30 @@ input#check {
 /* css popup */
 #slide {
   height: 1025.69px;
-  width: 656.61px;
+  width: 0px;
   /* border:1px solid red; */
+  position:absolute;
+  z-index: 1;
+
 }
 
 #bg {
-  height: 705.69px;
-  width: 656.61px;
-  position: relative;
+  height: 905.69px;
+  width: 600px;
+  position: absolute;
   object-fit: cover;
   overflow: scroll;
+  z-index: 1;
 }
 #form {
   position: absolute;
   top: 80px;
   background-color: white;
   height: 440px;
-  width: 600px;
-  margin-left: 50px;
-   overflow: scroll;
+  width: 120%;
+  z-index: 1;
+  /* margin-left: 50px;
+   overflow: scroll; */
   /* border:1px solid red; */
 }
 #head {
@@ -388,7 +394,7 @@ input#check {
 }
 #request {
   height: 41px;
-  width: 130px;
+ 
   background-color: #adadad;
   color: #ffffff;
   padding: 10px;
