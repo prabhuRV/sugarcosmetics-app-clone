@@ -242,7 +242,7 @@ useEffect(() => {
                     color: "#fff",
                   }}
                 >
-                  <Link to="/payment">Delivery Information</Link>{" "}
+                  <Link to="/deliveryform">Delivery Information</Link>
                 </button>
               </div>
             </div>

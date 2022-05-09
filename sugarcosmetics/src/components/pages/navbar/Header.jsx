@@ -1,11 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styles from './Header.module.css'
-// import './head1.scss'
-// import React,{ useEffect, useState } from "react";
-import { useState, useEffect } from 'react'
-// import { Link } from "react-router-dom";
-// import styles from "./Header.module.css";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import styles from "./Header.module.css";
+
+import { useEffect, useState } from "react";
+
 function Header() {
   const [data, setData] = useState([]);
 
@@ -41,11 +39,10 @@ function Header() {
 
   return (
     <>
-    
       <div className={styles.div1}>
         FREE eyeshadow palette worth 1199 on a spend of 1199
       </div>
-     <div className={styles.div2}>
+      <div className={styles.div2}>
         <div style={{ marginLeft: "60px" }}>
           <Link to="/">
             <img
@@ -118,68 +115,98 @@ function Header() {
         </div>
       </div>
 
-    
-    {/* <div className={styles.div3}>
+      {/*     
+    <div className={styles.div3}>
       <div className={styles.makeup} ><Link to="/makeup">MAKEUP</Link> */}
 
       <div className={styles.div3}>
-          <div className={styles.makeup}>
-            <Link to="/makeup" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>MAKEUP</Link>
+        <div className={styles.makeup}>
+          <Link
+            to="/makeup"
+            style={{ fontSize: "14px", fontFamily: "Quicksand" }}
+            id={styles.link}
+          >
+            MAKEUP
+          </Link>
 
-            <div className={styles.dropdown1}>
-              <Link to="/lips">LIPS</Link>
-              <Link to="/face">FACE</Link>
-              <Link to="/eyes">EYES</Link>
-            </div>
+          <div className={styles.dropdown1}>
+            <Link to="/lips">LIPS</Link>
+            <Link to="/face">FACE</Link>
+            <Link to="/eyes">EYES</Link>
           </div>
+        </div>
 
-          <div className={styles.makeup}>
-            <Link to="/brushes" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>BRUSHES</Link>
-            <div className={styles.dropdown1}>
-              <Link to="/facebrushes">FACE BRUSHES</Link>
-              <Link to="/eyebrushes">EYE BRUSHES</Link>
-            </div>
+        <div className={styles.makeup}>
+          <Link
+            to="/brushes"
+            style={{ fontSize: "14px", fontFamily: "Quicksand" }}
+            id={styles.link}
+          >
+            BRUSHES
+          </Link>
+          <div className={styles.dropdown1}>
+            <Link to="/facebrushes">FACE BRUSHES</Link>
+            <Link to="/eyebrushes">EYE BRUSHES</Link>
           </div>
-          <div className={styles.makeup}>
-            <Link to="/skincare" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>SKINCARE</Link>
-            <div className={styles.dropdown1}>
-              <Link to="/moisturisers">MOISTURISERS</Link>
-              <Link to="/masks">MASKS</Link>
-              <Link to="/settingmists">SETTING MISTS</Link>
-              <Link to="/coffeculturerange">COFFEE CULTURE RANGE</Link>
-              <Link to="/sheetmustcombo">SHEET MUSK COMBO</Link>
-              <Link to="/citrusgoatrealrange">CITRUS GOAT REAL RANGE</Link>
-              <Link to="/aquaholicrange">AQUAHOLIC RANGE</Link>
-            </div>
+        </div>
+        <div className={styles.makeup}>
+          <Link
+            to="/skincare"
+            style={{ fontSize: "14px", fontFamily: "Quicksand" }}
+            id={styles.link}
+          >
+            SKINCARE
+          </Link>
+          <div className={styles.dropdown1}>
+            <Link to="/moisturisers">MOISTURISERS</Link>
+            <Link to="/masks">MASKS</Link>
+            <Link to="/settingmists">SETTING MISTS</Link>
+            <Link to="/coffeculturerange">COFFEE CULTURE RANGE</Link>
+            <Link to="/sheetmustcombo">SHEET MUSK COMBO</Link>
+            <Link to="/citrusgoatrealrange">CITRUS GOAT REAL RANGE</Link>
+            <Link to="/aquaholicrange">AQUAHOLIC RANGE</Link>
           </div>
-          <div className={styles.makeup}>
-            <Link to="/trending" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>TRENDING</Link>
-            <div className={styles.dropdown1}>
-              <Link to="/sugarmerchstation">SUGAR MERCH STATION</Link>
-              <Link to="/makeupkits">MAKE UP KITS</Link>
-              <Link to="/bestsellers">BESTSELLERS</Link>
-            </div>
+        </div>
+        <div className={styles.makeup}>
+          <Link
+            to="/trending"
+            style={{ fontSize: "14px", fontFamily: "Quicksand" }}
+            id={styles.link}
+          >
+            TRENDING
+          </Link>
+          <div className={styles.dropdown1}>
+            <Link to="/sugarmerchstation">SUGAR MERCH STATION</Link>
+            <Link to="/makeupkits">MAKE UP KITS</Link>
+            <Link to="/bestsellers">BESTSELLERS</Link>
           </div>
+        </div>
 
-
-          {/* <div className='textdecorat' ><Link to="/blog">BLOG</Link></div> */}
-          {/* <div><Link className='textdec' style={{
-            textDecoration: 'none solid rgb(108, 117, 125)',
-
-
-          }} to="/offers">OFFERS</Link></div> */}
-        {/* </div> */}
-
+        {/* <div className='textdecorat' ><Link to="/blog" id= {styles.link}>BLOG</Link></div>
+          <div><Link className='textdec' to="/offers" id= {styles.link}>OFFERS</Link></div>
+        </div> */}
 
         <div>
-          <Link to="/blog" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>BLOG</Link>
+          <Link
+            to="/blog"
+            style={{ fontSize: "14px", fontFamily: "Quicksand" }}
+            id={styles.link}
+          >
+            BLOG
+          </Link>
         </div>
         <div>
-          <Link to="/offers" style={{ fontSize: "14px", fontFamily: "Quicksand" }}>OFFERS</Link>
+          <Link
+            to="/offers"
+            style={{ fontSize: "14px", fontFamily: "Quicksand" }}
+            id={styles.link}
+          >
+            OFFERS
+          </Link>
         </div>
-    </div>
-    {/* </div> */} 
-
+      </div>
+      {/* </div> */}
+      {/* // </div> */}
     </>
   );
 }
