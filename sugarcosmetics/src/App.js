@@ -11,7 +11,8 @@ import Header from './components/pages/navbar/Header';
 import { BestSellers } from './components/pages/Trending/BestSellers';
 import MakeupKit from './components/pages/Trending/MakeupKit';
 import { MerchStation } from './components/pages/Trending/MerchStation';
-// import Delivery from './components/pages/Payment/Delivery'
+import Delivery from './components/pages/Payment/Delivery'
+import Footer from './components/pages/footer/Footer'
 
 // >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf
 
@@ -31,7 +32,7 @@ import { MerchStation } from './components/pages/Trending/MerchStation';
 
 
 
-import { MainRouter } from "./components/routes/MainRouter";
+// import { MainRouter } from "./components/routes/MainRouter";
 
 
 // >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf
@@ -44,15 +45,8 @@ function App() {
     {/* <Payment/> */}
      
      <MainRouter/>
-     {/* <Home/> */}
-{/* ======= */}
-      {/* <BreshesData /> */}
-      {/* <BestSellers /> */}
-      {/* <MerchStation /> */}
-{/* <MakeupKit /> */}
-{/* <Delivery/> */}
-      {/* <MainRouter /> */}
-{/* >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf */}
+     
+
 
     </div>
   );
