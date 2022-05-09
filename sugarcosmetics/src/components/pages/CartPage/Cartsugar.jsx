@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./sugar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 
 const Cartsugar = ({ cart, setCart, handleChange }) => {
+    const navigate = useNavigate();
  console.log(cart);
   const [Cost, setCost] = useState(0);
 const [shipping, setShpping] = useState(0);
@@ -29,6 +30,11 @@ function getRandomArbitrary(min, max) {
 useEffect(() => {
   setShpping(getRandomArbitrary(40,100));
 },[]);
+
+
+useEffect(() => {
+  localStorage.setItem("Cost", Cost);
+}, [Cost]);
  
   console.log(Cost);
   return (
@@ -86,6 +92,7 @@ useEffect(() => {
                     </div>
                     <img
                       className={styles.deleteIcan}
+                      onClick={() => handleRemove(item.id)}
                       src="https://img.icons8.com/fluency-systems-regular/344/filled-trash.png"
                     />
                     <div className={styles.price}>
@@ -241,8 +248,9 @@ useEffect(() => {
                     backgroundColor: "darkslategray",
                     color: "#fff",
                   }}
+                  onClick= {()=> navigate("/Delivery")}
                 >
-                  <Link to="/payment">Delivery Information</Link>{" "}
+                Delivery Information
                 </button>
               </div>
             </div>

@@ -78,7 +78,7 @@ function MakeUp({handleClick}) {
       <div id={styles.contain}>
         
         {data.map((items) => (
-          <ShowData key={uuid()} item={items} handleClick={handleClick} />
+          <ShowData key={items.id} item={items} handleClick={handleClick} />
         ))}
       </div>
     </>

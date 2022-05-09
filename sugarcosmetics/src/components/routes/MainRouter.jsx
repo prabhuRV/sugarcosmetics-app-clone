@@ -20,6 +20,15 @@ import Payment from "../pages/Payment/Payment";
 import { Skincare } from "../pages/Skincare/Skincare";
 import Eye from "../pages/makeup/Eye";
 import { CartStorage } from "../pages/CartPage/CartStorage";
+import { SinglePage } from "../pages/SinglePageView/SinglePage";
+
+import { SinglePageLips } from "../pages/SinglePageView/SinglePageLips";
+import CheckOut from "../pages/checkout/CheckOut";
+import Mask from "../pages/Skincare/Mask";
+
+import { MyOffer } from "../pages/Offer/MyOffer";
+
+import PaymentDelivery from "../pages/Payment/PaymentDelivery";
 
 export const MainRouter = () => {
   const [cart, setCart] = useState([]);
@@ -52,6 +61,9 @@ export const MainRouter = () => {
         <Route path={"/lips"} element={<Lips handleClick={handleClick} />} />
         <Route path={"/face"} element={<Face handleClick={handleClick} />} />
         <Route path={"/eyes"} element={<Eye handleClick={handleClick} />} />
+        <Route path="makeup/:id" element={<SinglePage />} />
+        <Route path="Lips/:id" element={<SinglePageLips />} />
+        <Route path="Face/:id" element={<SinglePage />} />
         <Route
           path={"/brushes"}
           element={<BreshesData handleClick={handleClick} />}
@@ -60,6 +72,7 @@ export const MainRouter = () => {
           path={"/skincare"}
           element={<Skincare handleClick={handleClick} />}
         />
+        <Route path={"/masks"} element={<Mask handleClick={handleClick} />} />
         <Route path={"/trending"} element={<Makeup />} />
         <Route
           path={"/sugarmerchstation"}
@@ -74,6 +87,11 @@ export const MainRouter = () => {
           element={<MakeupKit handleClick={handleClick} />}
         />
         <Route
+          path={"/offers"}
+          element={<MyOffer handleClick={handleClick} />}
+        />
+
+        <Route
           path={"/cart"}
           element={
             <Cartsugar
@@ -84,7 +102,16 @@ export const MainRouter = () => {
           }
         />
 
-        <Route path={"/payment"} element={<Payment />} />
+        <Route
+          path={"/payment"}
+          element={
+            <Payment
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          }
+        />
 
         <Route
           path={"/facebrushes"}
@@ -95,6 +122,19 @@ export const MainRouter = () => {
           element={<EyeBrushes handleClick={handleClick} />}
         />
         <Route path={"/delivery"} element={<Delivery />} />
+
+        <Route path={"/checkout"} element={<CheckOut />} />
+
+        <Route
+          path={"/deliveryform"}
+          element={
+            <PaymentDelivery
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </>

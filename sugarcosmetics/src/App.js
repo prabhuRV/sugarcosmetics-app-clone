@@ -1,6 +1,7 @@
 import "./App.css";
 
 
+
 import './App.css';
 // <<<<<<< HEAD
 import Home from './components/pages/Home/Home';
@@ -14,40 +15,26 @@ import { MerchStation } from './components/pages/Trending/MerchStation';
 import Delivery from './components/pages/Payment/Delivery'
 import Footer from './components/pages/footer/Footer'
 
-// >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf
 
-
-// import Login from './components/pages/login/Login';
-
-// import BreshesData from './components/pages/Breshes/BreshesData';
-
-// <<<<<<< HEAD
-// =======
+import { MainRouter } from "./components/routes/MainRouter";
+// import MyOffers from "./components/pages/Offer/MyOffer";
+// import BestOffer from "./components/pages/Offer/BestOffer";
 
 
 
-// // import Face from './components/pages/makeup/Face';
-//  import Lips from './components/pages/makeup/Lips';
-//  import MakeUp from './components/pages/makeup/MakeUp';
-
-
-
-// import { MainRouter } from "./components/routes/MainRouter";
-
-
-// >>>>>>> 9e97041724eaa39fc6d6b0b8247be5e23c0d2acf
 function App() {
   return (
     <div className="App">
+{/* <<<<<<< HEAD */}
 
 {/* <<<<<<< HEAD */}
 
     {/* <Payment/> */}
-     
-     <MainRouter/>
-     
 
 
+
+      <MainRouter />
+{/* >>>>>>> 57c2e83d665baf15382b198dce643316981a6abc */}
     </div>
   );
 }
