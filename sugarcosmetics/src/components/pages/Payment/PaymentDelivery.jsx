@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./paydel.module.css";
 
 import { v4 as uuid } from "uuid";
+import { useNavigate } from "react-router-dom";
 const PaymentDelivery = ({ cart, setCart, handleChange }) => {
+   const navigate = useNavigate();
   console.log(cart);
   const [Cost, setCost] = useState(0);
   const [shipping, setShpping] = useState(0);
@@ -21,6 +23,15 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
   useEffect(() => {
     handleCost();
   });
+  const [Address, setItems] = useState([]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("Address"));
+    if (items) {
+      setItems(items);
+    }
+  }, []);
+  console.log(Address);
   return (
     <>
       <div className={styles.main}>
@@ -88,10 +99,10 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
           </div>
           <div
             style={{
-              border: "1px solid red",
-              height: "250px",
+              
+              height: "100%",
               marginTop: "30px",
-              width:"120%"
+              width: "120%",
             }}
           >
             {/* Appending the cart products here */}
@@ -106,7 +117,7 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
                   <p>{item.name}</p>
                 </div>
                 <img
-                  className={styles.deleteIcan} 
+                  className={styles.deleteIcan}
                   onClick={() => handleRemove(item.id)}
                   src="https://img.icons8.com/fluency-systems-regular/344/filled-trash.png"
                 />
@@ -160,7 +171,7 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
                 >
                   Full Name
                 </span>
-                <span>Give here usere name</span>
+                <span>{Address.name}</span>
               </div>
               <div style={{ marginTop: "10px" }}>
                 <span
@@ -172,7 +183,7 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
                 >
                   Phone Number
                 </span>
-                <span>Give here phone num</span>
+                <span>{Address.number}</span>
               </div>
             </div>
             <div>
@@ -187,7 +198,7 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
                 >
                   Email
                 </span>
-                <span>Email.GMail.com</span>
+                <span>{Address.email}</span>
               </div>
             </div>
             <div>
@@ -226,10 +237,12 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
                 padding: "0px 10px",
               }}
             >
-              <p style={{ marginTop: "15px" }}>Users Name</p>
-              <p>Phone Number</p>
-              <p>Address</p>
-              <p>Arera pinCode</p>
+              <p style={{ marginTop: "15px" }}>Users Name :{Address.name}</p>
+              <p>Phone Number :{Address.number}</p>
+              <p>
+                Address :{Address.flatNumber},{Address.address},{Address.city},{Address.country}
+              </p>
+              <p>Area pinCode : {Address.pincode}</p>
             </div>
             <div style={{ marginTop: "20px", display: "flex" }}>
               <button
@@ -251,8 +264,9 @@ const PaymentDelivery = ({ cart, setCart, handleChange }) => {
                   backgroundColor: "darkslategray",
                   color: "#fff",
                 }}
+                onClick={() => navigate("/payment")}
               >
-                Proceed to Payment Rs.<span>{}Tamu</span>
+                Proceed to Payment Rs.<span>{Cost - 45 + 200.69}</span>
               </button>
             </div>
           </div>
