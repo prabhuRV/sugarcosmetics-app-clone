@@ -26,10 +26,9 @@ import { SinglePageLips } from "../pages/SinglePageView/SinglePageLips";
 import CheckOut from "../pages/checkout/CheckOut";
 import Mask from "../pages/Skincare/Mask";
 
-import {MyOffer} from "../pages/Offer/MyOffer"
+import { MyOffer } from "../pages/Offer/MyOffer";
 
-
-import PaymentDelivery from '../pages/Payment/PaymentDelivery'
+import PaymentDelivery from "../pages/Payment/PaymentDelivery";
 
 export const MainRouter = () => {
   const [cart, setCart] = useState([]);
@@ -103,7 +102,16 @@ export const MainRouter = () => {
           }
         />
 
-        <Route path={"/payment"} element={<Payment />} />
+        <Route
+          path={"/payment"}
+          element={
+            <Payment
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          }
+        />
 
         <Route
           path={"/facebrushes"}

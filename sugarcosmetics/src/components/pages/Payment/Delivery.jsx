@@ -1,11 +1,35 @@
-import React from "react";
+import React, {useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import styles from "./Delivery.module.css";
 
 
 function Delivery() {
   const navigate = useNavigate();
+
     const [show, setShow] = React.useState(false);
+
+  const [formData, setFormData] = useState([]);
+
+  const handleChange = (e) => {
+    const inputName = e.target.name;
+ 
+   
+      setFormData({
+        ...formData,
+        [inputName]: e.target.value,
+      });
+    
+  };
+    localStorage.setItem("Address", JSON.stringify(formData));
+console.log(formData);
+  const haddleSubmit = (e) => {
+    e.preventDefault();
+  console.log("hai");
+
+  
+
+  };
+
   return (
     <>
       <div style={{ marginTop: "50px" }}></div>
@@ -28,25 +52,43 @@ function Delivery() {
             />
             <p>Continue as a guest</p>
           </div>
-          <form>
+
+          <form onSubmit={haddleSubmit}>
             <div className={styles.formdiv1}>
               <div>
-                <input type="text" name="name" placeholder="Full Name" />
-                <input type="number" name="number" placeholder="phone number" />
+                <input
+                  type="text"
+                  name="name"
+                  onChange={handleChange}
+                  placeholder="Full Name"
+                />
+                <input
+                  type="number"
+                  name="number"
+                  onChange={handleChange}
+                  placeholder="phone number"
+                />
               </div>
               <div>
                 <input
                   type="number"
                   name="flatNumber"
                   placeholder="Flat Number"
+                  onChange={handleChange}
                 />
-                <input type="text" name="email" placeholder="Email Id" />
+                <input
+                  type="text"
+                  name="email"
+                  onChange={handleChange}
+                  placeholder="Email Id"
+                />
               </div>
               <div>
                 <input
                   type="text"
                   name="address"
                   placeholder="Apartment Address"
+                  onChange={handleChange}
                 />
                 <div>
                   <input
@@ -54,6 +96,7 @@ function Delivery() {
                     type="number"
                     name="pincode"
                     placeholder="Zipcode/ Pincode"
+                    onChange={handleChange}
                   />
                   <button className={styles.details}>Get Details</button>
                 </div>
@@ -61,26 +104,40 @@ function Delivery() {
             </div>
             <div className={styles.formdiv2}>
               <div>
-                <input type="text" name="state" placeholder="State/ Province" />
+                <input
+                  type="text"
+                  name="state"
+                  onChange={handleChange}
+                  placeholder="State/ Province"
+                />
               </div>
               <div>
-                <input type="text" name="city" placeholder="City" />
+                <input
+                  type="text"
+                  onChange={handleChange}
+                  name="city"
+                  placeholder="City"
+                />
               </div>
               <div>
-                <input type="text" name="country" placeholder="Country" />{" "}
+                <input
+                  type="text"
+                  onChange={handleChange}
+                  name="country"
+                  placeholder="Country"
+                />{" "}
               </div>
             </div>
             <div className={styles.formdiv3}>
               <div>
                 <button className={styles.cancel}>Cancel</button>
               </div>
-              <div>
-                <button
+              <div onClick={() => navigate("/deliveryform")}>
+                <input
+                  type="submit"
                   className={styles.save}
-                  onClick={() => navigate("/payment")}
-                >
-                  Save and use this address
-                </button>
+                  value="Save and use this address"
+                />
               </div>
             </div>
           </form>

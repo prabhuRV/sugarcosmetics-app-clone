@@ -30,7 +30,7 @@ function getRandomArbitrary(min, max) {
 useEffect(() => {
   setShpping(getRandomArbitrary(40,100));
 },[]);
-const [items, setItems] = useState([]);
+
 
 useEffect(() => {
   localStorage.setItem("Cost", Cost);

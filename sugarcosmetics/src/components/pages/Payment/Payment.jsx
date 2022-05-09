@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import styles from "./Payment.module.css";
+import { v4 as uuid } from "uuid";
 
-function Payment() {
-  const navigate= useNavigate();
+function Payment({ cart, setCart, handleChange }) {
+  const navigate = useNavigate();
   const [click, setClick] = useState(false);
   const [click2, setClick2] = useState(false);
   const [click3, setClick3] = useState(false);
@@ -45,10 +46,68 @@ function Payment() {
     setClick3(false);
   };
 
+  console.log(cart);
+  const [Cost, setCost] = useState(0);
+  const [shipping, setShpping] = useState(0);
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
+    handleCost();
+  };
+
+  const handleCost = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.price));
+    setCost(ans);
+  };
+
+  useEffect(() => {
+    handleCost();
+  });
+  function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  useEffect(() => {
+    setShpping(getRandomArbitrary(40, 100));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("Cost", Cost);
+  }, [Cost]);
+
+  console.log(Cost);
   return (
     <div id={styles.main}>
       <div id={styles.parent}>
-        <div></div>
+        <div className={styles.firstHalf}>
+          {cart.map((item) => (
+            <div className={styles.MainDiv} key={uuid()}>
+              <div>
+                <img className={styles.imas} src={item.image} />
+              </div>
+              <div className={styles.cartname}>
+                {" "}
+                <p>{item.name}</p>
+              </div>
+              <img
+                className={styles.deleteIcan}
+                onClick={() => handleRemove(item.id)}
+                src="https://img.icons8.com/fluency-systems-regular/344/filled-trash.png"
+              />
+              <div className={styles.price}>
+                {" "}
+                <button onClick={() => handleChange(item, -1)}>-</button>
+                {item.amount}
+                <button onClick={() => handleChange(item, 1)}>+</button>
+              </div>
+
+              <div className={styles.GrandPricediv}>
+                {item.amount} *{item.price}.00={item.amount * item.price}
+                .00
+              </div>
+            </div>
+          ))}
+        </div>
         <div>
           <p id={styles.p}>Payment Method</p>
 
@@ -272,10 +331,14 @@ function Payment() {
             </div>
 
             <div id={styles.btnHold}>
-              <button id={styles.btn1}>
-                <a href="" >Delivery Info</a>
-              </button>
-              <button id={styles.btn2} onClick= {()=> navigate("/checkout")}>Proceed to Payment</button>
+              <button
+                id={styles.btn1}
+                onClick={() => navigate("/cart")}
+              >Delivary info</button>
+              <button
+                id={styles.btn2}
+                onClick={() => navigate("/checkout")}
+              >Procced Check out</button>
             </div>
           </div>
         </div>
