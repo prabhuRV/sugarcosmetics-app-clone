@@ -343,7 +343,7 @@ input#check {
 
 #bg {
   height: 905.69px;
-  width: 732.61px;
+  width: 600px;
   position: absolute;
   object-fit: cover;
   overflow: scroll;
@@ -354,7 +354,7 @@ input#check {
   top: 80px;
   background-color: white;
   height: 440px;
-  width: 600px;
+  width: 120%;
   z-index: 1;
   /* margin-left: 50px;
    overflow: scroll; */
@@ -394,7 +394,7 @@ input#check {
 }
 #request {
   height: 41px;
-  width: 130px;
+ 
   background-color: #adadad;
   color: #ffffff;
   padding: 10px;
