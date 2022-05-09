@@ -36,7 +36,7 @@ Link{
     height: 36px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    width: 600px;
+    width: 500px;
     background-color: rgb(255 , 255 , 255);
     border:1px solid rgb(255 , 255 , 255);
 }
@@ -335,12 +335,13 @@ input#check {
   height: 1025.69px;
   width: 656.61px;
   /* border:1px solid red; */
+  position:absolute;
 }
 
 #bg {
   height: 705.69px;
   width: 656.61px;
-  position: relative;
+  position: absolute;
   object-fit: cover;
   overflow: scroll;
 }

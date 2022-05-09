@@ -1,6 +1,7 @@
 #slide {
   height: 1025.69px;
   width: 656.61px;
+  position: absolute;
   /* border:1px solid red; */
 }
 
