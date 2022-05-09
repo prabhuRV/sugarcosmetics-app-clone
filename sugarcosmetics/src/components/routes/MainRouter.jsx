@@ -21,11 +21,15 @@ import { Skincare } from "../pages/Skincare/Skincare";
 import Eye from "../pages/makeup/Eye";
 import { CartStorage } from "../pages/CartPage/CartStorage";
 import { SinglePage } from "../pages/SinglePageView/SinglePage";
+
 import { SinglePageLips } from "../pages/SinglePageView/SinglePageLips";
 import CheckOut from "../pages/checkout/CheckOut";
 import Mask from "../pages/Skincare/Mask";
 
 import {MyOffer} from "../pages/Offer/MyOffer"
+
+
+import PaymentDelivery from '../pages/Payment/PaymentDelivery'
 
 export const MainRouter = () => {
   const [cart, setCart] = useState([]);
@@ -114,7 +118,11 @@ export const MainRouter = () => {
           element={<EyeBrushes handleClick={handleClick} />}
         />
         <Route path={"/delivery"} element={<Delivery />} />
+
         <Route path={"/checkout"} element={<CheckOut />} />
+
+        <Route path={"/deliveryform"} element={<PaymentDelivery/>} />
+
       </Routes>
       <Footer />
     </>
