@@ -37,7 +37,7 @@ export const MainRouter = () => {
     if (cart.indexOf(item) !== -1) return;
     setCart([...cart, item]);
   };
-  console.log(cart);
+
 
   const handleChange = (item, d) => {
     let index = cart.indexOf(item);
