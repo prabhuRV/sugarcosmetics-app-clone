@@ -331,14 +331,14 @@ function Payment({ cart, setCart, handleChange }) {
             </div>
 
             <div id={styles.btnHold}>
-              <button id={styles.btn1}>
-                <a href="/cart" >Delivery Info</a>
-
-                <a href="">Delivery Info</a>
-              </button>
-              <button id={styles.btn2} onClick={() => navigate("/checkout")}>
-
-              </button>
+              <button
+                id={styles.btn1}
+                onClick={() => navigate("/cart")}
+              >Delivary info</button>
+              <button
+                id={styles.btn2}
+                onClick={() => navigate("/checkout")}
+              >Procced Check out</button>
             </div>
           </div>
         </div>
