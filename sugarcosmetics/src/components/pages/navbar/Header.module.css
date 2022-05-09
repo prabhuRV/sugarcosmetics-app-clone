@@ -153,6 +153,7 @@ login pop */
   height: 1025.69px;
   width: 656.61px;
   /* border:1px solid red; */
+  /* overflow: scroll; */
 }
 
 #bg {
@@ -333,17 +334,20 @@ input#check {
 /* css popup */
 #slide {
   height: 1025.69px;
-  width: 656.61px;
+  width: 0px;
   /* border:1px solid red; */
   position:absolute;
+  z-index: 1;
+
 }
 
 #bg {
-  height: 705.69px;
-  width: 656.61px;
+  height: 905.69px;
+  width: 732.61px;
   position: absolute;
   object-fit: cover;
   overflow: scroll;
+  z-index: 1;
 }
 #form {
   position: absolute;
@@ -351,8 +355,9 @@ input#check {
   background-color: white;
   height: 440px;
   width: 600px;
-  margin-left: 50px;
-   overflow: scroll;
+  z-index: 1;
+  /* margin-left: 50px;
+   overflow: scroll; */
   /* border:1px solid red; */
 }
 #head {
