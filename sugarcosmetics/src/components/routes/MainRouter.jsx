@@ -73,10 +73,7 @@ export const MainRouter = () => {
           path={"/skincare"}
           element={<Skincare handleClick={handleClick} />}
         />
-          <Route
-          path={"/masks"}
-          element={<Mask handleClick={handleClick} />}
-        />
+        <Route path={"/masks"} element={<Mask handleClick={handleClick} />} />
         <Route path={"/trending"} element={<Makeup />} />
         <Route
           path={"/sugarmerchstation"}
@@ -95,7 +92,6 @@ export const MainRouter = () => {
           element={<MyOffer handleClick={handleClick} />}
         />
 
-        
         <Route
           path={"/cart"}
           element={
@@ -121,8 +117,16 @@ export const MainRouter = () => {
 
         <Route path={"/checkout"} element={<CheckOut />} />
 
-        <Route path={"/deliveryform"} element={<PaymentDelivery/>} />
-
+        <Route
+          path={"/deliveryform"}
+          element={
+            <PaymentDelivery
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </>
