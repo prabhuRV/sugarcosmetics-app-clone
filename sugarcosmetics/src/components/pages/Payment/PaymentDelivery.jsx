@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./paydel.module.css";
-const PaymentDelivery = () => {
+
+import { v4 as uuid } from "uuid";
+const PaymentDelivery = ({ cart, setCart, handleChange }) => {
+  console.log(cart);
+  const [Cost, setCost] = useState(0);
+  const [shipping, setShpping] = useState(0);
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
+    handleCost();
+  };
+
+  const handleCost = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.price));
+    setCost(ans);
+  };
+
+  useEffect(() => {
+    handleCost();
+  });
   return (
     <>
       <div className={styles.main}>
@@ -22,7 +42,7 @@ const PaymentDelivery = () => {
                 height="15px"
               />
               <span style={{ marginLeft: "10px" }}>Cart Sub Total: </span>
-              <span style={{ marginLeft: "80px" }}>₹ 50000</span>
+              <span style={{ marginLeft: "80px" }}>₹ {Cost}</span>
             </div>
             <div style={{ height: "30px", paddingTop: "5px" }}>
               <img
@@ -31,7 +51,7 @@ const PaymentDelivery = () => {
                 height="15px"
               />
               <span style={{ marginLeft: "10px" }}>Shipping Cost: </span>
-              <span style={{ marginLeft: "80px" }}>₹ 00.0</span>
+              <span style={{ marginLeft: "80px" }}>₹ 45.0</span>
             </div>
             <div style={{ height: "30px", paddingTop: "5px" }}>
               <img
@@ -39,7 +59,9 @@ const PaymentDelivery = () => {
                 width="15px"
                 height="15px"
               />
-              <span style={{ marginLeft: "10px",justifyContent:"start" }}>Discount Applied: </span>
+              <span style={{ marginLeft: "10px", justifyContent: "start" }}>
+                Discount Applied:{" "}
+              </span>
               <span style={{ marginLeft: "60px" }}>₹ 00.0</span>
             </div>
             <div style={{ height: "30px", paddingTop: "5px" }}>
@@ -49,10 +71,10 @@ const PaymentDelivery = () => {
                 height="15px"
               />
               <span style={{ marginLeft: "10px" }}>Amount Payable: </span>
-              <span style={{ marginLeft: "65px" }}>₹ 50000</span>
+              <span style={{ marginLeft: "65px" }}>₹ {Cost - 45 + 200.69}</span>
             </div>
             <div>
-              <span>Including ₹ 494.69 in taxes</span>
+              <span>Including ₹ 200.69 in taxes</span>
             </div>
             <div style={{ marginTop: "20px", marginBottom: "20px" }}>
               <img
@@ -69,9 +91,38 @@ const PaymentDelivery = () => {
               border: "1px solid red",
               height: "250px",
               marginTop: "30px",
+              width:"120%"
             }}
           >
             {/* Appending the cart products here */}
+
+            {cart.map((item) => (
+              <div className={styles.MainDiv} key={uuid()}>
+                <div>
+                  <img className={styles.imas} src={item.image} />
+                </div>
+                <div className={styles.cartname}>
+                  {" "}
+                  <p>{item.name}</p>
+                </div>
+                <img
+                  className={styles.deleteIcan} 
+                  onClick={() => handleRemove(item.id)}
+                  src="https://img.icons8.com/fluency-systems-regular/344/filled-trash.png"
+                />
+                <div className={styles.price}>
+                  {" "}
+                  <button onClick={() => handleChange(item, -1)}>-</button>
+                  {item.amount}
+                  <button onClick={() => handleChange(item, 1)}>+</button>
+                </div>
+
+                <div className={styles.GrandPricediv}>
+                  {item.amount} *{item.price}.00={item.amount * item.price}
+                  .00
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -91,7 +142,7 @@ const PaymentDelivery = () => {
 
           <div
             style={{
-            //   border: "1px solid red",
+              //   border: "1px solid red",
               height: "350px",
               backgroundColor: "whitesmoke",
               borderRadius: "15px",

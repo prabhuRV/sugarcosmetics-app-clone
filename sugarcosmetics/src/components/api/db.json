@@ -1997,8 +1997,312 @@
           "price": 499,
           "rating": 4.3
         }
+      ],
+        "Eye":[
 
+
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_5e8187e3-f7a2-40aa-a759-d4bf69769234.jpg?v=1639496327",
+              "name": "kohl-of-honour-intense-kajal-01-black-out-black",
+              "price": 499,
+              "amount": 1,
+              "id":0
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559",
+              "name":"blend-the-rules-eyeshadow-palette",
+              "price": 499,
+              "amount": 1,
+              "id":2
+              
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_30afa1e4-ceba-4cf0-bf6f-d6e6af88d7af.jpg?v=1634053475",
+              "name":"eye-love-jelly-eyeshadow",
+              "price": 499,
+              "amount": 1,
+              "id":3
+              
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-uptown-curl-lengthening-mascara-01-black-beauty-black-28122637828179.jpg?v=1619106532",
+              "name":"uptown-curl-lengthening-mascara-01-black-beauty",
+              "price": 499,
+              "amount": 1,
+              "id":4
+              
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594",
+          
+          "name": "twist-and-shout-fadeproof-kajal-02-still-got-the-blues",
+          "amount": 1,
+          "price":599,
+          "id":5
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_60aeafc9-9883-4165-ad23-f2a37c65fa96.jpg?v=1640676630",
+              "name":"gloss-boss-24hr-eyeliner-01-back-in-black-black-2",
+              "price":599,
+              "amount": 1,             
+              "id":6
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_391c6f1e-6a8e-4d3f-a5c2-c5bd618e8580.jpg?v=1639755524",
+              "name":"arch-arrival-brow-definer-02-taupe-tom-grey-brown",
+              "price":599,
+               "amount": 1,              
+              "id":7
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-01-black-swan-black-13954562654291.jpg?v=1619116881",
+              "name":"blend-the-rules-eyeshadow-palette-03-fantasy-mauve",
+              "price":599,
+              "amount": 1,              
+              "id":8
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-01-black-swan-black-12771272261715.jpg?v=1619103165",
+              "name":"eye-warned-you-so-double-matte-eyeliner",
+              "price":599,
+              "amount": 1,             
+               "id":9
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_7816b797-71de-432d-9162-1f950806770a.jpg?v=1641223993",
+              "name":"eye-warned-you-so-double-matte-eyeliner-01-black-swan",
+              "price":599,
+              "amount": 1,       
+              "id":10
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/Double-Date-Extreme-Volume-Mascara-Powered-by-Images-1025x1400-1.jpg?v=1636386431",
+              "name":"born-to-wing-gel-eyeliner-01-blackmagic-woman",
+              "price": 699,
+              "amount": 1,
+              "id": 11
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-wingman-waterproof-microliner-01-i-ll-be-black-black-28163915841619.jpg?v=1619117351",
+              "name": "double-date-extreme-volume-mascara-duo-01-blackjack",
+              "price": 699,
+              "amount": 1,
+              "id": 12
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_dfe1216c-0850-458c-8838-0abd46fd57e1.jpg?v=1640676576",
+              "name": "wingman-waterproof-microliner-01-ill-be-black-black",
+              "price": 699,
+              "amount": 1,
+              "id": 13
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1bde8549-cb5e-40e8-8779-83e8c0aae451.jpg?v=1638445456",
+              "name": "arch-arrival-brow-definer-01-jerry-brown-medium-brown",
+              "price": 699,
+              "amount": 1,
+              "id": 14
+          
+          },
+          
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6a5fa1af-0d0e-4e9e-85d1-579495fb5030.jpg?v=1648482145",
+              "name": "two-good-to-be-true-dual-eyeshadow",
+              "price": 699,
+              "amount": 1,
+              "id": 15
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d33d4c51-bd20-430d-9cd0-aff37b51633c.jpg?v=1639755504",
+              "name": "arch-arrival-micro-brow-pencil",
+              "price": 699,
+              "amount": 1,
+              "id": 16
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_7194c993-55ca-40dd-ad41-ce1f40037293.jpg?v=1648222945",
+              "name": "blend-the-rules-eyeshadow-palette-02-warrior-smokey",
+              "id": 17
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-graphic-jam-36hr-eyeliner-01-blackest-black-15278933278803.jpg?v=1619123100",
+              "name": "sugar-arch-arrival-micro-brow-pencil-01-jerry-brown",
+              "price": 799,
+              "amount": 1,
+              "id": 18
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-arch-arrival-3-in-1-brow-shaper-02-taupe-tom-grey-brown-28122561052755_667218d2-eb64-4933-87f0-31e23808898f.jpg?v=1645526316",
+              "name": "graphic-jam-36hr-eyeliner-01-blackest-black",
+              "price": 799,
+              "amount": 1,
+              "id": 19
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_a0e70fd4-3cf1-4e9d-8345-634c86971469.jpg?v=1639582432",
+              "name": "arch-arrival-3-in-1-brow-shaper",
+              "price": 799,
+              "amount": 1,
+              "id": 20
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-stroke-of-genius-combo-15283687293011.jpg?v=1619123113",
+              "name": "stroke-of-genius-heavy-duty-kohl-01-back-to-black",
+              "price": 799,
+              "amount": 1,
+              
+              
+              "id": 21
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_0fa12791-2d87-4386-9633-fe0dea75cf8f.jpg?v=1639755487",
+              "name": "stroke-of-genius-combo",
+              "price": 799,
+              "amount": 1,
+              "id": 22
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-twist-and-shout-fadeproof-kajal-01-black-velvet-black-12771571433555_7f6a68fc-aa43-4788-a234-e2c1febc622a.jpg?v=1632208581",
+              "name": "blend-the-rules-eyeshadow-palette-01-flawless",
+              "price": 799,
+              "amount": 1,
+              "id": 23
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-01-pink-sphinx-bright-pink-27939452452947.jpg?v=1619153599",
+              "name": "twist-and-shout-fadeproof-kajal-01-black-velvet-black",
+              "price": 469,
+              "amount": 1,
+              "id":24
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-arrested-for-overstay-waterproof-eyeliner-01-i-ll-be-black-black-12784884973651.jpg?v=1619101912",
+              "name": "eye-lit-you-so-vivid-eyeliner",
+              "price": 469,
+              "amount": 1,
+              "id":25
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-told-you-so-smudgeproof-eyeliner-01-black-swan-black-12771271049299.jpg?v=1619100648",
+              "name": "arrested-for-overstay-waterproof-eyeliner-01-i-ll-be-black-black",
+              "price": 469,
+              "amount": 1,
+              "id":26
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-told-you-so-smudgeproof-eyeliner-01-black-swan-black-13760408584275.jpg?v=1619116364",
+              "name": "eye-told-you-so-smudgeproof-eyeliner-01-black-swan",
+              "price": 469,
+              "amount": 1,
+              "id":27
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-wonder-woman-mixed-palette-02-primal-president-27982326628435.jpg?v=1619155537",
+              "name": "eye-told-you-so-smudgeproof-eyeliner",
+              "price": 469,
+              "amount": 1,
+              "id":28
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_29d62649-64ef-4647-8f5f-4c795522d8c4.jpg?v=1639585091",
+              "name": "wonder-woman-mixed-palette-02-primal-president",
+              "price": 469,
+              "amount": 1,
+              "id":29
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-arch-arrival-brow-powder-14753953644627.jpg?v=1619120283",
+              "name": "stroke-of-genius-heavy-duty-kohl-07-peacock-peacock-green-velvet-green-1",
+              "id": 30
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-dared-you-so-metallic-eyeliner-02-purple-pirate-metallic-purple-12784932847699.jpg?v=1619108783",
+              "name": "arch-arrival-brow-powder",
+              "price": 549,
+              "amount": 1,
+              "id":31
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-02-orange-honey-27938794602579.jpg?v=1619153448",
+              "name": "eye-dared-you-so-metallic-eyeliner-02-purple-pirate-metallic-purple",
+              "price": 549,
+              "amount": 1,
+              "id":32
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-twist-and-shout-fadeproof-kajal-02-still-got-the-blues-dark-blue-12771572187219_40970186-afbf-4e5a-a346-f61273099a7a.jpg?v=1632208792",
+              "name": "eye-lit-you-so-vivid-eyeliner-02-orange-honey",
+              "price": 549,
+              "amount": 1,
+              "id":33
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-06-white-heat-bright-white-28122569998419.jpg?v=1619153489",
+              "name": "twist-and-shout-fadeproof-kajal-02-still-got-the-blues-dark-blue",
+              "price": 549,
+              "amount": 1,
+              "id":34
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-01-pink-sphinx-27938773631059.jpg?v=1619153437",
+              "name": "eye-lit-you-so-vivid-eyeliner-06-white-heat",
+              "price": 549,
+              "amount": 1,
+              "id":35
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-04-yellow-bird-27938825961555.jpg?v=1619153469",
+              "name": "eye-lit-you-so-vivid-eyeliner-01-pink-sphinx",
+          
+              "price": 549,
+              "amount": 1,
+              "id":36
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-05-green-ray-27938831269971.jpg?v=1619153479",
+              "name": "eye-lit-you-so-vivid-eyeliner-04-yellow-bird",
+              "price": 999,
+              "amount": 1,
+              "id":37
+          
+          },
+          {
+              "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_9909d205-c5f9-476d-9903-c4beffbfebb7.jpg?v=1637068160",
+              "name": "eye-lit-you-so-vivid-eyeliner-05-green-ray",
+              "price": 999,
+              "amount": 1,
+              "id":38
+          }
       ]
+
+      
    
       
 }
