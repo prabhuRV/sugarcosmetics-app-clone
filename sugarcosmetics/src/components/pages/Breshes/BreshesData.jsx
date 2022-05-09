@@ -48,8 +48,11 @@ function BreshesData({ handleClick }) {
         <div id={styles.sortData}>
           <div id={styles.opt}>
             <div id={styles.top}>
-              <p>Select Sorting</p>
-              <p>Clear All</p>
+              <img
+                className={styles.whislisticon}
+                src="https://in.sugarcosmetics.com/desc-images/sortIcon.png"
+              />
+              <p id={styles.items}>Sort</p>
             </div>
             <hr />
 

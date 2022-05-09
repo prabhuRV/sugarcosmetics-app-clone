@@ -49,7 +49,7 @@ export const Skincare = ({ handleClick }) => {
             <div id={styles.top}>
               <img
                 className={styles.whislisticon}
-                src="http://localhost:8080/SKINCARE"
+                src="https://in.sugarcosmetics.com/desc-images/sortIcon.png"
               />
               <p id={styles.items}>Sort</p>
             </div>
