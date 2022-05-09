@@ -536,5 +536,5 @@ input#check {
   box-sizing: border-box;
   margin-right: -18px;
   margin-left: 850px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
